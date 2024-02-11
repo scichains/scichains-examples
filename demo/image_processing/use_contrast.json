@@ -1,0 +1,1243 @@
+{
+    "app": "stare-project",
+    "version": "1.0.9",
+    "root": {
+        "scale": 0.640000000000001,
+        "desktop": {
+            "scroll_h": 0.6111264300052541,
+            "scroll_v": 0.5728838665276973
+        },
+        "grid_adjust": true,
+        "grid_size": 20
+    },
+    "nodes": [
+        {
+            "@id": "UIBlockModel",
+            "uuid": "555bda2f-db53-4344-a675-d2e261ac8016",
+            "layout_x": 11360,
+            "layout_y": 11340,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Use sub-chain(s)",
+            "comment": "",
+            "worker_type": "1907b22c-c5c5-4d98-833f-20704c39c95a",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-0aa5-22ac834ca088",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "subChainJsonContent",
+                    "caption": "Sub-chain JSON content"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-0aa5-22ac834ca088",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "subChainJsonContent",
+                    "caption": "Sub-chain JSON content"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-75dc-6b57640cee19",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "executeIsolatedLoadingTimeFunctions",
+                    "caption": "Execute isolated loading-time functions"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-75dc-6b57640cee19",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "executeIsolatedLoadingTimeFunctions",
+                    "caption": "Execute isolated loading-time functions"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-770d-0e9882f31e1d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "overrideBehaviour",
+                    "caption": "Override behaviour"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-770d-0e9882f31e1d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "overrideBehaviour",
+                    "caption": "Override behaviour"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-7619-987b0c8ca24d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "multithreading",
+                    "caption": "Multithreading"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-7619-987b0c8ca24d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "multithreading",
+                    "caption": "Multithreading"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0300-0000-1d50-9d2c059d5b4d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "executeAll",
+                    "caption": "Execute all blocks"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "555bda2f-0400-0000-1d50-9d2c059d5b4d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "executeAll",
+                    "caption": "Execute all blocks"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "02d44a71-27de-4c9d-9312-a5644b836f9d",
+            "layout_x": 11820,
+            "layout_y": 11300,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Input/read from camera",
+            "comment": "",
+            "worker_type": "8238c847-96d8-49de-b9fc-1ae2b2e3ed28",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "input",
+                    "caption": "external input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0300-0000-ddf6-c45ef48d2eac",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "cameraIndex",
+                    "caption": "Camera ID (0 for default)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0400-0000-ddf6-c45ef48d2eac",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "cameraIndex",
+                    "caption": "Camera ID (0 for default)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0300-0000-ce9e-b4b7daa3adf9",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "apiPreference",
+                    "caption": "Video preference"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0400-0000-ce9e-b4b7daa3adf9",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "apiPreference",
+                    "caption": "Video preference"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0300-0000-a446-1eb22b642788",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "lockCameraForFurtherUsage",
+                    "caption": "Lock camera for further usage by this chain"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "02d44a71-0400-0000-a446-1eb22b642788",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "lockCameraForFurtherUsage",
+                    "caption": "Lock camera for further usage by this chain"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "dc7e08e8-94f3-49a3-bc38-b17874586bc5",
+            "layout_x": 12180,
+            "layout_y": 11300,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "contrast",
+            "comment": "",
+            "worker_type": "5cf1acdb-914b-467f-92d4-8b8f2d1a4f39",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "input",
+                    "caption": "input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "output",
+                    "caption": "output"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-4408-47b5648e5028",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "High contrast level",
+                    "caption": "High contrast level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-4408-47b5648e5028",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "High contrast level",
+                    "caption": "High contrast level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-913f-bedfd2f05aa9",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "Low contras level",
+                    "caption": "Low contras level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-913f-bedfd2f05aa9",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "Low contras level",
+                    "caption": "Low contras level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-ef65-f1739acbc13e",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "Size for smoothing",
+                    "caption": "Size for smoothing"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-ef65-f1739acbc13e",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "Size for smoothing",
+                    "caption": "Size for smoothing"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-566d-a0122c6c955a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___doAction",
+                    "caption": "_sch___doAction"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-566d-a0122c6c955a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___doAction",
+                    "caption": "_sch___doAction"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-381c-484df0e4e6ab",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___logTiming",
+                    "caption": "_sch___logTiming"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-381c-484df0e4e6ab",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___logTiming",
+                    "caption": "_sch___logTiming"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-b6d1-27655d3164dd",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingLogLevel",
+                    "caption": "_sch___timingLogLevel"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-b6d1-27655d3164dd",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingLogLevel",
+                    "caption": "_sch___timingLogLevel"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-ca29-83d7eada6678",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingNumberOfCalls",
+                    "caption": "_sch___timingNumberOfCalls"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-ca29-83d7eada6678",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingNumberOfCalls",
+                    "caption": "_sch___timingNumberOfCalls"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0300-0000-05e2-4a2b5abc163f",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingNumberOfPercentiles",
+                    "caption": "_sch___timingNumberOfPercentiles"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dc7e08e8-0400-0000-05e2-4a2b5abc163f",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sch___timingNumberOfPercentiles",
+                    "caption": "_sch___timingNumberOfPercentiles"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UILinkModel",
+            "uuid": "e0766b18-761e-4e0b-9a24-8304c2e7aea1",
+            "src_port_uuid": "02d44a71-0200-0000-6416-fc948a169899",
+            "dest_port_uuid": "dc7e08e8-0100-0000-8fd6-4c4759803353"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "12dd83d6-d49b-4192-bdfb-de3aa23998f3",
+            "layout_x": 12520,
+            "layout_y": 11300,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Write image",
+            "comment": "",
+            "worker_type": "a3b846f2-68f0-44b9-b689-e8d1d83f6686",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "input",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0100-0000-a304-77c019f67c0a",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0100-0000-3c7c-49a1bd6e05e2",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name_addition",
+                    "caption": "file name addition"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0200-0000-d4f1-a3b3e738ab87",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolute_path",
+                    "caption": "absolute path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0200-0000-91a2-e9b2673cd69d",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "parent_folder",
+                    "caption": "parent folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0200-0000-5f82-f315ea9a15dd",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name",
+                    "caption": "file name"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0300-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0400-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0300-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0400-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0300-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0400-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0300-0000-842f-1e7e2cde3c44",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "autoContrastBeforeWriting",
+                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "12dd83d6-0400-0000-842f-1e7e2cde3c44",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "autoContrastBeforeWriting",
+                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UILinkModel",
+            "uuid": "04feb68b-3210-4fa3-9660-292d340cddd7",
+            "src_port_uuid": "dc7e08e8-0200-0000-6416-fc948a169899",
+            "dest_port_uuid": "12dd83d6-0100-0000-8fd6-4c4759803353"
+        }
+    ],
+    "blocks": [
+    ],
+    "plugins": [
+    ],
+    "properties": {
+    },
+    "poke_and_look_project": "",
+    "stare_chain": {
+        "app": "stare-chain",
+        "version": "1.0",
+        "executor": {
+            "uuid": "fcf261a3-3f3e-4b65-a67e-6772377334b7",
+            "options": {
+                "execution": {
+                    "all": false,
+                    "multithreading": false,
+                    "ignore_exceptions": false
+                }
+            }
+        },
+        "properties": [
+            {
+                "name": "execution.strategy",
+                "type": "scalar",
+                "value": "output_broadcast"
+            }
+        ],
+        "blocks": [
+            {
+                "uuid": "555bda2f-db53-4344-a675-d2e261ac8016",
+                "executor_id": "1907b22c-c5c5-4d98-833f-20704c39c95a",
+                "execution_stage": "loading_time",
+                "executor_name": "Use sub-chain(s)",
+                "ports": [
+                    {
+                        "uuid": "555bda2f-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "555bda2f-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "555bda2f-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-0aa5-22ac834ca088",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "subChainJsonContent"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-0aa5-22ac834ca088",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "subChainJsonContent"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-75dc-6b57640cee19",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "executeIsolatedLoadingTimeFunctions"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-75dc-6b57640cee19",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "executeIsolatedLoadingTimeFunctions"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-770d-0e9882f31e1d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "overrideBehaviour"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-770d-0e9882f31e1d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "overrideBehaviour"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-7619-987b0c8ca24d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "multithreading"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-7619-987b0c8ca24d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "multithreading"
+                    },
+                    {
+                        "uuid": "555bda2f-0300-0000-1d50-9d2c059d5b4d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "executeAll"
+                    },
+                    {
+                        "uuid": "555bda2f-0400-0000-1d50-9d2c059d5b4d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "executeAll"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "executeAll",
+                        "type": "boolean",
+                        "value": false
+                    },
+                    {
+                        "name": "executeIsolatedLoadingTimeFunctions",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "file",
+                        "type": "scalar",
+                        "value": "contrast.json"
+                    },
+                    {
+                        "name": "fileExistenceRequired",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "multithreading",
+                        "type": "boolean",
+                        "value": false
+                    },
+                    {
+                        "name": "overrideBehaviour",
+                        "type": "boolean",
+                        "value": false
+                    },
+                    {
+                        "name": "subChainJsonContent",
+                        "type": "scalar",
+                        "value": ""
+                    }
+                ],
+                "system": {
+                    "caption": "Use sub-chain(s)"
+                }
+            },
+            {
+                "uuid": "02d44a71-27de-4c9d-9312-a5644b836f9d",
+                "executor_id": "8238c847-96d8-49de-b9fc-1ae2b2e3ed28",
+                "executor_name": "Input/read from camera",
+                "ports": [
+                    {
+                        "uuid": "02d44a71-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "02d44a71-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "02d44a71-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "02d44a71-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "02d44a71-0300-0000-ddf6-c45ef48d2eac",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "cameraIndex"
+                    },
+                    {
+                        "uuid": "02d44a71-0400-0000-ddf6-c45ef48d2eac",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "cameraIndex"
+                    },
+                    {
+                        "uuid": "02d44a71-0300-0000-ce9e-b4b7daa3adf9",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "apiPreference"
+                    },
+                    {
+                        "uuid": "02d44a71-0400-0000-ce9e-b4b7daa3adf9",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "apiPreference"
+                    },
+                    {
+                        "uuid": "02d44a71-0300-0000-a446-1eb22b642788",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "lockCameraForFurtherUsage"
+                    },
+                    {
+                        "uuid": "02d44a71-0400-0000-a446-1eb22b642788",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "lockCameraForFurtherUsage"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "apiPreference",
+                        "type": "scalar",
+                        "value": "AUTO"
+                    },
+                    {
+                        "name": "cameraIndex",
+                        "type": "int64",
+                        "value": 0
+                    },
+                    {
+                        "name": "lockCameraForFurtherUsage",
+                        "type": "boolean",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Input/read from camera"
+                }
+            },
+            {
+                "uuid": "dc7e08e8-94f3-49a3-bc38-b17874586bc5",
+                "executor_id": "5cf1acdb-914b-467f-92d4-8b8f2d1a4f39",
+                "executor_name": "contrast",
+                "executor_category": "",
+                "ports": [
+                    {
+                        "uuid": "dc7e08e8-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-4408-47b5648e5028",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "High contrast level"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-4408-47b5648e5028",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "High contrast level"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-913f-bedfd2f05aa9",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "Low contras level"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-913f-bedfd2f05aa9",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "Low contras level"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-ef65-f1739acbc13e",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "Size for smoothing"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-ef65-f1739acbc13e",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "Size for smoothing"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-566d-a0122c6c955a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___doAction"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-566d-a0122c6c955a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___doAction"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-381c-484df0e4e6ab",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___logTiming"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-381c-484df0e4e6ab",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___logTiming"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-b6d1-27655d3164dd",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingLogLevel"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-b6d1-27655d3164dd",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingLogLevel"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-ca29-83d7eada6678",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingNumberOfCalls"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-ca29-83d7eada6678",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingNumberOfCalls"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0300-0000-05e2-4a2b5abc163f",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingNumberOfPercentiles"
+                    },
+                    {
+                        "uuid": "dc7e08e8-0400-0000-05e2-4a2b5abc163f",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sch___timingNumberOfPercentiles"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "High contrast level",
+                        "type": "double",
+                        "value": 0.8
+                    },
+                    {
+                        "name": "Low contras level",
+                        "type": "double",
+                        "value": 0.1
+                    },
+                    {
+                        "name": "Size for smoothing",
+                        "type": "int64",
+                        "value": 5
+                    },
+                    {
+                        "name": "_sch___doAction",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "_sch___logTiming",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "_sch___timingLogLevel",
+                        "type": "scalar",
+                        "value": "CONFIG"
+                    },
+                    {
+                        "name": "_sch___timingNumberOfCalls",
+                        "type": "int64",
+                        "value": 10
+                    },
+                    {
+                        "name": "_sch___timingNumberOfPercentiles",
+                        "type": "int64",
+                        "value": 5
+                    }
+                ],
+                "system": {
+                    "caption": "contrast"
+                }
+            },
+            {
+                "uuid": "12dd83d6-d49b-4192-bdfb-de3aa23998f3",
+                "executor_id": "a3b846f2-68f0-44b9-b689-e8d1d83f6686",
+                "executor_name": "Write image",
+                "ports": [
+                    {
+                        "uuid": "12dd83d6-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "12dd83d6-0100-0000-a304-77c019f67c0a",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "12dd83d6-0100-0000-3c7c-49a1bd6e05e2",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name_addition"
+                    },
+                    {
+                        "uuid": "12dd83d6-0200-0000-d4f1-a3b3e738ab87",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolute_path"
+                    },
+                    {
+                        "uuid": "12dd83d6-0200-0000-91a2-e9b2673cd69d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "parent_folder"
+                    },
+                    {
+                        "uuid": "12dd83d6-0200-0000-5f82-f315ea9a15dd",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name"
+                    },
+                    {
+                        "uuid": "12dd83d6-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "12dd83d6-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "12dd83d6-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "12dd83d6-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "12dd83d6-0300-0000-b50e-f55dea9c782d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "12dd83d6-0400-0000-b50e-f55dea9c782d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "12dd83d6-0300-0000-c0d9-95521ea10fa4",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "12dd83d6-0400-0000-c0d9-95521ea10fa4",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "12dd83d6-0300-0000-3712-596fc4b7b937",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "12dd83d6-0400-0000-3712-596fc4b7b937",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "12dd83d6-0300-0000-842f-1e7e2cde3c44",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "autoContrastBeforeWriting"
+                    },
+                    {
+                        "uuid": "12dd83d6-0400-0000-842f-1e7e2cde3c44",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "autoContrastBeforeWriting"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "autoContrastBeforeWriting",
+                        "type": "boolean",
+                        "value": false
+                    },
+                    {
+                        "name": "file",
+                        "type": "scalar",
+                        "value": "/tmp/result.png"
+                    },
+                    {
+                        "name": "fileNameAdditionMode",
+                        "type": "scalar",
+                        "value": "NONE"
+                    },
+                    {
+                        "name": "requireInput",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "secure",
+                        "type": "boolean",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Write image"
+                }
+            }
+        ],
+        "links": [
+            {
+                "uuid": "e0766b18-761e-4e0b-9a24-8304c2e7aea1",
+                "src_port_uuid": "02d44a71-0200-0000-6416-fc948a169899",
+                "dest_port_uuid": "dc7e08e8-0100-0000-8fd6-4c4759803353"
+            },
+            {
+                "uuid": "04feb68b-3210-4fa3-9660-292d340cddd7",
+                "src_port_uuid": "dc7e08e8-0200-0000-6416-fc948a169899",
+                "dest_port_uuid": "12dd83d6-0100-0000-8fd6-4c4759803353"
+            }
+        ]
+    }
+}

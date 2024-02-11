@@ -1,0 +1,32 @@
+{
+  "app": "executor",
+  "category": "chain_examples.js.scalars",
+  "name": "Chain JS example: sum a+b",
+  "uuid": "7eca3e3d-ebb0-4386-a3ea-716074286f9f",
+  "language": "js",
+  "js": {
+    "module": "demo/scalars/ExampleScalarSum.mjs"
+  },
+  "in_ports": [
+  ],
+  "out_ports": [
+    {
+      "value_type": "scalar",
+      "name": "output"
+    }
+  ],
+  "controls": [
+    {
+      "name": "a",
+      "value_type": "double",
+      "edition_type": "value",
+      "default": 1.0
+    },
+    {
+      "name": "b",
+      "value_type": "double",
+      "edition_type": "value",
+      "default": 1.0
+    }
+  ]
+}
