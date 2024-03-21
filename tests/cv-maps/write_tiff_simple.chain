@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.6289322670012402,
-            "scroll_v": 0.4164679346645702
+            "scroll_h": 0.6037389852097179,
+            "scroll_v": 0.41412265779160606
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -279,6 +279,24 @@
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file_size",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f4b98735-0200-0000-7b66-4257a4625613",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "stored_tiles_count",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f4b98735-0200-0000-d9ad-212c54201779",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "stored_tiles_memory",
                     "caption": ""
                 },
                 {
@@ -1726,8 +1744,7 @@
                     }
                 ],
                 "system": {
-                    "caption": "Matrix example: gradients (MultiMatrix)",
-                    "enabled": false
+                    "caption": "Matrix example: gradients (MultiMatrix)"
                 }
             },
             {
@@ -1806,6 +1823,18 @@
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "file_size"
+                    },
+                    {
+                        "uuid": "f4b98735-0200-0000-7b66-4257a4625613",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "stored_tiles_count"
+                    },
+                    {
+                        "uuid": "f4b98735-0200-0000-d9ad-212c54201779",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "stored_tiles_memory"
                     },
                     {
                         "uuid": "f4b98735-0200-0000-835f-ba8da7b1636d",
@@ -2208,13 +2237,13 @@
                     },
                     {
                         "name": "tileSizeX",
-                        "type": "int64",
-                        "value": 256
+                        "type": "int32",
+                        "value": 512
                     },
                     {
                         "name": "tileSizeY",
-                        "type": "int64",
-                        "value": 256
+                        "type": "int32",
+                        "value": 512
                     },
                     {
                         "name": "tiled",
