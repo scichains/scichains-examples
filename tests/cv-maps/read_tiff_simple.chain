@@ -2,10 +2,10 @@
     "app": "stare-project",
     "version": "1.0.9",
     "root": {
-        "scale": 0.640000000000001,
+        "scale": 0.6400000000000012,
         "desktop": {
-            "scroll_h": 0.6266345912710072,
-            "scroll_v": 0.4165847587137613
+            "scroll_h": 0.6445835326319902,
+            "scroll_v": 0.41666605291748465
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -14,8 +14,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "38739870-c5e9-4be5-a1c5-91e3be719e81",
-            "layout_x": 12260,
-            "layout_y": 8220,
+            "layout_x": 12340,
+            "layout_y": 8240,
             "layout_width": 300,
             "layout_height": 340,
             "caption": "Read TIFF",
@@ -548,6 +548,190 @@
             "display_advanced": true,
             "properties": [
             ]
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "1e21840a-f378-4478-9f9d-143d81ef4da5",
+            "layout_x": 12720,
+            "layout_y": 8240,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Write image",
+            "comment": "",
+            "worker_type": "a3b846f2-68f0-44b9-b689-e8d1d83f6686",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "input",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0100-0000-a304-77c019f67c0a",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0100-0000-3c7c-49a1bd6e05e2",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name_addition",
+                    "caption": "file name addition"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0200-0000-d4f1-a3b3e738ab87",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolute_path",
+                    "caption": "absolute path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0200-0000-91a2-e9b2673cd69d",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "parent_folder",
+                    "caption": "parent folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0200-0000-5f82-f315ea9a15dd",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name",
+                    "caption": "file name"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-842f-1e7e2cde3c44",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "autoContrastBeforeWriting",
+                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-842f-1e7e2cde3c44",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "autoContrastBeforeWriting",
+                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UILinkModel",
+            "uuid": "3427d981-4342-45f5-8b38-cd90ce31d7a2",
+            "src_port_uuid": "38739870-0200-0000-6416-fc948a169899",
+            "dest_port_uuid": "1e21840a-0100-0000-8fd6-4c4759803353"
         }
     ],
     "blocks": [
@@ -956,7 +1140,7 @@
                     {
                         "name": "file",
                         "type": "scalar",
-                        "value": "/tmp/invalid.tiff"
+                        "value": "/tmp/test.tiff"
                     },
                     {
                         "name": "fileNameAdditionMode",
@@ -965,8 +1149,8 @@
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "scalar",
-                        "value": "0"
+                        "type": "int32",
+                        "value": 0
                     },
                     {
                         "name": "numberOfChannels",
@@ -986,7 +1170,7 @@
                     {
                         "name": "requireValidTiff",
                         "type": "boolean",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "secure",
@@ -1027,9 +1211,160 @@
                 "system": {
                     "caption": "Read TIFF"
                 }
+            },
+            {
+                "uuid": "1e21840a-f378-4478-9f9d-143d81ef4da5",
+                "executor_id": "a3b846f2-68f0-44b9-b689-e8d1d83f6686",
+                "executor_name": "Write image",
+                "ports": [
+                    {
+                        "uuid": "1e21840a-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "1e21840a-0100-0000-a304-77c019f67c0a",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "1e21840a-0100-0000-3c7c-49a1bd6e05e2",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name_addition"
+                    },
+                    {
+                        "uuid": "1e21840a-0200-0000-d4f1-a3b3e738ab87",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolute_path"
+                    },
+                    {
+                        "uuid": "1e21840a-0200-0000-91a2-e9b2673cd69d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "parent_folder"
+                    },
+                    {
+                        "uuid": "1e21840a-0200-0000-5f82-f315ea9a15dd",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name"
+                    },
+                    {
+                        "uuid": "1e21840a-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "1e21840a-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-b50e-f55dea9c782d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-b50e-f55dea9c782d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-c0d9-95521ea10fa4",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-c0d9-95521ea10fa4",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-3712-596fc4b7b937",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-3712-596fc4b7b937",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-842f-1e7e2cde3c44",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "autoContrastBeforeWriting"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-842f-1e7e2cde3c44",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "autoContrastBeforeWriting"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "autoContrastBeforeWriting",
+                        "type": "boolean",
+                        "value": false
+                    },
+                    {
+                        "name": "file",
+                        "type": "scalar",
+                        "value": "/tmp/readtiff.bmp"
+                    },
+                    {
+                        "name": "fileNameAdditionMode",
+                        "type": "scalar",
+                        "value": "NONE"
+                    },
+                    {
+                        "name": "requireInput",
+                        "type": "boolean",
+                        "value": true
+                    },
+                    {
+                        "name": "secure",
+                        "type": "boolean",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Write image",
+                    "enabled": false
+                }
             }
         ],
         "links": [
+            {
+                "uuid": "3427d981-4342-45f5-8b38-cd90ce31d7a2",
+                "src_port_uuid": "38739870-0200-0000-6416-fc948a169899",
+                "dest_port_uuid": "1e21840a-0100-0000-8fd6-4c4759803353"
+            }
         ]
     }
 }
