@@ -2,10 +2,10 @@
     "app": "stare-project",
     "version": "1.0.9",
     "root": {
-        "scale": 1.0000000000000016,
+        "scale": 0.8000000000000015,
         "desktop": {
-            "scroll_h": 0.6164127991373856,
-            "scroll_v": 0.41431254984423255
+            "scroll_h": 0.5561943635616335,
+            "scroll_v": 0.3698547829038733
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -2491,7 +2491,7 @@
         {
             "@id": "UIBlockModel",
             "uuid": "efcf431c-1723-4e67-8302-c6c1715c2552",
-            "layout_x": 12202,
+            "layout_x": 12220,
             "layout_y": 7800,
             "layout_width": 300,
             "layout_height": 200,
@@ -4470,6 +4470,82 @@
             "display_advanced": true,
             "properties": [
             ]
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "f2522f43-3d8a-4a05-9f7f-34e92f40b3d2",
+            "layout_x": 11280,
+            "layout_y": 7200,
+            "layout_width": 320,
+            "layout_height": 120,
+            "caption": "Copy scalar",
+            "comment": "",
+            "worker_type": "ba7fe29b-4b4b-426a-a5b0-58201e8d24d5",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "input",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0300-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f2522f43-0400-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UILinkModel",
+            "uuid": "1981a828-d435-480c-a6b4-72969e627e59",
+            "src_port_uuid": "f1cb6414-0200-0000-e4fa-4d45fd5682d4",
+            "dest_port_uuid": "f2522f43-0100-0000-8fd6-4c4759803353"
         }
     ],
     "blocks": [
@@ -5629,7 +5705,7 @@
                     {
                         "name": "file",
                         "type": "scalar",
-                        "value": "../images/tiff/libtiff/test/images/palette-1c-1b.tiff"
+                        "value": "../images/tiff/libtiff/test/images/palette-1c-8b.tiff"
                     },
                     {
                         "name": "fileNameAdditionMode",
@@ -5962,7 +6038,7 @@
                     {
                         "name": "file",
                         "type": "scalar",
-                        "value": "C:/TMP/CMU-1-Small-Region.svs "
+                        "value": "../images/tiff/openslide/CMU-1-Small-Region.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
@@ -6569,7 +6645,7 @@
                     {
                         "name": "requireInput",
                         "type": "boolean",
-                        "value": true
+                        "value": false
                     }
                 ],
                 "system": {
@@ -6622,7 +6698,7 @@
                     {
                         "name": "requireInput",
                         "type": "boolean",
-                        "value": true
+                        "value": false
                     }
                 ],
                 "system": {
@@ -7268,7 +7344,7 @@
                     {
                         "name": "file",
                         "type": "scalar",
-                        "value": "C:/scichains-examples/tests/images/tiff/libtiffpic/off_l16.tif"
+                        "value": "../images/tiff/libtiffpic/off_l16.tif"
                     },
                     {
                         "name": "fileNameAdditionMode",
@@ -7826,6 +7902,59 @@
                     "caption": "Read TIFF",
                     "description": "Example of non TIFF (this chain file)"
                 }
+            },
+            {
+                "uuid": "f2522f43-3d8a-4a05-9f7f-34e92f40b3d2",
+                "executor_id": "ba7fe29b-4b4b-426a-a5b0-58201e8d24d5",
+                "executor_name": "Copy scalar",
+                "ports": [
+                    {
+                        "uuid": "f2522f43-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "f2522f43-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "f2522f43-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "f2522f43-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "f2522f43-0300-0000-3712-596fc4b7b937",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "f2522f43-0400-0000-3712-596fc4b7b937",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "requireInput",
+                        "type": "boolean",
+                        "value": true
+                    }
+                ],
+                "system": {
+                    "caption": "Copy scalar"
+                }
             }
         ],
         "links": [
@@ -7858,6 +7987,11 @@
                 "uuid": "1fb348f0-afe3-4346-8c18-311de0cf94e2",
                 "src_port_uuid": "d01a6c09-0200-0000-d4f1-a3b3e738ab87",
                 "dest_port_uuid": "2deed9f8-0100-0000-a304-77c019f67c0a"
+            },
+            {
+                "uuid": "1981a828-d435-480c-a6b4-72969e627e59",
+                "src_port_uuid": "f1cb6414-0200-0000-e4fa-4d45fd5682d4",
+                "dest_port_uuid": "f2522f43-0100-0000-8fd6-4c4759803353"
             }
         ]
     }
