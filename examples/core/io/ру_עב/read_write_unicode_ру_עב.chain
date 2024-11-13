@@ -2,10 +2,10 @@
     "app": "stare-project",
     "version": "1.0.9",
     "root": {
-        "scale": 1.0000000000000002,
+        "scale": 1.0000000000000007,
         "desktop": {
-            "scroll_h": 0.5184321793366887,
-            "scroll_v": 0.5128313513432475
+            "scroll_h": 0.5528518535877537,
+            "scroll_v": 0.5050276900685201
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -919,7 +919,7 @@
             "layout_y": 9800,
             "layout_width": 500,
             "layout_height": 120,
-            "caption": "Copy scalar",
+            "caption": "[Result file]",
             "comment": "",
             "worker_type": "ba7fe29b-4b4b-426a-a5b0-58201e8d24d5",
             "ports": [
@@ -1276,6 +1276,15 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "ac3a0e61-0200-0000-525a-e3a77c9dc21e",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "os_path",
+                    "caption": "os path"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "ac3a0e61-0200-0000-91a2-e9b2673cd69d",
                     "visible": true,
                     "port_type": "OUTPUT",
@@ -1363,6 +1372,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "secure",
                     "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ac3a0e61-0300-0000-2b55-2546ac317add",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "relativizePath",
+                    "caption": "Relativize path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ac3a0e61-0400-0000-2b55-2546ac317add",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "relativizePath",
+                    "caption": "Relativize path"
                 }
             ],
             "display_advanced": false,
@@ -1424,14 +1451,14 @@
         "app": "stare-chain",
         "version": "1.0",
         "executor": {
-            "uuid": "320cfa44-6248-4cbf-8195-e656d263be65",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "320cfa44-6248-4cbf-8195-e656d263be65"
         },
         "properties": [
             {
@@ -2064,6 +2091,7 @@
                     }
                 ],
                 "system": {
+                    "auto_contrast_preview_result": true,
                     "caption": "Read image"
                 }
             },
@@ -2166,11 +2194,12 @@
                     {
                         "name": "requireInput",
                         "type": "boolean",
-                        "value": true
+                        "value": false
                     }
                 ],
                 "system": {
-                    "caption": "Copy scalar"
+                    "caption": "[Result file]",
+                    "name": "Result file"
                 }
             },
             {
@@ -2390,6 +2419,12 @@
                         "name": "absolute_path"
                     },
                     {
+                        "uuid": "ac3a0e61-0200-0000-525a-e3a77c9dc21e",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "os_path"
+                    },
+                    {
                         "uuid": "ac3a0e61-0200-0000-91a2-e9b2673cd69d",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -2448,6 +2483,18 @@
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "secure"
+                    },
+                    {
+                        "uuid": "ac3a0e61-0300-0000-2b55-2546ac317add",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "relativizePath"
+                    },
+                    {
+                        "uuid": "ac3a0e61-0400-0000-2b55-2546ac317add",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "relativizePath"
                     }
                 ],
                 "properties": [
@@ -2460,6 +2507,11 @@
                         "name": "fileNameAdditionMode",
                         "type": "scalar",
                         "value": "NONE"
+                    },
+                    {
+                        "name": "relativizePath",
+                        "type": "boolean",
+                        "value": false
                     },
                     {
                         "name": "secure",
