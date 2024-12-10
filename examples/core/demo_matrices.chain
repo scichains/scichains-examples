@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 1.0,
         "desktop": {
-            "scroll_h": 0.5036053231535973,
-            "scroll_v": 0.5113950771124032
+            "scroll_h": 0.5059048727724694,
+            "scroll_v": 0.5153867826593187
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -24,11 +24,11 @@
             "ports": [
                 {
                     "@id": "UIPortModel",
-                    "uuid": "045d7eee-0200-0000-c4b0-50812c294434",
+                    "uuid": "045d7eee-0200-0000-6416-fc948a169899",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                    "name": "image",
+                    "name": "output",
                     "caption": ""
                 },
                 {
@@ -84,6 +84,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "height",
                     "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "045d7eee-0300-0000-20af-854a76fd3443",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "channels",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "045d7eee-0400-0000-20af-854a76fd3443",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "channels",
+                    "caption": ""
                 }
             ],
             "display_advanced": false,
@@ -103,11 +121,11 @@
             "ports": [
                 {
                     "@id": "UIPortModel",
-                    "uuid": "92409ea4-0200-0000-c4b0-50812c294434",
+                    "uuid": "92409ea4-0200-0000-6416-fc948a169899",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                    "name": "image",
+                    "name": "output",
                     "caption": ""
                 },
                 {
@@ -200,11 +218,11 @@
             "ports": [
                 {
                     "@id": "UIPortModel",
-                    "uuid": "bb2a27e3-0200-0000-c4b0-50812c294434",
+                    "uuid": "bb2a27e3-0200-0000-6416-fc948a169899",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                    "name": "image",
+                    "name": "output",
                     "caption": ""
                 },
                 {
@@ -499,60 +517,6 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "operation",
                     "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0300-0000-4ca8-7ddbfe8d4552",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "factor",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0400-0000-4ca8-7ddbfe8d4552",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "factor",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0300-0000-0a06-50aa1d48e3af",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "description",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0400-0000-0a06-50aa1d48e3af",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "description",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0300-0000-3344-d8258f98f4f7",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "value64",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "272c7d31-0400-0000-3344-d8258f98f4f7",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "value64",
-                    "caption": ""
                 }
             ],
             "display_advanced": false,
@@ -573,23 +537,22 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "b37e5fc6-bc2f-43ab-823d-826362749989",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "b37e5fc6-bc2f-43ab-823d-826362749989"
         },
         "properties": [
             {
                 "name": "execution.strategy",
-                "type": "scalar",
                 "value": "output_broadcast"
             }
         ],
@@ -600,10 +563,10 @@
                 "executor_name": "Matrix example: low-level filling (SMat)",
                 "ports": [
                     {
-                        "uuid": "045d7eee-0200-0000-c4b0-50812c294434",
+                        "uuid": "045d7eee-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                        "name": "image"
+                        "name": "output"
                     },
                     {
                         "uuid": "045d7eee-0200-0000-cf95-37e5dfbcb01d",
@@ -640,17 +603,31 @@
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "height"
+                    },
+                    {
+                        "uuid": "045d7eee-0300-0000-20af-854a76fd3443",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "channels"
+                    },
+                    {
+                        "uuid": "045d7eee-0400-0000-20af-854a76fd3443",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "channels"
                     }
                 ],
                 "properties": [
                     {
+                        "name": "channels",
+                        "value": 3
+                    },
+                    {
                         "name": "height",
-                        "type": "int64",
                         "value": 100
                     },
                     {
                         "name": "width",
-                        "type": "int64",
                         "value": 100
                     }
                 ],
@@ -664,10 +641,10 @@
                 "executor_name": "Matrix example: low-level filling (SMat, previewable)",
                 "ports": [
                     {
-                        "uuid": "92409ea4-0200-0000-c4b0-50812c294434",
+                        "uuid": "92409ea4-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                        "name": "image"
+                        "name": "output"
                     },
                     {
                         "uuid": "92409ea4-0200-0000-cf95-37e5dfbcb01d",
@@ -721,17 +698,14 @@
                 "properties": [
                     {
                         "name": "color",
-                        "type": "scalar",
                         "value": "#0000FF"
                     },
                     {
                         "name": "height",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "width",
-                        "type": "int64",
                         "value": 1000
                     }
                 ],
@@ -745,10 +719,10 @@
                 "executor_name": "Matrix example: some f(x,y) (Matrix)",
                 "ports": [
                     {
-                        "uuid": "bb2a27e3-0200-0000-c4b0-50812c294434",
+                        "uuid": "bb2a27e3-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
-                        "name": "image"
+                        "name": "output"
                     },
                     {
                         "uuid": "bb2a27e3-0200-0000-cf95-37e5dfbcb01d",
@@ -802,17 +776,14 @@
                 "properties": [
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "byte"
                     },
                     {
                         "name": "height",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "width",
-                        "type": "int64",
                         "value": 1000
                     }
                 ],
@@ -919,32 +890,26 @@
                 "properties": [
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 1007
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 1011
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "double"
                     },
                     {
                         "name": "multiplierForFP",
-                        "type": "double",
                         "value": 0.7
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "int64",
                         "value": 3
                     },
                     {
                         "name": "shift",
-                        "type": "int32",
                         "value": 200
                     }
                 ],
@@ -992,64 +957,12 @@
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "operation"
-                    },
-                    {
-                        "uuid": "272c7d31-0300-0000-4ca8-7ddbfe8d4552",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "factor"
-                    },
-                    {
-                        "uuid": "272c7d31-0400-0000-4ca8-7ddbfe8d4552",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "factor"
-                    },
-                    {
-                        "uuid": "272c7d31-0300-0000-0a06-50aa1d48e3af",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "description"
-                    },
-                    {
-                        "uuid": "272c7d31-0400-0000-0a06-50aa1d48e3af",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "description"
-                    },
-                    {
-                        "uuid": "272c7d31-0300-0000-3344-d8258f98f4f7",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "value64"
-                    },
-                    {
-                        "uuid": "272c7d31-0400-0000-3344-d8258f98f4f7",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "value64"
                     }
                 ],
                 "properties": [
                     {
-                        "name": "description",
-                        "type": "scalar",
-                        "value": "sample string value"
-                    },
-                    {
-                        "name": "factor",
-                        "type": "double",
-                        "value": 1.0
-                    },
-                    {
                         "name": "operation",
-                        "type": "int64",
-                        "value": 0
-                    },
-                    {
-                        "name": "value64",
-                        "type": "int64",
-                        "value": 0
+                        "value": "copy"
                     }
                 ],
                 "system": {

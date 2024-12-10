@@ -1,6 +1,6 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 1.0000000000000016,
         "desktop": {
@@ -1721,23 +1721,22 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "f373ed61-84e8-4188-9099-9c8d4c92feb2",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "f373ed61-84e8-4188-9099-9c8d4c92feb2"
         },
         "properties": [
             {
                 "name": "execution.strategy",
-                "type": "scalar",
                 "value": "output_broadcast"
             }
         ],
@@ -1841,32 +1840,26 @@
                 "properties": [
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "byte"
                     },
                     {
                         "name": "multiplierForFP",
-                        "type": "double",
                         "value": 1.5
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "int64",
                         "value": 3
                     },
                     {
                         "name": "shift",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -2285,122 +2278,98 @@
                 "properties": [
                     {
                         "name": "appendIFDToExistingTiff",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "bigTiff",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "byteOrder",
-                        "type": "scalar",
                         "value": "NATIVE"
                     },
                     {
                         "name": "compression",
-                        "type": "scalar",
                         "value": "DEFLATE"
                     },
                     {
                         "name": "deleteFileOnError",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "/tmp/gradients.tiff"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "flushASAP",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "imageDescription",
-                        "type": "scalar",
                         "value": " "
                     },
                     {
                         "name": "imageDimX",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "imageDimY",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_FIRST_CALL"
                     },
                     {
                         "name": "prediction",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "preferRGB",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "quality",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resizable",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "signedIntegers",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "stripSizeY",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "tileSizeX",
-                        "type": "int64",
                         "value": 512
                     },
                     {
                         "name": "tileSizeY",
-                        "type": "int64",
                         "value": 512
                     },
                     {
                         "name": "tiled",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "y",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -2789,103 +2758,83 @@
                 "properties": [
                     {
                         "name": "autoCorrectInvertedBrightness",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "autoScaleWhenIncreasingBitDepth",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "autoUnpackBitsToBytes",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "caching",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropTilesToImageBoundaries",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropToImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "C:\\tmp\\gradients.tiff"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_AND_CLOSE"
                     },
                     {
                         "name": "requireFileExistence",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "requireValidTiff",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "y",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     }
                 ],
                 "system": {
@@ -2949,12 +2898,10 @@
                 "properties": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "value",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -3007,7 +2954,6 @@
                 "properties": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -3060,7 +3006,6 @@
                 "properties": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
