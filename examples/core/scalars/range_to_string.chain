@@ -1,6 +1,6 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.8,
         "desktop": {
@@ -725,9 +725,9 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
             "id": "2600a0c9-7db4-45d6-9414-d803727ab641",
             "options": {
@@ -738,18 +738,11 @@
                 }
             }
         },
-        "properties": [
-            {
-                "name": "execution.strategy",
-                "type": "scalar",
-                "value": "output_broadcast"
-            }
-        ],
         "blocks": [
             {
                 "uuid": "69de78da-5572-44a0-8b2b-d807218a12dc",
                 "executor_id": "fb74d61f-8fbe-478a-aaec-65adddbe587d",
-                "executor_name": "Replace number in range with constant string",
+                "executor_name": "Replace number in range with constant",
                 "ports": [
                     {
                         "uuid": "69de78da-0100-0000-8fd6-4c4759803353",
@@ -824,25 +817,21 @@
                         "name": "replacement"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "max",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "min",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "replacement",
-                        "type": "scalar",
                         "value": "rrr"
                     },
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -892,10 +881,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0.0001"
                     }
                 ],
@@ -945,10 +933,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -959,7 +946,7 @@
             {
                 "uuid": "b6ec1171-2b67-4517-a3bc-b5e90e233b52",
                 "executor_id": "fb74d61f-8fbe-478a-aaec-65adddbe587d",
-                "executor_name": "Replace number in range with constant string",
+                "executor_name": "Replace number in range with constant",
                 "ports": [
                     {
                         "uuid": "b6ec1171-0100-0000-8fd6-4c4759803353",
@@ -1034,25 +1021,21 @@
                         "name": "replacement"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "max",
-                        "type": "scalar",
                         "value": "0.0"
                     },
                     {
                         "name": "min",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "replacement",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -1063,7 +1046,7 @@
             {
                 "uuid": "b515d586-4d71-4edc-a619-6795ee6287b3",
                 "executor_id": "fb74d61f-8fbe-478a-aaec-65adddbe587d",
-                "executor_name": "Replace number in range with constant string",
+                "executor_name": "Replace number in range with constant",
                 "ports": [
                     {
                         "uuid": "b515d586-0100-0000-8fd6-4c4759803353",
@@ -1138,25 +1121,21 @@
                         "name": "replacement"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "max",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "min",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "replacement",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -1206,10 +1185,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0"
                     }
                 ],
@@ -1259,10 +1237,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
