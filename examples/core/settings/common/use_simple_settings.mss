@@ -6,7 +6,7 @@
     {
       "name": "settings_combiner_test",
       "caption": "settings combiner test",
-      "value_class": "SP-model",
+      "value_class_name": "SP-model",
       "value_type": "settings",
       "edition_type": "value",
       "multiline": true,
