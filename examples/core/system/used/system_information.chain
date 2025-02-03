@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000009,
         "desktop": {
-            "scroll_h": 0.5428901064507736,
-            "scroll_v": 0.540780122354489
+            "scroll_h": 0.5400562895693216,
+            "scroll_v": 0.5187536906364274
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -2655,11 +2655,11 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6cea0809-0200-0000-cd51-ec87094a6715",
+                    "uuid": "6cea0809-0200-0000-c23a-7e65a478a393",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "technology",
+                    "name": "technologies",
                     "caption": ""
                 },
                 {
@@ -2759,12 +2759,6 @@
         },
         {
             "@id": "UILinkModel",
-            "uuid": "e71dcdff-af0c-4c3d-9be3-7cafbd1dda85",
-            "src_port_uuid": "6cea0809-0200-0000-cd51-ec87094a6715",
-            "dest_port_uuid": "9cd64d44-0100-0000-e52a-3367aacda21c"
-        },
-        {
-            "@id": "UILinkModel",
             "uuid": "d763e6c1-0e51-4da3-86a4-b8e536c9888d",
             "src_port_uuid": "6cea0809-0200-0000-9be9-fcbaa73ce947",
             "dest_port_uuid": "9cd64d44-0100-0000-6ed5-5c1b1f4e7903"
@@ -2848,11 +2842,11 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "84230087-0200-0000-cd51-ec87094a6715",
+                    "uuid": "84230087-0200-0000-c23a-7e65a478a393",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "technology",
+                    "name": "technologies",
                     "caption": ""
                 },
                 {
@@ -4373,16 +4367,16 @@
         "app": "chain",
         "version": "1.1",
         "executor": {
-            "name": "System information",
-            "category": "subchains",
             "options": {
                 "execution": {
                     "all": false,
-                    "multithreading": false,
-                    "ignore_exceptions": false
+                    "ignore_exceptions": false,
+                    "multithreading": false
                 }
             },
-            "id": "c6046d66-6b0f-4666-9eb3-9beb1eba88e8"
+            "name": "System information subchain",
+            "id": "c6046d66-6b0f-4666-9eb3-9beb1eba88e8",
+            "category": "subchains"
         },
         "blocks": [
             {
@@ -6109,10 +6103,10 @@
                         "name": "description"
                     },
                     {
-                        "uuid": "6cea0809-0200-0000-cd51-ec87094a6715",
+                        "uuid": "6cea0809-0200-0000-c23a-7e65a478a393",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "technology"
+                        "name": "technologies"
                     },
                     {
                         "uuid": "6cea0809-0200-0000-9230-a6f417476ad3",
@@ -6199,10 +6193,10 @@
                         "name": "description"
                     },
                     {
-                        "uuid": "84230087-0200-0000-cd51-ec87094a6715",
+                        "uuid": "84230087-0200-0000-c23a-7e65a478a393",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "technology"
+                        "name": "technologies"
                     },
                     {
                         "uuid": "84230087-0200-0000-9230-a6f417476ad3",
@@ -7317,11 +7311,6 @@
                 "uuid": "bfbca852-d4fb-4956-85d4-b2007ae4401e",
                 "src_port_uuid": "6cea0809-0200-0000-0a06-50aa1d48e3af",
                 "dest_port_uuid": "9cd64d44-0100-0000-7853-468044626121"
-            },
-            {
-                "uuid": "e71dcdff-af0c-4c3d-9be3-7cafbd1dda85",
-                "src_port_uuid": "6cea0809-0200-0000-cd51-ec87094a6715",
-                "dest_port_uuid": "9cd64d44-0100-0000-e52a-3367aacda21c"
             },
             {
                 "uuid": "d763e6c1-0e51-4da3-86a4-b8e536c9888d",
