@@ -28,7 +28,8 @@
       "default": "DEFAULT PARAM 2 IN A"
     },
     {
-      "name": "chain_b",
+      "name": "settings_b",
+      "_rem": "(This name MUST be equal to the name of the main settings of the chain B.)",
       "value_class_name": "settings.class.b",
       "value_type": "settings",
       "edition_type": "value",
