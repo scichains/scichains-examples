@@ -211,11 +211,11 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "8eb9fb21-0200-0000-e9a7-821009eca8bd",
+                    "uuid": "8eb9fb21-0200-0000-82b2-412afb2c12dd",
                     "visible": false,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_cs___settings_name",
+                    "name": "_ss___settings_name",
                     "caption": "settings_name"
                 },
                 {
@@ -1313,6 +1313,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "a6bace97-0300-0000-35f2-3532e0d6ed17",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "doAction",
+                    "caption": "Do action"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a6bace97-0400-0000-35f2-3532e0d6ed17",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "doAction",
+                    "caption": "Do action"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "a6bace97-0300-0000-2c84-29cddf80f9d1",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1961,14 +1979,14 @@
         "app": "chain",
         "version": "1.1",
         "executor": {
+            "id": "c803d76a-d1fb-4eb4-9a37-3c2bfaaf2456",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            },
-            "id": "c803d76a-d1fb-4eb4-9a37-3c2bfaaf2456"
+            }
         },
         "blocks": [
             {
@@ -2116,10 +2134,10 @@
                         "name": "_sys___executor_id"
                     },
                     {
-                        "uuid": "8eb9fb21-0200-0000-e9a7-821009eca8bd",
+                        "uuid": "8eb9fb21-0200-0000-82b2-412afb2c12dd",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_cs___settings_name"
+                        "name": "_ss___settings_name"
                     },
                     {
                         "uuid": "8eb9fb21-0300-0000-9ecb-4a9b75e2f864",
@@ -2901,6 +2919,18 @@
                         "name": "pattern"
                     },
                     {
+                        "uuid": "a6bace97-0300-0000-35f2-3532e0d6ed17",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "doAction"
+                    },
+                    {
+                        "uuid": "a6bace97-0400-0000-35f2-3532e0d6ed17",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "doAction"
+                    },
+                    {
                         "uuid": "a6bace97-0300-0000-2c84-29cddf80f9d1",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -2926,6 +2956,10 @@
                     }
                 ],
                 "parameters": [
+                    {
+                        "name": "doAction",
+                        "value": true
+                    },
                     {
                         "name": "file",
                         "value": ""
