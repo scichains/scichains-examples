@@ -1,0 +1,60 @@
+{
+  "app": "multi-chain",
+  "id": "1435d32e-cb67-45bf-9ac0-968535fc58db",
+  "options": {
+    "behavior": {
+      "prefer_selection_by_id": false
+    }
+  },
+  "in_ports": [
+    {
+      "value_type": "scalar",
+      "name": "x"
+    },
+    {
+      "value_type": "scalar",
+      "name": "y"
+    }
+  ],
+  "out_ports": [
+    {
+      "value_type": "scalar",
+      "name": "output"
+    }
+  ],
+  "controls": [
+    {
+      "name": "a",
+      "description": "(This parameter will be passed to any chain variant)",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": 1.0
+    },
+    {
+      "name": "b",
+      "description": "(This parameter will be passed to any chain variant)",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": 1.0
+    },
+    {
+      "name": "print_to_console",
+      "caption": "Print to console also",
+      "value_type": "boolean",
+      "edition_type": "value",
+      "default": true
+    },
+    {
+      "name": "print_pattern",
+      "caption": "Pattern for printing",
+      "description": "If the flag above is set, the result is also printed to the console using this pattern: $$$ is replaced by the result value.",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": "Result = $$$"
+    }
+  ],
+  "chain_variant_paths": [
+    "${path.name}"
+  ],
+  "default_variant_name": "scalar_concatenation"
+}
