@@ -1,0 +1,52 @@
+{
+    "app": "multi-chain",
+    "version": "1.0",
+    "description": "Simple multi-chain",
+    "id": "deef5528-2fbd-498e-bc2d-e9c784871762",
+    "options": {
+        "behavior": {
+            "skippable": true,
+            "prefer_selection_by_id": true
+        }
+    },
+    "chain_variant_paths": [
+        "${path.name}"
+    ],
+    "default_variant_id": "c803d76a-d1fb-4eb4-9a37-3c2bfaaf2456",
+    "in_ports": [
+        {
+            "name": "input",
+            "value_type": "scalar"
+        },
+        {
+            "name": "data",
+            "value_type": "scalar"
+        }
+    ],
+    "out_ports": [
+        {
+            "name": "output",
+            "value_type": "scalar"
+        },
+        {
+            "name": "data",
+            "value_type": "scalar"
+        }
+    ],
+    "controls": [
+        {
+            "name": "important_param1",
+            "value_type": "String",
+            "edition_type": "value",
+            "default": "0.111 from multi-chain"
+        },
+        {
+            "name": "commonFolder",
+            "caption": "Common folder",
+            "value_type": "String",
+            "edition_type": "folder",
+            "resources": true,
+            "default": "somefolder"
+        }
+    ]
+}

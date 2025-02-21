@@ -4,8 +4,8 @@
     "root": {
         "scale": 1.000000000000001,
         "desktop": {
-            "scroll_h": 0.5097539143640224,
-            "scroll_v": 0.5122203939659388
+            "scroll_h": 0.5112925391517983,
+            "scroll_v": 0.5154618016629958
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -226,6 +226,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "Some scalars",
                     "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "964c42ac-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "964c42ac-0200-0000-93e2-fa7605472c20",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_ss___settings_id",
+                    "caption": "Settings ID"
                 },
                 {
                     "@id": "UIPortModel",
@@ -647,8 +665,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "780382f5-4aee-494d-b86c-860366a9afa7",
-            "layout_x": 9720,
-            "layout_y": 10180,
+            "layout_x": 9700,
+            "layout_y": 10240,
             "layout_width": 300,
             "layout_height": 200,
             "caption": "Use chain main settings",
@@ -716,7 +734,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Main chains settings combiner JSON file"
+                    "caption": "Main chains settings JSON file"
                 },
                 {
                     "@id": "UIPortModel",
@@ -725,7 +743,7 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Main chains settings combiner JSON file"
+                    "caption": "Main chains settings JSON file"
                 },
                 {
                     "@id": "UIPortModel",
@@ -752,7 +770,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "settingsCombinerJsonContent",
-                    "caption": "Main chain settings combiner JSON content"
+                    "caption": "Main chain settings JSON content"
                 },
                 {
                     "@id": "UIPortModel",
@@ -761,7 +779,7 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "settingsCombinerJsonContent",
-                    "caption": "Main chain settings combiner JSON content"
+                    "caption": "Main chain settings JSON content"
                 }
             ],
             "display_advanced": false,
@@ -826,11 +844,11 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "4db927a4-0200-0000-e9a7-821009eca8bd",
+                    "uuid": "4db927a4-0200-0000-82b2-412afb2c12dd",
                     "visible": false,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_cs___settings_name",
+                    "name": "_ss___settings_name",
                     "caption": "settings_name"
                 },
                 {
@@ -1246,6 +1264,18 @@
                         "name": "Some scalars"
                     },
                     {
+                        "uuid": "964c42ac-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "964c42ac-0200-0000-93e2-fa7605472c20",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_ss___settings_id"
+                    },
+                    {
                         "uuid": "964c42ac-0300-0000-566d-a0122c6c955a",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1513,7 +1543,7 @@
                     },
                     {
                         "name": "_sch___visibleResult",
-                        "value": "Full settings"
+                        "value": "Some scalars"
                     },
                     {
                         "name": "file1",
@@ -1644,10 +1674,10 @@
                         "name": "_sys___executor_id"
                     },
                     {
-                        "uuid": "4db927a4-0200-0000-e9a7-821009eca8bd",
+                        "uuid": "4db927a4-0200-0000-82b2-412afb2c12dd",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_cs___settings_name"
+                        "name": "_ss___settings_name"
                     },
                     {
                         "uuid": "4db927a4-0300-0000-9ecb-4a9b75e2f864",
@@ -1685,8 +1715,7 @@
                     }
                 ],
                 "system": {
-                    "caption": "Combine Use simple settings",
-                    "enabled": false
+                    "caption": "Combine Use simple settings"
                 }
             }
         ],
