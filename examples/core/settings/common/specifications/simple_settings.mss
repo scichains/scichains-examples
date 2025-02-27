@@ -17,7 +17,7 @@
       "name": "kind",
       "value_type": "String",
       "edition_type": "enum",
-      "enum_items_file": "simple_enum.txt",
+      "items_file": "simple_enum.txt",
       "default": "BETA"
     },
     {
