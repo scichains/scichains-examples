@@ -1,0 +1,44 @@
+{
+  "app": "multi-chain",
+  "id": "6c3c7f15-8d6e-4d35-895c-663db2e35dbf",
+  "options": {
+    "behavior": {
+      "skippable": true
+    }
+  },
+  "in_ports": [
+    {
+      "value_type": "scalar",
+      "name": "x"
+    },
+    {
+      "value_type": "scalar",
+      "name": "y"
+    }
+  ],
+  "out_ports": [
+    {
+      "value_type": "scalar",
+      "name": "output"
+    }
+  ],
+  "controls": [
+    {
+      "name": "a",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": 1.0
+    },
+    {
+      "name": "b",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": 1.0
+    }
+  ],
+  "chain_variant_paths": [
+    "${path.name}/scalar_sum.chain",
+    "${path.name}/scalar_product.chain"
+  ],
+  "default_variant_name": "scalar_sum"
+}
