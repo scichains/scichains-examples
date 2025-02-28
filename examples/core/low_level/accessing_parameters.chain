@@ -4,8 +4,8 @@
     "root": {
         "scale": 1.0,
         "desktop": {
-            "scroll_h": 0.5070092220498614,
-            "scroll_v": 0.5247980349661998
+            "scroll_h": 0.5093887894973788,
+            "scroll_v": 0.520733412615922
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -65,6 +65,24 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "StringParameter",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "46d028be-0300-0000-1640-7a681ba2c5f1",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "StringEnumParameter",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "46d028be-0400-0000-1640-7a681ba2c5f1",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "StringEnumParameter",
                     "caption": ""
                 },
                 {
@@ -246,6 +264,24 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "StringParameter",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ef24dd66-0300-0000-1640-7a681ba2c5f1",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "StringEnumParameter",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ef24dd66-0400-0000-1640-7a681ba2c5f1",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "StringEnumParameter",
                     "caption": ""
                 },
                 {
@@ -626,6 +662,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "dd318840-0300-0000-35f2-3532e0d6ed17",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "doAction",
+                    "caption": "Do action"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "dd318840-0400-0000-35f2-3532e0d6ed17",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "doAction",
+                    "caption": "Do action"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "dd318840-0300-0000-2c84-29cddf80f9d1",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -774,12 +828,6 @@
                 }
             }
         },
-        "properties": [
-            {
-                "name": "execution.strategy",
-                "value": "output_broadcast"
-            }
-        ],
         "blocks": [
             {
                 "uuid": "46d028be-abd4-49fe-b640-2e68a60a189b",
@@ -815,6 +863,18 @@
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "StringParameter"
+                    },
+                    {
+                        "uuid": "46d028be-0300-0000-1640-7a681ba2c5f1",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "StringEnumParameter"
+                    },
+                    {
+                        "uuid": "46d028be-0400-0000-1640-7a681ba2c5f1",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "StringEnumParameter"
                     },
                     {
                         "uuid": "46d028be-0300-0000-0197-af9c0c1c57f6",
@@ -877,7 +937,11 @@
                         "name": "booleanParameter"
                     }
                 ],
-                "properties": [
+                "parameters": [
+                    {
+                        "name": "StringEnumParameter",
+                        "value": "A"
+                    },
                     {
                         "name": "StringParameter",
                         "value": "true"
@@ -943,6 +1007,18 @@
                         "name": "StringParameter"
                     },
                     {
+                        "uuid": "ef24dd66-0300-0000-1640-7a681ba2c5f1",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "StringEnumParameter"
+                    },
+                    {
+                        "uuid": "ef24dd66-0400-0000-1640-7a681ba2c5f1",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "StringEnumParameter"
+                    },
+                    {
                         "uuid": "ef24dd66-0300-0000-0197-af9c0c1c57f6",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1003,14 +1079,18 @@
                         "name": "booleanParameter"
                     }
                 ],
-                "properties": [
+                "parameters": [
+                    {
+                        "name": "StringEnumParameter",
+                        "value": "A"
+                    },
                     {
                         "name": "StringParameter",
                         "value": "New scalar"
                     },
                     {
                         "name": "booleanParameter",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "doubleParameter",
@@ -1075,7 +1155,7 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
                         "value": "New scalar"
@@ -1127,7 +1207,7 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
                         "value": "true"
@@ -1215,6 +1295,18 @@
                         "name": "pattern"
                     },
                     {
+                        "uuid": "dd318840-0300-0000-35f2-3532e0d6ed17",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "doAction"
+                    },
+                    {
+                        "uuid": "dd318840-0400-0000-35f2-3532e0d6ed17",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "doAction"
+                    },
+                    {
                         "uuid": "dd318840-0300-0000-2c84-29cddf80f9d1",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1239,7 +1331,11 @@
                         "name": "file"
                     }
                 ],
-                "properties": [
+                "parameters": [
+                    {
+                        "name": "doAction",
+                        "value": true
+                    },
                     {
                         "name": "file",
                         "value": ""
@@ -1299,7 +1395,7 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
                         "value": "0.2314"
