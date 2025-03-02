@@ -1,5 +1,5 @@
 {
-  "app": "main-settings-combiner",
+  "app": "main-settings",
   "_category": "settings",
   "class_name": "settings.class.b",
   "id": "1e52e4ee-4dbb-4272-b570-2ed09d6ede2b",

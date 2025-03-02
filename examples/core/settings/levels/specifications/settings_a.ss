@@ -1,5 +1,5 @@
 {
-  "app": "main-settings-combiner",
+  "app": "main-settings",
   "_category": "settings",
   "id": "715df744-2be7-4ee7-b234-3de17d4a976d",
   "controls": [
