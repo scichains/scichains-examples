@@ -1,5 +1,5 @@
 {
-  "app": "main-settings-combiner",
+  "app": "settings",
   "id": "fc18034b-7884-4529-8496-d6e58ef75a3a",
   "split_id": "ea655822-f49f-4358-86a0-e051c2abf10b",
   "get_names_id": "8a3cbf2b-7cd5-4110-8ca2-e2c872b5ca1e",
@@ -27,11 +27,11 @@
     },
     {
       "caption": "Some child",
-      "name": "subsettings",
+      "name": "subSettings",
       "value_type": "settings",
       "edition_type": "value",
       "multiline": true,
-      "lines": 10,
+      "edition_rows": 20,
       "default": {
         "myValue": 102
       }

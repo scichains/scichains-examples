@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000065,
         "desktop": {
-            "scroll_h": 0.483211750693813,
-            "scroll_v": 0.5197123598320855
+            "scroll_h": 0.4492386349310898,
+            "scroll_v": 0.5103835181632593
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -1236,7 +1236,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "_cs___extractSubSettings",
-                    "caption": "Extract sub-settings \"chain_settings_model\" from input \"settings\" JSON"
+                    "caption": "Extract sub-settings \"chain_d_settings_model\" from input \"settings\" JSON"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1245,12 +1245,12 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "_cs___extractSubSettings",
-                    "caption": "Extract sub-settings \"chain_settings_model\" from input \"settings\" JSON"
+                    "caption": "Extract sub-settings \"chain_d_settings_model\" from input \"settings\" JSON"
                 },
                 {
                     "@id": "UIPortModel",
                     "uuid": "d69e4a4d-0300-0000-f97d-ca112ec57bd7",
-                    "visible": false,
+                    "visible": true,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "_cs___logSettings",
@@ -2878,7 +2878,7 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "value": "${path.name}/chain_settings_model.json"
+                        "value": "${path.name}/chain_c_settings_model.json"
                     },
                     {
                         "name": "recursiveScanning",
@@ -3565,7 +3565,7 @@
             {
                 "uuid": "6776e5d9-4139-4b0d-9aec-f9924200bcf8",
                 "executor_id": "afade27a-ef76-4a92-8bb0-6f9ae3351684",
-                "executor_name": "Combine chain_settings_model",
+                "executor_name": "Combine chain_c_settings_model",
                 "ports": [
                     {
                         "uuid": "6776e5d9-0100-0000-9ecb-4a9b75e2f864",
@@ -3979,7 +3979,7 @@
             {
                 "uuid": "377bb9dc-6444-452a-93b2-5204a3667c84",
                 "executor_id": "a3859430-24b0-4a2f-bc13-a607e1399195",
-                "executor_name": "Combine chain_settings_model",
+                "executor_name": "Combine chain_d_settings_model",
                 "ports": [
                     {
                         "uuid": "377bb9dc-0100-0000-9ecb-4a9b75e2f864",
@@ -4097,7 +4097,7 @@
             {
                 "uuid": "ec9f8a59-ce00-49a9-af7d-b0634722e287",
                 "executor_id": "a3859430-24b0-4a2f-bc13-a607e1399195",
-                "executor_name": "Combine chain_settings_model",
+                "executor_name": "Combine chain_d_settings_model",
                 "ports": [
                     {
                         "uuid": "ec9f8a59-0100-0000-9ecb-4a9b75e2f864",

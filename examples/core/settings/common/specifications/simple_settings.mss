@@ -1,6 +1,6 @@
 {
-  "app": "main-settings-combiner",
-  "name": "SP-model",
+  "app": "main-settings",
+  "name": "Some model",
   "id": "9eb7f278-20dc-4d05-abdb-1c2a7b2fd767",
   "split_id": "df196eaa-9f39-41e6-8a2a-06135525ab85",
   "description": "Simple settings",
@@ -42,13 +42,6 @@
       "default": 10
     },
     {
-      "caption": "Number of checked positions",
-      "name": "numberOfCheckedPositions",
-      "value_type": "int",
-      "edition_type": "value",
-      "default": 1
-    },
-    {
       "caption": "Random rotation",
       "name": "randomRotation",
       "value_type": "boolean",
@@ -56,9 +49,8 @@
       "default": false
     },
     {
-      "caption": "How to choose 1st touching position",
+      "caption": "How to choose 1st position",
       "name": "firstPositionStrategy",
-      "description": "\"First touching\": new object \"falls\" along the random straight from infinity and touches to the first encountered sphere-polyhedron.\n\"Deepest\": new \"falling\" object ignores encountered sphere-polyhedra and moves along the straight to the deepest available position (for example, into the deepest pore intersecting this straight).\n\"Random\": like \"deepest\", but the object moves to some random from all available positions.",
       "value_type": "String",
       "edition_type": "enum",
       "items": [
@@ -78,13 +70,13 @@
       "default": "LAST"
     },
     {
-      "caption": "Some large text",
+      "caption": "Some settings JSON",
       "name": "someText",
       "value_type": "settings",
       "edition_type": "value",
       "multiline": true,
-      "lines": 2,
-      "default": ""
+      "edition_rows": 3,
+      "default": {}
     }
-]
+  ]
 }

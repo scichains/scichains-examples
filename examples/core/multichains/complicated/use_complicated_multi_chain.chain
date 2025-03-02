@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.5414850103666359,
-            "scroll_v": 0.48799079608684665
+            "scroll_h": 0.532590474153167,
+            "scroll_v": 0.4836502933659345
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -3267,7 +3267,7 @@
             {
                 "uuid": "43c68105-6c12-4002-a5ed-c62528aee379",
                 "executor_id": "afade27a-ef76-4a92-8bb0-6f9ae3351684",
-                "executor_name": "Combine chain_settings_model",
+                "executor_name": "Combine chain_c_settings_model",
                 "ports": [
                     {
                         "uuid": "43c68105-0100-0000-9ecb-4a9b75e2f864",
@@ -3441,7 +3441,7 @@
             {
                 "uuid": "b16878e5-cfd5-4463-a63b-afcff8533cbc",
                 "executor_id": "a3859430-24b0-4a2f-bc13-a607e1399195",
-                "executor_name": "Combine chain_settings_model",
+                "executor_name": "Combine chain_d_settings_model",
                 "ports": [
                     {
                         "uuid": "b16878e5-0100-0000-9ecb-4a9b75e2f864",
@@ -3651,7 +3651,7 @@
                     },
                     {
                         "name": "settings",
-                        "value": "{\n    \"important_param1\": \"4.000 from caller\",\n    \"@multi_xxx\": {\n        \"___selectedChainId\": \"66e0db56-25a1-495f-b998-0951b725af13\",\n        \"important_param1\": \"0.111 from multi-chain\",\n        \"commonFolder\": \"somefolder\",\n        \"kind\": \"ALPHA\",\n        \"@chain_c\": {\n            \"important_param1\": \"0.5\",\n            \"param1_of_C\": \"defaultC1\",\n            \"param2_of_C\": \"defaultC2\",\n            \"@chain_d\": {\n                \"important_param1\": 0.5,\n                \"param1_of_D\": \"defaultD1\",\n                \"param2_of_D\": \"defaultD2\"\n            },\n            \"@fruits\": {\n                \"type1\": \"orange\",\n                \"type2\": \"\",\n                \"type3\": \"\"\n            }\n        },\n        \"@chain_d\": {\n            \"important_param1\": 0.5,\n            \"param1_of_D\": \"defaultD1\",\n            \"param2_of_D\": \"defaultD2\"\n        }\n    }\n}"
+                        "value": "{\n    \"important_param1\": \"4.000 from caller\",\n    \"@multi_xxx\": {\n        \"___selectedChainId\": \"66e0db56-25a1-495f-b998-0951b725af13\",\n        \"important_param1\": \"0.111 from multi-chain\",\n        \"commonFolder\": \"somefolder\",\n        \"kind\": \"BETA\",\n        \"@chain_c\": {\n            \"important_param1\": \"0.5\",\n            \"param1_of_C\": \"defaultC1\",\n            \"param2_of_C\": \"defaultC2\",\n            \"@chain_d\": {\n                \"important_param1\": 0.5,\n                \"param1_of_D\": \"defaultD1\",\n                \"param2_of_D\": \"defaultD2\"\n            },\n            \"@fruits\": {\n                \"type1\": \"orange\",\n                \"type2\": \"\",\n                \"type3\": \"\"\n            }\n        },\n        \"@chain_d\": {\n            \"important_param1\": 0.5,\n            \"param1_of_D\": \"defaultD1\",\n            \"param2_of_D\": \"defaultD2\"\n        }\n    }\n}"
                     }
                 ],
                 "system": {
@@ -4447,7 +4447,7 @@
                     },
                     {
                         "name": "kind",
-                        "value": "ALPHA"
+                        "value": "BETA"
                     }
                 ],
                 "system": {
