@@ -2,10 +2,10 @@
     "app": "SciChains",
     "version": "1.1",
     "root": {
-        "scale": 1.000000000000008,
+        "scale": 0.6400000000000052,
         "desktop": {
-            "scroll_h": 0.45548241804278095,
-            "scroll_v": 0.5157975225517027
+            "scroll_h": 0.4551526737601603,
+            "scroll_v": 0.5047002270351764
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -14,12 +14,12 @@
         {
             "@id": "UIBlockModel",
             "uuid": "91c4124b-5781-4d04-8fc9-2ffdc2b61182",
-            "layout_x": 8661,
-            "layout_y": 9800,
+            "layout_x": 8560,
+            "layout_y": 9740,
             "layout_width": 300,
             "layout_height": 200,
             "caption": "Use chain settings",
-            "comment": "",
+            "comment": "Note: if we specify here \"specification/\" folder without a specific file, \nthis function will load ALL main-settings files, including \"settings_a.ss\".\nThis will lead to problem with opening the dashboard for \"chain_a\" chain:\nthe owner of settings_a.ss can become THIS chain, not \"chain_a\"",
             "worker_type": "6534749c-8d07-47fa-8ab5-b80d855a3df3",
             "ports": [
                 {
@@ -1256,7 +1256,7 @@
             "@id": "UIBlockModel",
             "uuid": "a0572559-9557-480e-8a04-a733c22337fd",
             "layout_x": 9000,
-            "layout_y": 9800,
+            "layout_y": 9780,
             "layout_width": 260,
             "layout_height": 180,
             "caption": "Use sub-chain",
@@ -3505,11 +3505,29 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "f1c9352b-0200-0000-7232-9fad852ed109",
+                    "uuid": "f1c9352b-0200-0000-81b3-98979377d0c9",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "number_of_subtrees",
+                    "name": "number_of_trees",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f1c9352b-0200-0000-381d-e6275e1793be",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "tree_paths",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f1c9352b-0200-0000-e9ec-e6f4ac3aeba9",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "control_paths",
                     "caption": ""
                 },
                 {
@@ -4388,7 +4406,7 @@
                 "parameters": [
                     {
                         "name": "file",
-                        "value": "specifications/"
+                        "value": "specifications/settings_b.ss"
                     },
                     {
                         "name": "recursiveScanning",
@@ -4400,7 +4418,8 @@
                     }
                 ],
                 "system": {
-                    "caption": "Use chain settings"
+                    "caption": "Use chain settings",
+                    "description": "Note: if we specify here \"specification/\" folder without a specific file, \nthis function will load ALL main-settings files, including \"settings_a.ss\".\nThis will lead to problem with opening the dashboard for \"chain_a\" chain:\nthe owner of settings_a.ss can become THIS chain, not \"chain_a\""
                 }
             },
             {
@@ -6845,10 +6864,22 @@
                         "name": "complete"
                     },
                     {
-                        "uuid": "f1c9352b-0200-0000-7232-9fad852ed109",
+                        "uuid": "f1c9352b-0200-0000-81b3-98979377d0c9",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "number_of_subtrees"
+                        "name": "number_of_trees"
+                    },
+                    {
+                        "uuid": "f1c9352b-0200-0000-381d-e6275e1793be",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "tree_paths"
+                    },
+                    {
+                        "uuid": "f1c9352b-0200-0000-e9ec-e6f4ac3aeba9",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "control_paths"
                     },
                     {
                         "uuid": "f1c9352b-0200-0000-cf95-37e5dfbcb01d",
