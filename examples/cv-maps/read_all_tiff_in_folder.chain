@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
-        "scale": 1.2500000000000022,
+        "scale": 1.000000000000002,
         "desktop": {
-            "scroll_h": 0.579908203450647,
-            "scroll_v": 0.3979319826691659
+            "scroll_h": 0.5764696388665719,
+            "scroll_v": 0.396975314259189
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -240,21 +240,21 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "2deed9f8-0300-0000-6de8-005fe6410495",
+                    "uuid": "2deed9f8-0300-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "2deed9f8-0400-0000-6de8-005fe6410495",
+                    "uuid": "2deed9f8-0400-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1154,21 +1154,21 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a3406b1f-0300-0000-6de8-005fe6410495",
+                    "uuid": "a3406b1f-0300-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a3406b1f-0400-0000-6de8-005fe6410495",
+                    "uuid": "a3406b1f-0400-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1598,26 +1598,19 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "34528e85-807e-43bd-8301-1e7dcda44ebc",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "34528e85-807e-43bd-8301-1e7dcda44ebc"
         },
-        "properties": [
-            {
-                "name": "execution.strategy",
-                "type": "scalar",
-                "value": "output_broadcast"
-            }
-        ],
         "blocks": [
             {
                 "uuid": "2deed9f8-ae40-4732-ba84-b43c132dd177",
@@ -1769,16 +1762,16 @@
                         "name": "requireFileExistence"
                     },
                     {
-                        "uuid": "2deed9f8-0300-0000-6de8-005fe6410495",
+                        "uuid": "2deed9f8-0300-0000-1321-d88ca4b3a7cf",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
-                        "uuid": "2deed9f8-0400-0000-6de8-005fe6410495",
+                        "uuid": "2deed9f8-0400-0000-1321-d88ca4b3a7cf",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
                         "uuid": "2deed9f8-0300-0000-17bf-ab37611908f5",
@@ -1805,40 +1798,33 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "C:/TMP/Edit1"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "scalar",
-                        "value": "1"
+                        "value": 1
                     },
                     {
                         "name": "requireFileExistence",
-                        "type": "boolean",
                         "value": true
                     },
                     {
-                        "name": "requireValidTiff",
-                        "type": "boolean",
+                        "name": "requireTiff",
                         "value": false
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "all_ifds"
                     }
                 ],
@@ -2044,55 +2030,45 @@
                         "name": "clearFileIndexOnReset"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "clearFileIndexOnReset",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/tiff/libtiffpic"
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{tiff,tif}"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
@@ -2232,20 +2208,17 @@
                         "name": "maxIterationsCount"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "invertCondition",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "maxIterationsCount",
-                        "type": "scalar",
                         "value": ""
                     }
                 ],
@@ -2451,16 +2424,16 @@
                         "name": "requireFileExistence"
                     },
                     {
-                        "uuid": "a3406b1f-0300-0000-6de8-005fe6410495",
+                        "uuid": "a3406b1f-0300-0000-1321-d88ca4b3a7cf",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
-                        "uuid": "a3406b1f-0400-0000-6de8-005fe6410495",
+                        "uuid": "a3406b1f-0400-0000-1321-d88ca4b3a7cf",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
                         "uuid": "a3406b1f-0300-0000-17bf-ab37611908f5",
@@ -2631,105 +2604,85 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoCorrectInvertedBrightness",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "autoScaleWhenIncreasingBitDepth",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "autoUnpackBitsToBytes",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "caching",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropTilesToImageBoundaries",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropToImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_AND_CLOSE"
                     },
                     {
                         "name": "requireFileExistence",
-                        "type": "boolean",
                         "value": true
                     },
                     {
-                        "name": "requireValidTiff",
-                        "type": "boolean",
+                        "name": "requireTiff",
                         "value": false
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "y",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -2779,10 +2732,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -2832,10 +2784,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],

@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.5120000000000008,
         "desktop": {
-            "scroll_h": 0.5757885097974953,
-            "scroll_v": 0.4505072940302551
+            "scroll_h": 0.5628490628780555,
+            "scroll_v": 0.4481408303984498
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -1360,6 +1360,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "57301ac4-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "57301ac4-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "57301ac4-0300-0000-e34b-5cf51aaf4de0",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1896,6 +1914,24 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "separator",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ab1db034-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ab1db034-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
                     "caption": ""
                 },
                 {
@@ -6162,11 +6198,10 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "1f253faf-3463-4f7d-a74c-0b50696272be",
             "category": "subchain",
             "options": {
                 "execution": {
@@ -6174,10 +6209,9 @@
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "1f253faf-3463-4f7d-a74c-0b50696272be"
         },
-        "properties": [
-        ],
         "blocks": [
             {
                 "uuid": "02aa9daa-92dc-4c84-adc0-426f6a5e1e50",
@@ -6719,125 +6753,101 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/tiff/openslide/CMU-1-Small-Region.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_RESET_AND_FIRST_CALL"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m: m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": "10"
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int32",
                         "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "ROWS_BY_SNAKE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 555
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 555
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -6887,10 +6897,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -6901,7 +6910,7 @@
             {
                 "uuid": "57301ac4-688b-4414-b8f4-bf1904986353",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "57301ac4-0100-0000-60f5-d7289e42146c",
@@ -7126,6 +7135,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "57301ac4-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "57301ac4-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "57301ac4-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -7246,60 +7267,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": "\\n"
                     }
                 ],
@@ -7310,7 +7324,7 @@
             {
                 "uuid": "ab1db034-1663-4ee5-b8f5-72c8627b829f",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "ab1db034-0100-0000-60f5-d7289e42146c",
@@ -7535,6 +7549,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "ab1db034-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "ab1db034-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "ab1db034-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -7655,60 +7681,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": "\\n"
                     }
                 ],
@@ -7758,10 +7777,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -7811,10 +7829,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -7966,50 +7983,41 @@
                         "name": "folderExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "absolutePaths",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images"
                     },
                     {
                         "name": "folderExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{png,jpg,jpeg}"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
@@ -8419,105 +8427,85 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "doOperator",
-                        "type": "scalar",
                         "value": "i++"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "var i = 0;"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultI",
-                        "type": "scalar",
                         "value": "i"
                     },
                     {
                         "name": "resultJ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultK",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "status",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "whileCondition",
-                        "type": "scalar",
                         "value": "a == \"false\""
                     }
                 ],
@@ -8627,35 +8615,29 @@
                         "name": "resetIndexing"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoReindexLabels",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "clearOnReset",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "numberOfStoredFrames",
-                        "type": "int64",
                         "value": 200
                     },
                     {
                         "name": "resetIndexing",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "stitchingLabels",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "zerosLabelReservedForBackground",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -8795,30 +8777,25 @@
                         "name": "disableOverlapping"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "disableOverlapping",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "expansionX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "expansionY",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -8976,41 +8953,34 @@
                         "name": "reindexStitched"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "expansionX",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "expansionY",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "reindexStitched",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
-                        "value": "900"
+                        "value": 900
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
-                        "value": "700"
+                        "value": 700
                     },
                     {
                         "name": "startX",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     }
                 ],
                 "system": {
@@ -9558,125 +9528,101 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/tiff/openslide/CMU-1-Small-Region.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "scalar",
-                        "value": "10"
+                        "value": 10
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_AND_CLOSE"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m: m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": "10"
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int32",
                         "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 200
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 20
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 506
                     },
                     {
                         "name": "startY",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -10224,125 +10170,101 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/tiff/openslide/CMU-1-Small-Region.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "scalar",
-                        "value": "10"
+                        "value": 10
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_FIRST_CALL"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m: m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": "10"
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
-                        "value": "200"
+                        "value": 200
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
-                        "value": "20"
+                        "value": 20
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "startX",
-                        "type": "scalar",
-                        "value": "506"
+                        "value": 506
                     },
                     {
                         "name": "startY",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -10596,20 +10518,17 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "invert",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "checked_condition"
                     }
                 ],
@@ -10677,15 +10596,13 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "E0_N_ASSERTION"
                     },
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -10735,10 +10652,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "int64",
                         "value": 0
                     }
                 ],

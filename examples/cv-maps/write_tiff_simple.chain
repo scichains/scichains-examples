@@ -508,24 +508,6 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "f4b98735-0300-0000-2f74-a24b42ae1492",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "preferRGB",
-                    "caption": "Prefer RGB"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "f4b98735-0400-0000-2f74-a24b42ae1492",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "preferRGB",
-                    "caption": "Prefer RGB"
-                },
-                {
-                    "@id": "UIPortModel",
                     "uuid": "f4b98735-0300-0000-b459-8bc5a6b76083",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1082,21 +1064,21 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0300-0000-6de8-005fe6410495",
+                    "uuid": "38739870-0300-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0400-0000-6de8-005fe6410495",
+                    "uuid": "38739870-0400-0000-1321-d88ca4b3a7cf",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "requireTiff",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1734,12 +1716,6 @@
             },
             "id": "f373ed61-84e8-4188-9099-9c8d4c92feb2"
         },
-        "properties": [
-            {
-                "name": "execution.strategy",
-                "value": "output_broadcast"
-            }
-        ],
         "blocks": [
             {
                 "uuid": "4f538d49-dcf7-4ec9-82b0-3a253a788987",
@@ -1837,7 +1813,7 @@
                         "name": "multiplierForFP"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "dimX",
                         "value": 1000
@@ -2095,18 +2071,6 @@
                         "name": "compression"
                     },
                     {
-                        "uuid": "f4b98735-0300-0000-2f74-a24b42ae1492",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "preferRGB"
-                    },
-                    {
-                        "uuid": "f4b98735-0400-0000-2f74-a24b42ae1492",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "preferRGB"
-                    },
-                    {
                         "uuid": "f4b98735-0300-0000-b459-8bc5a6b76083",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -2275,7 +2239,7 @@
                         "name": "flushASAP"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "appendIFDToExistingTiff",
                         "value": false
@@ -2290,7 +2254,7 @@
                     },
                     {
                         "name": "compression",
-                        "value": "DEFLATE"
+                        "value": "JPEG"
                     },
                     {
                         "name": "deleteFileOnError",
@@ -2329,12 +2293,8 @@
                         "value": false
                     },
                     {
-                        "name": "preferRGB",
-                        "value": true
-                    },
-                    {
                         "name": "quality",
-                        "value": ""
+                        "value": "0.6"
                     },
                     {
                         "name": "resizable",
@@ -2575,16 +2535,16 @@
                         "name": "requireFileExistence"
                     },
                     {
-                        "uuid": "38739870-0300-0000-6de8-005fe6410495",
+                        "uuid": "38739870-0300-0000-1321-d88ca4b3a7cf",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
-                        "uuid": "38739870-0400-0000-6de8-005fe6410495",
+                        "uuid": "38739870-0400-0000-1321-d88ca4b3a7cf",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "requireTiff"
                     },
                     {
                         "uuid": "38739870-0300-0000-17bf-ab37611908f5",
@@ -2755,7 +2715,7 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoCorrectInvertedBrightness",
                         "value": false
@@ -2805,8 +2765,8 @@
                         "value": true
                     },
                     {
-                        "name": "requireValidTiff",
-                        "value": false
+                        "name": "requireTiff",
+                        "value": true
                     },
                     {
                         "name": "secure",
@@ -2895,7 +2855,7 @@
                         "name": "conditionStyle"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
                         "value": "JAVA_LIKE"
@@ -2951,7 +2911,7 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
                         "value": true
@@ -3003,7 +2963,7 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
                         "value": true
