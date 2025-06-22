@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
-        "scale": 0.3276800000000005,
+        "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.5384816016105581,
-            "scroll_v": 0.49613037316957964
+            "scroll_h": 0.5081924756073509,
+            "scroll_v": 0.548810603850061
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -1294,6 +1294,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "6cc72988-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "6cc72988-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "6cc72988-0300-0000-e34b-5cf51aaf4de0",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1515,7 +1533,7 @@
             "layout_width": 560,
             "layout_height": 480,
             "caption": "Read plane pyramid",
-            "comment": "",
+            "comment": "Using pyramid configuration test",
             "worker_type": "b11c34fb-7f8a-493c-89a6-db81cb71137f",
             "ports": [
                 {
@@ -2818,6 +2836,24 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "separator",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "c3ecc4b1-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "c3ecc4b1-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
                     "caption": ""
                 },
                 {
@@ -7029,6 +7065,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "57301ac4-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "57301ac4-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "57301ac4-0300-0000-e34b-5cf51aaf4de0",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -7565,6 +7619,24 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "separator",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ab1db034-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "ab1db034-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
                     "caption": ""
                 },
                 {
@@ -11418,11 +11490,10 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "5b4dd5ca-b309-4edc-856d-6308aa66f472",
             "category": "subchain",
             "options": {
                 "execution": {
@@ -11430,10 +11501,9 @@
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "5b4dd5ca-b309-4edc-856d-6308aa66f472"
         },
-        "properties": [
-        ],
         "blocks": [
             {
                 "uuid": "c515b6d1-5761-4656-8ec4-781bf05a3701",
@@ -11975,125 +12045,101 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/lenna.png"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_RESET_AND_FIRST_CALL"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m : m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "ROWS_LEFT_TO_RIGHT"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 110
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 110
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -12104,7 +12150,7 @@
             {
                 "uuid": "6cc72988-80f5-4088-b6b0-aa6cea9371fd",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "6cc72988-0100-0000-60f5-d7289e42146c",
@@ -12329,6 +12375,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "6cc72988-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "6cc72988-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "6cc72988-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -12449,60 +12507,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": ", "
                     }
                 ],
@@ -13050,130 +13101,107 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "/Image/BIG/SVS/CMU-1.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_RESET_AND_FIRST_CALL"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m : m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int64",
                         "value": 4
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 5000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "WHOLE_SLIDE"
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
                 "system": {
-                    "caption": "Read plane pyramid"
+                    "caption": "Read plane pyramid",
+                    "description": "Using pyramid configuration test"
                 }
             },
             {
@@ -13218,10 +13246,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "{\n\"format\": {\n\"aperio\": {\n        \"combineWithWholeSlideImage\": true,\n        \"recommendedGeometry\": {\n            \"slideHeight\": 27539.224149863763,\n            \"slideWidth\": 82419.0845112782\n        }\n}\n}\n}\n"
                     }
                 ],
@@ -13271,10 +13298,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "{\n  \"border\": {\n    \"color\": \"#FF00FF\"\n  }\n}"
                     }
                 ],
@@ -13285,7 +13311,7 @@
             {
                 "uuid": "c3ecc4b1-baac-4dc4-a99a-f7ef682543a1",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "c3ecc4b1-0100-0000-60f5-d7289e42146c",
@@ -13510,6 +13536,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "c3ecc4b1-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "c3ecc4b1-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "c3ecc4b1-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -13630,60 +13668,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": ", "
                     }
                 ],
@@ -13733,10 +13764,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -13912,55 +13942,45 @@
                         "name": "sizeZ"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "maxX",
-                        "type": "scalar",
                         "value": "500"
                     },
                     {
                         "name": "maxY",
-                        "type": "scalar",
                         "value": "500"
                     },
                     {
                         "name": "maxZ",
-                        "type": "scalar",
                         "value": "100"
                     },
                     {
                         "name": "minX",
-                        "type": "int64",
                         "value": 200
                     },
                     {
                         "name": "minY",
-                        "type": "scalar",
                         "value": "200"
                     },
                     {
                         "name": "minZ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultElementType",
-                        "type": "scalar",
                         "value": "LONG"
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "sizeZ",
-                        "type": "scalar",
                         "value": ""
                     }
                 ],
@@ -14274,80 +14294,65 @@
                         "name": "sizeY"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "D:/Image/BIG/SVS/CMU-2.svs"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m : m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "ROWS_LEFT_TO_RIGHT"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -14470,35 +14475,29 @@
                         "name": "sizeY"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "maxX",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "maxY",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "minX",
-                        "type": "scalar",
                         "value": "20"
                     },
                     {
                         "name": "minY",
-                        "type": "scalar",
                         "value": "20"
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
                         "value": ""
                     }
                 ],
@@ -14812,80 +14811,65 @@
                         "name": "sizeY"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/alpha_phase_titan.png"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m : m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "ROWS_BY_SNAKE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -14935,10 +14919,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -15006,15 +14989,13 @@
                         "name": "internalContour"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "internalContour",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "objectLabel",
-                        "type": "int64",
                         "value": 1
                     }
                 ],
@@ -15196,20 +15177,17 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "needToAnalyseNestingForDiagonals",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "pixelCoordinatesForRectangles",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "containing_rectangle"
                     }
                 ],
@@ -15259,10 +15237,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -15444,20 +15421,17 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "needToAnalyseNestingForDiagonals",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "pixelCoordinatesForRectangles",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "internal_boundary"
                     }
                 ],
@@ -15507,10 +15481,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -15560,10 +15533,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -15631,15 +15603,13 @@
                         "name": "cacheLastContours"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "cacheLastContours",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "needToProcessDiagonals",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -16187,125 +16157,101 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeAfterLast",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "customPlanePyramidSourceFactoryClass",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "equalizeGrid",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/alpha_phase_titan.png"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "minimalAnalyzedSize",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_ON_RESET_AND_FIRST_CALL"
                     },
                     {
                         "name": "planePyramidFormat",
-                        "type": "scalar",
                         "value": "AUTO_DETECT_BY_EXTENSION"
                     },
                     {
                         "name": "recommendedNumberOfStoredFrames",
-                        "type": "scalar",
                         "value": "snake ? 2*m: m+2"
                     },
                     {
                         "name": "recommendedNumberOfStoredFramesP",
-                        "type": "scalar",
                         "value": "10"
                     },
                     {
                         "name": "requireNonIntersectingRectangles",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "resolutionLevel",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "scanningSequence",
-                        "type": "scalar",
                         "value": "ROWS_BY_SNAKE"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeUnit",
-                        "type": "scalar",
                         "value": "PIXEL"
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "specialImageKind",
-                        "type": "scalar",
                         "value": "MAP_IMAGE"
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 110
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 110
                     },
                     {
                         "name": "useInputROI",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "useMetadata",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeROI",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -16355,10 +16301,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -16408,10 +16353,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -16422,7 +16366,7 @@
             {
                 "uuid": "57301ac4-688b-4414-b8f4-bf1904986353",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "57301ac4-0100-0000-60f5-d7289e42146c",
@@ -16647,6 +16591,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "57301ac4-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "57301ac4-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "57301ac4-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -16767,60 +16723,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": "\\n"
                     }
                 ],
@@ -16831,7 +16780,7 @@
             {
                 "uuid": "ab1db034-1663-4ee5-b8f5-72c8627b829f",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "ab1db034-0100-0000-60f5-d7289e42146c",
@@ -17056,6 +17005,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "ab1db034-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "ab1db034-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "ab1db034-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -17176,60 +17137,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": "\\n"
                     }
                 ],
@@ -17279,10 +17233,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -17332,10 +17285,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -17385,10 +17337,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -17456,16 +17407,14 @@
                         "name": "internalContour"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "internalContour",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "objectLabel",
-                        "type": "scalar",
-                        "value": "1"
+                        "value": 1
                     }
                 ],
                 "system": {
@@ -17646,20 +17595,17 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "needToAnalyseNestingForDiagonals",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "pixelCoordinatesForRectangles",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "containing_rectangle"
                     }
                 ],
@@ -17746,25 +17692,21 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "blockLength",
-                        "type": "int64",
                         "value": 4
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "float"
                     },
                     {
                         "name": "singleBlock",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1, 1, 2, 2"
                     }
                 ],
@@ -17916,50 +17858,41 @@
                         "name": "folderExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "absolutePaths",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images"
                     },
                     {
                         "name": "folderExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{png,jpg,jpeg}"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
@@ -18111,50 +18044,41 @@
                         "name": "folderExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "absolutePaths",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images"
                     },
                     {
                         "name": "folderExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{png,jpg,jpeg}"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ".*(girl\\.jpg|alpha).*"
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
@@ -18348,60 +18272,49 @@
                         "name": "defaultFiller"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "cacheUnpackedContours",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "defaultFiller",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "boolean"
                     },
                     {
                         "name": "indexingBase",
-                        "type": "scalar",
                         "value": "ZERO_BASED"
                     },
                     {
                         "name": "needToProcessDiagonals",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 7000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "startX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "zeroResultForEmptyContours",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -18470,15 +18383,13 @@
                         "name": "cacheLastContours"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "cacheLastContours",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "needToProcessDiagonals",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -18690,70 +18601,57 @@
                         "name": "contrastBackground"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "contrastBackground",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 10000
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 5000
                     },
                     {
                         "name": "drawnContourKinds",
-                        "type": "scalar",
                         "value": "ALL"
                     },
                     {
                         "name": "drawnFeatures",
-                        "type": "scalar",
                         "value": "NOT_INTERSECTED_RANDOMLY_COLORED_CONTOURS"
                     },
                     {
                         "name": "firstIndex",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "imageStartX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "imageStartY",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "needToProcessDiagonals",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "numberOfContours",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "randSeed",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "scale",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "strictByteMultiplier",
-                        "type": "int64",
                         "value": 1
                     }
                 ],
@@ -19074,125 +18972,101 @@
                         "name": "v19"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "blockLength",
-                        "type": "int64",
                         "value": 2
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "double"
                     },
                     {
                         "name": "numberOfBlocks",
-                        "type": "int64",
                         "value": 2
                     },
                     {
                         "name": "singleBlock",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "v0",
-                        "type": "int64",
                         "value": -100
                     },
                     {
                         "name": "v1",
-                        "type": "int64",
                         "value": 2500
                     },
                     {
                         "name": "v10",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v11",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v12",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v13",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v14",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v15",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v16",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v17",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v18",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v19",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v2",
-                        "type": "int64",
                         "value": -50
                     },
                     {
                         "name": "v3",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "v4",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v5",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v6",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v7",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v8",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "v9",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -19386,60 +19260,49 @@
                         "name": "defaultFiller"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "cacheUnpackedContours",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultFiller",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "boolean"
                     },
                     {
                         "name": "indexingBase",
-                        "type": "scalar",
                         "value": "ZERO_BASED"
                     },
                     {
                         "name": "needToProcessDiagonals",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sizeX",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "sizeY",
-                        "type": "int64",
                         "value": 2200
                     },
                     {
                         "name": "startX",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "startY",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "zeroResultForEmptyContours",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19489,10 +19352,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19554,15 +19416,13 @@
                         "name": "conditionStyle"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "value",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19702,20 +19562,17 @@
                         "name": "maxIterationsCount"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "invertCondition",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "maxIterationsCount",
-                        "type": "scalar",
                         "value": ""
                     }
                 ],
@@ -19795,20 +19652,17 @@
                         "name": "defaultInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "booleanStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "commonInputStyle",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19858,10 +19712,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19911,10 +19764,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -19964,10 +19816,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -20017,10 +19868,9 @@
                         "name": "requireInput"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "requireInput",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
