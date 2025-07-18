@@ -809,15 +809,6 @@
             "uuid": "a3d3340f-f0e4-46d9-b5f6-892c7d921e4c",
             "src_port_uuid": "a8dde033-0200-0000-ae3e-5290343c1654",
             "dest_port_uuid": "a79813b9-0100-0000-8fd6-4c4759803353"
-        },
-        {
-            "@id": "UICommentModel",
-            "uuid": "fdd73203-e8ce-43ad-9949-f3874bb3471d",
-            "layout_x": 11560.0,
-            "layout_y": 9620.0,
-            "layout_width": 600.0,
-            "layout_height": 120.0,
-            "comment": "Note: before using the functions of this chain, you should install \"matplotlib\" Pyhton package.\nPlease open SciChains/python folder and run\n    python.exe -m pip install matplotlib"
         }
     ],
     "blocks": [
@@ -1322,7 +1313,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas\n\ndef make_figure():\n\tt = np.linspace(9, 13, 400)  \n\tgrowth_rate = 0.4          \n\tradius = np.exp(growth_rate * t)\n\tx = radius * np.cos(2 * np.pi * t)\n\ty = radius * np.sin(2 * np.pi * t)\n\tz = t - 2\n\tz_min = 6\n\n\tfig = plt.figure(figsize=(8, 6))\n\tcanvas = FigureCanvas(fig)\n\tax = fig.add_subplot(111, projection='3d')\n\tax.plot(x, y, z, color='royalblue', linewidth=2)\n\n\tax.grid(False)\n\tfor spine in [ax.xaxis, ax.yaxis, ax.zaxis]:\n\t\tspine.pane.fill = False  \n\t\tspine.line.set_color((1.0, 1.0, 1.0, 0.0))  # transparent standard axes\n\n\tmax_r = np.max(radius)\n\tx_range = max_r * 2.5\n\ty_range = max_r * 2.5\n\tz_max = np.max(z) + 1\n\n\tax.set_xlim(-x_range, x_range)\n\tax.set_ylim(-y_range, y_range)\n\tax.set_zlim(0, z_max)\n\n\t# Remove labels\n\tax.set_xticks([])\n\tax.set_yticks([])\n\tax.set_zticks([])\n\n\t# Axes\n\tax.plot([0, 0], [0, 0], [z_min, z_max], color='red', linewidth=1)\n\n\tax.set_box_aspect([1.5, 1.5, 2.0])\n\n\tplt.tight_layout()\n\tplt.savefig(\"/tmp/time_spiral_with_vertical_line.py.png\", dpi=150)\n\tcanvas.draw()  \n\n\twidth, height = fig.canvas.get_width_height()\n\tbuf = canvas.buffer_rgba()\n\n\timage = np.frombuffer(buf, dtype=np.uint8).reshape((height, width, 4))\n\trgb_image = image[:, :, :3].copy()  # отбрасываем альфа-канал\n\tplt.close(fig)  \n\n\treturn rgb_image\n\t# plt.show()\n\ndef simple(params, inputs, outputs):\n  image = make_figure()\n  outputs.m1 = image\n  return \"Hello! figure is in m1\"\n\n"
+                        "value": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas\n\ndef make_figure():\n\tt = np.linspace(9, 13, 400)  \n\tgrowth_rate = 0.4          \n\tradius = np.exp(growth_rate * t)\n\tx = radius * np.cos(2 * np.pi * t)\n\ty = radius * np.sin(2 * np.pi * t)\n\tz = t - 2\n\tz_min = 6\n\n\tfig = plt.figure(figsize=(8, 6))\n\tcanvas = FigureCanvas(fig)\n\tax = fig.add_subplot(111, projection='3d')\n\tax.plot(x, y, z, color='royalblue', linewidth=2)\n\n\tax.grid(False)\n\tfor spine in [ax.xaxis, ax.yaxis, ax.zaxis]:\n\t\tspine.pane.fill = False  \n\t\tspine.line.set_color((1.0, 1.0, 1.0, 0.0))  # transparent standard axes\n\n\tmax_r = np.max(radius)\n\tx_range = max_r * 2.5\n\ty_range = max_r * 2.5\n\tz_max = np.max(z) + 1\n\n\tax.set_xlim(-x_range, x_range)\n\tax.set_ylim(-y_range, y_range)\n\tax.set_zlim(0, z_max)\n\n\t# Remove labels\n\tax.set_xticks([])\n\tax.set_yticks([])\n\tax.set_zticks([])\n\n\t# Axes\n\tax.plot([0, 0], [0, 0], [z_min, z_max], color='red', linewidth=1)\n\n\tax.set_box_aspect([1.5, 1.5, 2.0])\n\n\tplt.tight_layout()\n\tplt.savefig(\"/tmp/time_spiral_with_vertical_line.py.png\", dpi=150)\n\tcanvas.draw()  \n\n\twidth, height = fig.canvas.get_width_height()\n\tbuf = canvas.buffer_rgba()\n\n\timage = np.frombuffer(buf, dtype=np.uint8).reshape((height, width, 4))\n\trgb_image = image[:, :, :3].copy()  # ??????????? ?????-?????\n\tplt.close(fig)  \n\n\treturn rgb_image\n\t# plt.show()\n\ndef simple(params, inputs, outputs):\n  image = make_figure()\n  outputs.m1 = image\n  return \"Hello! figure is in m1\"\n\n"
                     },
                     {
                         "name": "compilerKind",

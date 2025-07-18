@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000009,
         "desktop": {
-            "scroll_h": 0.6085384960357823,
-            "scroll_v": 0.5025724340467077
+            "scroll_h": 0.6211939538204588,
+            "scroll_v": 0.5038117530735161
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -2314,6 +2314,82 @@
             "uuid": "ed3c5d58-45cb-4c10-a1cb-fa8dff8909cc",
             "src_port_uuid": "403f0b15-0200-0000-34f2-15b58b6cf4d6",
             "dest_port_uuid": "8a11230d-0100-0000-8fd6-4c4759803353"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "78495214-843a-4f37-bc94-288f0f533065",
+            "layout_x": 12420,
+            "layout_y": 9820,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Copy number array",
+            "comment": "",
+            "worker_type": "c545d2c9-cece-40b6-a9f2-f392073f2d1d",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "input",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0300-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "78495214-0400-0000-3712-596fc4b7b937",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "requireInput",
+                    "caption": "Requires input"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UILinkModel",
+            "uuid": "cf4624b9-82d9-48e4-92ec-71281b8a560e",
+            "src_port_uuid": "4aa1dcdb-0200-0000-34f2-15b58b6cf4d6",
+            "dest_port_uuid": "78495214-0100-0000-8fd6-4c4759803353"
         }
     ],
     "blocks": [
@@ -3314,7 +3390,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "import numpy\n\ndef execute(params, inputs, outputs):\n    return numpy.array([1, 2])\n"
+                        "value": "import numpy\n\ndef execute(params, inputs, outputs):\n    outputs.x1 = numpy.array([[1, 2, 3], [4, 5, 6]])\n    # outputs.x2 = [1, 2, 3] # non-numpy: will not work!\n    return str(outputs.x1)\n"
                     },
                     {
                         "name": "compilerKind",
@@ -3810,7 +3886,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "import numpy\n\ndef execute(params, inputs, outputs):\n    x1 = inputs.x1\n    x2 = inputs.x2    \n    outputs.x1 = numpy.add(x1, x2)\n"
+                        "value": "import numpy\n\ndef execute(params, inputs, outputs):\n    x1 = inputs.x1\n    x2 = inputs.x2\n    print(\"x1 = \" + str(x1))\n    print(\"x2 = \" + str(x2))\n    outputs.x1 = numpy.add(x1, x2)\n    return str(x1) + \"\\n\" + str(x2) \n"
                     },
                     {
                         "name": "compilerKind",
@@ -4038,6 +4114,58 @@
                 "parameters": [
                     {
                         "name": "requireInput",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Copy number array"
+                }
+            },
+            {
+                "uuid": "78495214-843a-4f37-bc94-288f0f533065",
+                "executor_id": "c545d2c9-cece-40b6-a9f2-f392073f2d1d",
+                "executor_name": "Copy number array",
+                "ports": [
+                    {
+                        "uuid": "78495214-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "78495214-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "78495214-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "78495214-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "78495214-0300-0000-3712-596fc4b7b937",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    },
+                    {
+                        "uuid": "78495214-0400-0000-3712-596fc4b7b937",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "requireInput"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "requireInput",
                         "value": true
                     }
                 ],
@@ -4061,6 +4189,11 @@
                 "uuid": "ed3c5d58-45cb-4c10-a1cb-fa8dff8909cc",
                 "src_port_uuid": "403f0b15-0200-0000-34f2-15b58b6cf4d6",
                 "dest_port_uuid": "8a11230d-0100-0000-8fd6-4c4759803353"
+            },
+            {
+                "uuid": "cf4624b9-82d9-48e4-92ec-71281b8a560e",
+                "src_port_uuid": "4aa1dcdb-0200-0000-34f2-15b58b6cf4d6",
+                "dest_port_uuid": "78495214-0100-0000-8fd6-4c4759803353"
             }
         ]
     }
