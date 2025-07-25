@@ -1270,7 +1270,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "from java.lang import System # - you may import Java classes\n\ndef execute(params, inputs, outputs):\n    m = params._sys.local_import(\"figures.py\")\n\n    outputs.m1 = m.make_spiral()\n    return \"Hello! figure is in m1\"\n"
+                        "value": "from java.lang import System # - you may import Java classes\n\ndef execute(params, inputs, outputs):\n    m = params._env.import_file(\"lib/figures.py\")\n\n    outputs.m1 = m.make_spiral()\n    return \"Hello! figure is in m1\"\n"
                     },
                     {
                         "name": "compilerKind",

@@ -1389,7 +1389,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "def execute(params, inputs, outputs):\n    m = params._sys.local_import(\"my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import(params)\n    return \"Hello! \" + m.my_function()\n\n"
+                        "value": "def execute(params, inputs, outputs):\n    m = params._env.import_file(\"lib/my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import(params._env)\n    return \"Hello! \" + m.my_function()\n\n"
                     },
                     {
                         "name": "compilerKind",
