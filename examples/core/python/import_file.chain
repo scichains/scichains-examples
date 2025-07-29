@@ -330,6 +330,42 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "compilerKind",
+                    "caption": "Python compiler kind"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "compilerKind",
+                    "caption": "Python compiler kind"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -597,24 +633,6 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "u",
                     "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "compilerKind",
-                    "caption": "Python compiler kind"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "compilerKind",
-                    "caption": "Python compiler kind"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1170,6 +1188,30 @@
                         "name": "mainFunctionName"
                     },
                     {
+                        "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "workingDirectory"
+                    },
+                    {
+                        "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "workingDirectory"
+                    },
+                    {
+                        "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "compilerKind"
+                    },
+                    {
+                        "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "compilerKind"
+                    },
+                    {
                         "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1350,18 +1392,6 @@
                         "name": "u"
                     },
                     {
-                        "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "compilerKind"
-                    },
-                    {
-                        "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "compilerKind"
-                    },
-                    {
                         "uuid": "a8dde033-0300-0000-d0fa-978fba00c921",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1389,11 +1419,11 @@
                     },
                     {
                         "name": "code",
-                        "value": "def execute(params, inputs, outputs):\n    m = params._env.import_file(\"lib/my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import(params._env)\n    return \"Hello! \" + m.my_function()\n\n"
+                        "value": "def execute(params, inputs, outputs):\n    m = pya.import_file(\"my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import()\n    return \"Hello! \" + m.my_function()\n\n"
                     },
                     {
                         "name": "compilerKind",
-                        "value": "JEP_SHARED"
+                        "value": "JEP_GLOBAL"
                     },
                     {
                         "name": "d",
@@ -1450,6 +1480,10 @@
                     {
                         "name": "visibleResult",
                         "value": "output"
+                    },
+                    {
+                        "name": "workingDirectory",
+                        "value": "lib"
                     }
                 ],
                 "system": {
