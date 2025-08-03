@@ -352,7 +352,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "compilerKind",
+                    "name": "interpretationKind",
                     "caption": "Python compiler kind"
                 },
                 {
@@ -361,7 +361,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "compilerKind",
+                    "name": "interpretationKind",
                     "caption": "Python compiler kind"
                 },
                 {
@@ -687,7 +687,7 @@
                 },
                 {
                     "type": "str",
-                    "name": "compilerKind",
+                    "name": "interpretationKind",
                     "value": "SHARED"
                 },
                 {
@@ -1203,13 +1203,13 @@
                         "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "compilerKind"
+                        "name": "interpretationKind"
                     },
                     {
                         "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "compilerKind"
+                        "name": "interpretationKind"
                     },
                     {
                         "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
@@ -1422,7 +1422,7 @@
                         "value": "def execute(params, inputs, outputs):\n    m = pya.import_file(\"my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import()\n    return \"Hello! \" + m.my_function()\n\n"
                     },
                     {
-                        "name": "compilerKind",
+                        "name": "interpretationKind",
                         "value": "GLOBAL"
                     },
                     {
