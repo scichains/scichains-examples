@@ -19,7 +19,7 @@
             "layout_width": 440,
             "layout_height": 220,
             "caption": "Call Python function",
-            "comment": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation mode\" parameter)",
+            "comment": "Python interpretation mode \"global\"",
             "worker_type": "4a2fa4ed-a415-4f0a-90aa-d092a6a362ee",
             "ports": [
                 {
@@ -755,8 +755,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "16f23876-16b7-47c1-b423-2096a039d5b3",
-            "layout_x": 12080,
-            "layout_y": 10000,
+            "layout_x": 12020,
+            "layout_y": 10040,
             "layout_width": 300,
             "layout_height": 200,
             "caption": "Copy scalar",
@@ -827,103 +827,6 @@
             "uuid": "d863fd92-6166-4d80-b244-05f21f99ea11",
             "src_port_uuid": "a8dde033-0200-0000-bf1d-ef548618383d",
             "dest_port_uuid": "16f23876-0100-0000-8fd6-4c4759803353"
-        },
-        {
-            "@id": "UIBlockModel",
-            "uuid": "d947d0b4-90f1-4fdf-adaa-c84f580a6f79",
-            "layout_x": 11520,
-            "layout_y": 10360,
-            "layout_width": 300,
-            "layout_height": 200,
-            "caption": "Python example: sum a+b",
-            "comment": "This block SHOULD be disabled: initializing it immediately \nbefore/after the block with SubInterpreter is dangerous",
-            "worker_type": "a8df5a34-35ec-4bda-883d-5a58c1e791f2",
-            "ports": [
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0200-0000-6416-fc948a169899",
-                    "visible": true,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "output",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0200-0000-cf95-37e5dfbcb01d",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_sys___executor_id",
-                    "caption": "Executor ID"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0200-0000-a0ae-37d4ecb650d4",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_sys___platform_id",
-                    "caption": "Platform ID"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0200-0000-2156-a208f456f341",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_roots",
-                    "caption": "supplied python roots"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0200-0000-6df9-ef3e34af2631",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_specification",
-                    "caption": "supplied python specification"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0300-0000-bf1d-ef548618383d",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "a",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0400-0000-bf1d-ef548618383d",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "a",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0300-0000-2e73-94f1d03b9780",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "b",
-                    "caption": ""
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "d947d0b4-0400-0000-2e73-94f1d03b9780",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "b",
-                    "caption": ""
-                }
-            ],
-            "display_advanced": false,
-            "properties": [
-            ]
         }
     ],
     "blocks": [
@@ -996,7 +899,7 @@
                     "ignore_exceptions": false
                 }
             },
-            "id": "8fde7b89-c991-403f-8948-c04cf95f7150"
+            "id": "ed41d7a2-d7ca-4780-ac15-772a7b726e14"
         },
         "blocks": [
             {
@@ -1440,7 +1343,7 @@
                     },
                     {
                         "name": "code",
-                        "value": "import sys\n\ndef execute(params, inputs, outputs):\n    # verify() # will not work: defined in another SharedInterpreter\n    outputs.a = 12\n    return \"Hello! Python version:\\n\" + sys.version\n"
+                        "value": "def execute(params, inputs, outputs):\n    outputs.a = 12\n    return \"Hello\"\n"
                     },
                     {
                         "name": "d",
@@ -1460,7 +1363,7 @@
                     },
                     {
                         "name": "interpretationMode",
-                        "value": "SUB_INTERPRETER"
+                        "value": "GLOBAL"
                     },
                     {
                         "name": "mainFunctionName",
@@ -1509,7 +1412,7 @@
                 ],
                 "system": {
                     "caption": "Call Python function",
-                    "description": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation mode\" parameter)"
+                    "description": "Python interpretation mode \"global\""
                 }
             },
             {
@@ -1562,82 +1465,6 @@
                 ],
                 "system": {
                     "caption": "Copy scalar"
-                }
-            },
-            {
-                "uuid": "d947d0b4-90f1-4fdf-adaa-c84f580a6f79",
-                "executor_id": "a8df5a34-35ec-4bda-883d-5a58c1e791f2",
-                "executor_name": "Python example: sum a+b",
-                "ports": [
-                    {
-                        "uuid": "d947d0b4-0200-0000-6416-fc948a169899",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "output"
-                    },
-                    {
-                        "uuid": "d947d0b4-0200-0000-cf95-37e5dfbcb01d",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_sys___executor_id"
-                    },
-                    {
-                        "uuid": "d947d0b4-0200-0000-a0ae-37d4ecb650d4",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_sys___platform_id"
-                    },
-                    {
-                        "uuid": "d947d0b4-0200-0000-2156-a208f456f341",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_roots"
-                    },
-                    {
-                        "uuid": "d947d0b4-0200-0000-6df9-ef3e34af2631",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_specification"
-                    },
-                    {
-                        "uuid": "d947d0b4-0300-0000-bf1d-ef548618383d",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "a"
-                    },
-                    {
-                        "uuid": "d947d0b4-0400-0000-bf1d-ef548618383d",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "a"
-                    },
-                    {
-                        "uuid": "d947d0b4-0300-0000-2e73-94f1d03b9780",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "b"
-                    },
-                    {
-                        "uuid": "d947d0b4-0400-0000-2e73-94f1d03b9780",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "b"
-                    }
-                ],
-                "parameters": [
-                    {
-                        "name": "a",
-                        "value": 1.0
-                    },
-                    {
-                        "name": "b",
-                        "value": 1.0
-                    }
-                ],
-                "system": {
-                    "caption": "Python example: sum a+b",
-                    "description": "This block SHOULD be disabled: initializing it immediately \nbefore/after the block with SubInterpreter is dangerous",
-                    "enabled": false
                 }
             }
         ],
