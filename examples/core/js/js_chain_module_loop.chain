@@ -2,10 +2,10 @@
     "app": "SciChains",
     "version": "1.1",
     "root": {
-        "scale": 1.000000000000001,
+        "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.6084488237505543,
-            "scroll_v": 0.5123711629055359
+            "scroll_h": 0.5507714049986908,
+            "scroll_v": 0.46985279578485545
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -13,18 +13,18 @@
     "nodes": [
         {
             "@id": "UIBlockModel",
-            "uuid": "6778724b-e03b-45ff-86dc-96d216a1b847",
-            "layout_x": 12060,
-            "layout_y": 10160,
+            "uuid": "75ed8759-8a13-42b8-b4ea-3dec1b2caf76",
+            "layout_x": 10520,
+            "layout_y": 9260,
             "layout_width": 300,
             "layout_height": 200,
-            "caption": "Python example: long delay (shared)",
+            "caption": "Use JavaScript",
             "comment": "",
-            "worker_type": "287f5a8f-5819-4a6a-bf63-639c9aed06e0",
+            "worker_type": "2c1ef76c-21b7-49c2-be09-e4a0784f1c79",
             "ports": [
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0200-0000-6416-fc948a169899",
+                    "uuid": "75ed8759-0200-0000-6416-fc948a169899",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -33,7 +33,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0200-0000-cf95-37e5dfbcb01d",
+                    "uuid": "75ed8759-0200-0000-cf95-37e5dfbcb01d",
                     "visible": false,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -42,7 +42,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0200-0000-a0ae-37d4ecb650d4",
+                    "uuid": "75ed8759-0200-0000-a0ae-37d4ecb650d4",
                     "visible": false,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -51,25 +51,77 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0200-0000-2156-a208f456f341",
+                    "uuid": "75ed8759-0300-0000-a304-77c019f67c0a",
                     "visible": false,
-                    "port_type": "OUTPUT",
+                    "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_roots",
-                    "caption": "supplied python roots"
+                    "name": "file",
+                    "caption": "JavaScript executor JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0200-0000-6df9-ef3e34af2631",
+                    "uuid": "75ed8759-0400-0000-a304-77c019f67c0a",
                     "visible": false,
-                    "port_type": "OUTPUT",
+                    "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_specification",
-                    "caption": "supplied python specification"
+                    "name": "file",
+                    "caption": "JavaScript executor JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0300-0000-984d-daae3b5abe9a",
+                    "uuid": "75ed8759-0300-0000-7596-eeade70d0bc8",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "75ed8759-0400-0000-7596-eeade70d0bc8",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "1214e4fd-84fb-4c76-a696-2a7c4c6d013d",
+            "layout_x": 10880,
+            "layout_y": 9220,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Chain JS example: long delay",
+            "comment": "",
+            "worker_type": "7534229c-512a-4583-8870-1c8b8bce061e",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1214e4fd-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1214e4fd-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1214e4fd-0300-0000-984d-daae3b5abe9a",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -78,7 +130,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0400-0000-984d-daae3b5abe9a",
+                    "uuid": "1214e4fd-0400-0000-984d-daae3b5abe9a",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -87,7 +139,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0300-0000-3e92-6ff0bf978c1e",
+                    "uuid": "1214e4fd-0300-0000-3e92-6ff0bf978c1e",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -96,7 +148,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "6778724b-0400-0000-3e92-6ff0bf978c1e",
+                    "uuid": "1214e4fd-0400-0000-3e92-6ff0bf978c1e",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -106,22 +158,32 @@
             ],
             "display_advanced": false,
             "properties": [
+                {
+                    "type": "str",
+                    "name": "title",
+                    "value": "Long delay (JS chain-built-in module)"
+                },
+                {
+                    "type": "int",
+                    "name": "delay",
+                    "value": 5
+                }
             ]
         },
         {
             "@id": "UIBlockModel",
-            "uuid": "af3672cb-dc6d-43ef-83d6-512ff1cf5b4f",
-            "layout_x": 12060,
-            "layout_y": 10400,
+            "uuid": "e632978f-b268-4d1d-8d89-8df39b2b1d7a",
+            "layout_x": 10920,
+            "layout_y": 9440,
             "layout_width": 300,
             "layout_height": 200,
-            "caption": "Python example: long delay (shared)",
+            "caption": "Chain JS example: long delay",
             "comment": "",
-            "worker_type": "287f5a8f-5819-4a6a-bf63-639c9aed06e0",
+            "worker_type": "7534229c-512a-4583-8870-1c8b8bce061e",
             "ports": [
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0200-0000-6416-fc948a169899",
+                    "uuid": "e632978f-0200-0000-6416-fc948a169899",
                     "visible": true,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -130,7 +192,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0200-0000-cf95-37e5dfbcb01d",
+                    "uuid": "e632978f-0200-0000-cf95-37e5dfbcb01d",
                     "visible": false,
                     "port_type": "OUTPUT",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -139,34 +201,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0200-0000-a0ae-37d4ecb650d4",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_sys___platform_id",
-                    "caption": "Platform ID"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "af3672cb-0200-0000-2156-a208f456f341",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_roots",
-                    "caption": "supplied python roots"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "af3672cb-0200-0000-6df9-ef3e34af2631",
-                    "visible": false,
-                    "port_type": "OUTPUT",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "_py_supplied_python_specification",
-                    "caption": "supplied python specification"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "af3672cb-0300-0000-984d-daae3b5abe9a",
+                    "uuid": "e632978f-0300-0000-984d-daae3b5abe9a",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -175,7 +210,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0400-0000-984d-daae3b5abe9a",
+                    "uuid": "e632978f-0400-0000-984d-daae3b5abe9a",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -184,7 +219,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0300-0000-3e92-6ff0bf978c1e",
+                    "uuid": "e632978f-0300-0000-3e92-6ff0bf978c1e",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -193,7 +228,7 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "af3672cb-0400-0000-3e92-6ff0bf978c1e",
+                    "uuid": "e632978f-0400-0000-3e92-6ff0bf978c1e",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -209,56 +244,6 @@
     "blocks": [
     ],
     "plugins": [
-        {
-            "@id": "StareProjectVPPlugin",
-            "id": "VPPluginModel",
-            "vpjson": {
-                "multi_project": 0,
-                "project": {
-                    "title": "default",
-                    "filters": [
-                        {
-                            "ptype": "plugin",
-                            "visible": 1,
-                            "readonly": 1,
-                            "plugin_name": "stare",
-                            "filter_name": "stare_ex",
-                            "settings": {
-                                "stare_project_file": "",
-                                "controls": [
-                                ],
-                                "stare_controls": [
-                                ],
-                                "data_bind": [
-                                ],
-                                "sets": [
-                                ]
-                            }
-                        }
-                    ],
-                    "classify": [
-                    ],
-                    "contours": {
-                        "properties": {
-                            "connectivity": 8,
-                            "ctype": "diagonal"
-                        }
-                    }
-                }
-            }
-        },
-        {
-            "@id": "StarePokePlugin",
-            "id": "PokePluginModel",
-            "classes": [
-            ],
-            "user_markers": [
-            ],
-            "label_features": [
-            ],
-            "export_label_feature_idx": [
-            ]
-        }
     ],
     "properties": {
     },
@@ -267,73 +252,116 @@
         "app": "chain",
         "version": "1.1",
         "executor": {
-            "name": "System information",
-            "category": "subchains",
+            "id": "f25de2c1-a07a-4bfd-9487-e5e7d3b1f099",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            },
-            "id": "f98912cd-3556-429a-b254-2bae4ccf6bde"
+            }
         },
         "blocks": [
             {
-                "uuid": "6778724b-e03b-45ff-86dc-96d216a1b847",
-                "executor_id": "287f5a8f-5819-4a6a-bf63-639c9aed06e0",
-                "executor_name": "Python example: long delay (shared)",
+                "uuid": "75ed8759-8a13-42b8-b4ea-3dec1b2caf76",
+                "executor_id": "2c1ef76c-21b7-49c2-be09-e4a0784f1c79",
+                "execution_stage": "loading_time",
+                "executor_name": "Use JavaScript",
                 "ports": [
                     {
-                        "uuid": "6778724b-0200-0000-6416-fc948a169899",
+                        "uuid": "75ed8759-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "output"
                     },
                     {
-                        "uuid": "6778724b-0200-0000-cf95-37e5dfbcb01d",
+                        "uuid": "75ed8759-0200-0000-cf95-37e5dfbcb01d",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "_sys___executor_id"
                     },
                     {
-                        "uuid": "6778724b-0200-0000-a0ae-37d4ecb650d4",
+                        "uuid": "75ed8759-0200-0000-a0ae-37d4ecb650d4",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "_sys___platform_id"
                     },
                     {
-                        "uuid": "6778724b-0200-0000-2156-a208f456f341",
-                        "type": 2,
+                        "uuid": "75ed8759-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_roots"
+                        "name": "file"
                     },
                     {
-                        "uuid": "6778724b-0200-0000-6df9-ef3e34af2631",
-                        "type": 2,
+                        "uuid": "75ed8759-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_specification"
+                        "name": "file"
                     },
                     {
-                        "uuid": "6778724b-0300-0000-984d-daae3b5abe9a",
+                        "uuid": "75ed8759-0300-0000-7596-eeade70d0bc8",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "workingDirectory"
+                    },
+                    {
+                        "uuid": "75ed8759-0400-0000-7596-eeade70d0bc8",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "workingDirectory"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "file",
+                        "value": "lib/models/"
+                    },
+                    {
+                        "name": "workingDirectory",
+                        "value": "lib/modules"
+                    }
+                ],
+                "system": {
+                    "caption": "Use JavaScript"
+                }
+            },
+            {
+                "uuid": "1214e4fd-84fb-4c76-a696-2a7c4c6d013d",
+                "executor_id": "7534229c-512a-4583-8870-1c8b8bce061e",
+                "executor_name": "Chain JS example: long delay",
+                "ports": [
+                    {
+                        "uuid": "1214e4fd-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "1214e4fd-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "1214e4fd-0300-0000-984d-daae3b5abe9a",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "title"
                     },
                     {
-                        "uuid": "6778724b-0400-0000-984d-daae3b5abe9a",
+                        "uuid": "1214e4fd-0400-0000-984d-daae3b5abe9a",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "title"
                     },
                     {
-                        "uuid": "6778724b-0300-0000-3e92-6ff0bf978c1e",
+                        "uuid": "1214e4fd-0300-0000-3e92-6ff0bf978c1e",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "delay"
                     },
                     {
-                        "uuid": "6778724b-0400-0000-3e92-6ff0bf978c1e",
+                        "uuid": "1214e4fd-0400-0000-3e92-6ff0bf978c1e",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "delay"
@@ -346,68 +374,50 @@
                     },
                     {
                         "name": "title",
-                        "value": "Long delay (shared)"
+                        "value": "Long delay (JS chain-built-in module)"
                     }
                 ],
                 "system": {
-                    "caption": "Python example: long delay (shared)"
+                    "caption": "Chain JS example: long delay"
                 }
             },
             {
-                "uuid": "af3672cb-dc6d-43ef-83d6-512ff1cf5b4f",
-                "executor_id": "287f5a8f-5819-4a6a-bf63-639c9aed06e0",
-                "executor_name": "Python example: long delay (shared)",
+                "uuid": "e632978f-b268-4d1d-8d89-8df39b2b1d7a",
+                "executor_id": "7534229c-512a-4583-8870-1c8b8bce061e",
+                "executor_name": "Chain JS example: long delay",
                 "ports": [
                     {
-                        "uuid": "af3672cb-0200-0000-6416-fc948a169899",
+                        "uuid": "e632978f-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "output"
                     },
                     {
-                        "uuid": "af3672cb-0200-0000-cf95-37e5dfbcb01d",
+                        "uuid": "e632978f-0200-0000-cf95-37e5dfbcb01d",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "_sys___executor_id"
                     },
                     {
-                        "uuid": "af3672cb-0200-0000-a0ae-37d4ecb650d4",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_sys___platform_id"
-                    },
-                    {
-                        "uuid": "af3672cb-0200-0000-2156-a208f456f341",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_roots"
-                    },
-                    {
-                        "uuid": "af3672cb-0200-0000-6df9-ef3e34af2631",
-                        "type": 2,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "_py_supplied_python_specification"
-                    },
-                    {
-                        "uuid": "af3672cb-0300-0000-984d-daae3b5abe9a",
+                        "uuid": "e632978f-0300-0000-984d-daae3b5abe9a",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "title"
                     },
                     {
-                        "uuid": "af3672cb-0400-0000-984d-daae3b5abe9a",
+                        "uuid": "e632978f-0400-0000-984d-daae3b5abe9a",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "title"
                     },
                     {
-                        "uuid": "af3672cb-0300-0000-3e92-6ff0bf978c1e",
+                        "uuid": "e632978f-0300-0000-3e92-6ff0bf978c1e",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "delay"
                     },
                     {
-                        "uuid": "af3672cb-0400-0000-3e92-6ff0bf978c1e",
+                        "uuid": "e632978f-0400-0000-3e92-6ff0bf978c1e",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "delay"
@@ -416,15 +426,15 @@
                 "parameters": [
                     {
                         "name": "delay",
-                        "value": 3
+                        "value": 5
                     },
                     {
                         "name": "title",
-                        "value": "Long delay (shared)"
+                        "value": "Long delay (JS chain-built-in module)"
                     }
                 ],
                 "system": {
-                    "caption": "Python example: long delay (shared)"
+                    "caption": "Chain JS example: long delay"
                 }
             }
         ],

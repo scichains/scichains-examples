@@ -1,0 +1,35 @@
+{
+  "app": "executor",
+  "category": "chain_examples.js",
+  "name": "Chain JS example: long delay",
+  "tags": [
+    "demo"
+  ],
+  "id": "7534229c-512a-4583-8870-1c8b8bce061e",
+  "language": "js",
+  "js": {
+    "module": "demo/ExampleChainLongDelay.mjs"
+  },
+  "in_ports": [
+  ],
+  "out_ports": [
+    {
+      "value_type": "scalar",
+      "name": "output"
+    }
+  ],
+  "controls": [
+    {
+      "name": "title",
+      "value_type": "String",
+      "edition_type": "value",
+      "default": "Long delay (JS chain-built-in module)"
+    },
+    {
+      "name": "delay",
+      "value_type": "int",
+      "edition_type": "value",
+      "default": 10
+    }
+  ]
+}
