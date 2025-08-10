@@ -3,7 +3,8 @@ let global_counter = 0;
 console.log("==== Initializing JS long delay! ====");
 
 export function longDelay(params, delay, title) {
-    console.log("Global environment context path: " + params._env.context_path);
+    console.log("Global environment context path: " + params._env.contextPath +
+        ", working directory: " + params._env.workingDirectory);
 
     global_counter += 1;
     console.log("Starting JS loop; global counter: " + global_counter);
@@ -16,7 +17,7 @@ export function longDelay(params, delay, title) {
             console.log("Sleeping interrupted!");
             break;
         }
-        let info = " (" + params._env.context_path + ", session " + params._executor.getSessionId() + ")";
+        let info = " (" + params._env.contextPath + ", session " + params._executor.getSessionId() + ")";
         console.log(`${title}${info}: ${i} from ${n} seconds, global counter: ${global_counter}`);
         const Thread = Java.type("java.lang.Thread");
         Thread.sleep(1000);

@@ -330,24 +330,6 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "workingDirectory",
-                    "caption": "Current working folder"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "workingDirectory",
-                    "caption": "Current working folder"
-                },
-                {
-                    "@id": "UIPortModel",
                     "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -366,20 +348,38 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
+                    "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "paramsClassName",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "workingDirectory",
+                    "caption": "Current working folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0300-0000-68ce-94139158409c",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "parametersClassName",
                     "caption": "Class name for argument \"params\""
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a8dde033-0400-0000-d450-daffd7945ffb",
+                    "uuid": "a8dde033-0400-0000-68ce-94139158409c",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "paramsClassName",
+                    "name": "parametersClassName",
                     "caption": "Class name for argument \"params\""
                 },
                 {
@@ -1188,18 +1188,6 @@
                         "name": "mainFunctionName"
                     },
                     {
-                        "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "workingDirectory"
-                    },
-                    {
-                        "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "workingDirectory"
-                    },
-                    {
                         "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1212,16 +1200,28 @@
                         "name": "interpretationMode"
                     },
                     {
-                        "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
+                        "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "paramsClassName"
+                        "name": "workingDirectory"
                     },
                     {
-                        "uuid": "a8dde033-0400-0000-d450-daffd7945ffb",
+                        "uuid": "a8dde033-0400-0000-7596-eeade70d0bc8",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "paramsClassName"
+                        "name": "workingDirectory"
+                    },
+                    {
+                        "uuid": "a8dde033-0300-0000-68ce-94139158409c",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "parametersClassName"
+                    },
+                    {
+                        "uuid": "a8dde033-0400-0000-68ce-94139158409c",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "parametersClassName"
                     },
                     {
                         "uuid": "a8dde033-0300-0000-457d-1433c0e08638",
@@ -1422,10 +1422,6 @@
                         "value": "def execute(params, inputs, outputs):\n    m = pya.import_file(\"my_lib.py\")\n    outputs.x1 = m.my_function_array()\n    outputs.a = m.my_function_with_import()\n    return \"Hello! \" + m.my_function()\n\n"
                     },
                     {
-                        "name": "interpretationMode",
-                        "value": "GLOBAL"
-                    },
-                    {
                         "name": "d",
                         "value": ""
                     },
@@ -1442,6 +1438,10 @@
                         "value": ""
                     },
                     {
+                        "name": "interpretationMode",
+                        "value": "SHARED"
+                    },
+                    {
                         "name": "mainFunctionName",
                         "value": "execute"
                     },
@@ -1454,7 +1454,7 @@
                         "value": 0.0
                     },
                     {
-                        "name": "paramsClassName",
+                        "name": "parametersClassName",
                         "value": ""
                     },
                     {

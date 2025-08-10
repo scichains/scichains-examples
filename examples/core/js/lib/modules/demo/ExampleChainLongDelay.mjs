@@ -2,9 +2,9 @@ let global_counter = 0;
 // - will be global across all imports in the same context
 console.log("==== Initializing JS chain-built-in module long delay! ====");
 
-
 export function execute(params, inputs, outputs) {
-    console.log("Global environment context path: " + params._env.context_path);
+    console.log("Global environment context path: " + params._env.contextPath +
+        ", working directory: " + params._env.workingDirectory);
 
     global_counter += 1;
     console.log("Starting JS chain-built-in module loop; module counter: " + global_counter);
@@ -17,7 +17,7 @@ export function execute(params, inputs, outputs) {
             console.log("Sleeping interrupted!");
             break;
         }
-        let info = " (" + params._env.context_path + ", session " + params._executor.getSessionId() + ")";
+        let info = " (" + params._env.contextPath + ", session " + params._executor.getSessionId() + ")";
         console.log(`${params.title}${info} in a chain-built-in module: ${i} from ${n} seconds, module counter: ${global_counter}`);
         const Thread = Java.type("java.lang.Thread");
         Thread.sleep(1000);
