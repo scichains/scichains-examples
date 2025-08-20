@@ -19,7 +19,7 @@
             "layout_width": 440,
             "layout_height": 220,
             "caption": "Call Python function",
-            "comment": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation mode\" parameter)",
+            "comment": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation type\" parameter)",
             "worker_type": "4a2fa4ed-a415-4f0a-90aa-d092a6a362ee",
             "ports": [
                 {
@@ -330,6 +330,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "a8dde033-0300-0000-f67d-8dd1476466ff",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "jepType",
+                    "caption": "Python interpretation type"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a8dde033-0400-0000-f67d-8dd1476466ff",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "jepType",
+                    "caption": "Python interpretation type"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -348,38 +366,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
+                    "uuid": "a8dde033-0300-0000-68ce-94139158409c",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "interpretationMode",
-                    "caption": "Python interpretation mode"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
-                    "visible": false,
-                    "port_type": "OUTPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "interpretationMode",
-                    "caption": "Python interpretation mode"
-                },
-                {
-                    "@id": "UIPortModel",
-                    "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
-                    "visible": false,
-                    "port_type": "INPUT_CONTROL",
-                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "paramsClassName",
+                    "name": "parametersClassName",
                     "caption": "Class name for argument \"params\""
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a8dde033-0400-0000-d450-daffd7945ffb",
+                    "uuid": "a8dde033-0400-0000-68ce-94139158409c",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "paramsClassName",
+                    "name": "parametersClassName",
                     "caption": "Class name for argument \"params\""
                 },
                 {
@@ -742,7 +742,7 @@
                 },
                 {
                     "type": "str",
-                    "name": "interpretationMode",
+                    "name": "jepType",
                     "value": "SHARED"
                 },
                 {
@@ -1209,6 +1209,18 @@
                         "name": "mainFunctionName"
                     },
                     {
+                        "uuid": "a8dde033-0300-0000-f67d-8dd1476466ff",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "jepType"
+                    },
+                    {
+                        "uuid": "a8dde033-0400-0000-f67d-8dd1476466ff",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "jepType"
+                    },
+                    {
                         "uuid": "a8dde033-0300-0000-7596-eeade70d0bc8",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -1221,28 +1233,16 @@
                         "name": "workingDirectory"
                     },
                     {
-                        "uuid": "a8dde033-0300-0000-8bec-9bc145dc9a84",
+                        "uuid": "a8dde033-0300-0000-68ce-94139158409c",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "interpretationMode"
+                        "name": "parametersClassName"
                     },
                     {
-                        "uuid": "a8dde033-0400-0000-8bec-9bc145dc9a84",
+                        "uuid": "a8dde033-0400-0000-68ce-94139158409c",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "interpretationMode"
-                    },
-                    {
-                        "uuid": "a8dde033-0300-0000-d450-daffd7945ffb",
-                        "type": 3,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "paramsClassName"
-                    },
-                    {
-                        "uuid": "a8dde033-0400-0000-d450-daffd7945ffb",
-                        "type": 4,
-                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "paramsClassName"
+                        "name": "parametersClassName"
                     },
                     {
                         "uuid": "a8dde033-0300-0000-457d-1433c0e08638",
@@ -1459,7 +1459,7 @@
                         "value": ""
                     },
                     {
-                        "name": "interpretationMode",
+                        "name": "jepType",
                         "value": "SUB_INTERPRETER"
                     },
                     {
@@ -1475,7 +1475,7 @@
                         "value": 0.0
                     },
                     {
-                        "name": "paramsClassName",
+                        "name": "parametersClassName",
                         "value": ""
                     },
                     {
@@ -1509,7 +1509,7 @@
                 ],
                 "system": {
                     "caption": "Call Python function",
-                    "description": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation mode\" parameter)"
+                    "description": "The simplest call may use JEP SubInterpreter\n(\"Python interpretation type\" parameter)"
                 }
             },
             {
