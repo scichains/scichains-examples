@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.800000000000002,
         "desktop": {
-            "scroll_h": 0.6541094279930059,
-            "scroll_v": 0.4499460850381274
+            "scroll_h": 0.6373043798362473,
+            "scroll_v": 0.4202443905596789
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -294,39 +294,39 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0300-0000-cf07-23df275fa880",
+                    "uuid": "38739870-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0400-0000-cf07-23df275fa880",
+                    "uuid": "38739870-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0300-0000-6de8-005fe6410495",
+                    "uuid": "38739870-0300-0000-2539-19334cbc709e",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "tiffRequired",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "38739870-0400-0000-6de8-005fe6410495",
+                    "uuid": "38739870-0400-0000-2539-19334cbc709e",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireValidTiff",
-                    "caption": "Requires valid TIFF"
+                    "name": "tiffRequired",
+                    "caption": "Requires TIFF"
                 },
                 {
                     "@id": "UIPortModel",
@@ -724,20 +724,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "1e21840a-0300-0000-3712-596fc4b7b937",
+                    "uuid": "1e21840a-0300-0000-45ee-c4917d2e4323",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "1e21840a-0400-0000-3712-596fc4b7b937",
+                    "uuid": "1e21840a-0400-0000-45ee-c4917d2e4323",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -747,7 +747,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "autoContrastBeforeWriting",
-                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                    "caption": "Auto contrast before writing"
                 },
                 {
                     "@id": "UIPortModel",
@@ -756,7 +756,25 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "autoContrastBeforeWriting",
-                    "caption": "Auto contrast image before writing (usually for debugging needs)"
+                    "caption": "Auto contrast before writing"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0300-0000-4515-26f52759c613",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "convertAllElementTypesToByte",
+                    "caption": "Convert all element types to \"byte\""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "1e21840a-0400-0000-4515-26f52759c613",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "convertAllElementTypesToByte",
+                    "caption": "Convert all element types to \"byte\""
                 },
                 {
                     "@id": "UIPortModel",
@@ -1052,20 +1070,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a958661c-0300-0000-cf07-23df275fa880",
+                    "uuid": "a958661c-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "a958661c-0400-0000-cf07-23df275fa880",
+                    "uuid": "a958661c-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
@@ -1432,20 +1450,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "c6beb6aa-0300-0000-cf07-23df275fa880",
+                    "uuid": "c6beb6aa-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "c6beb6aa-0400-0000-cf07-23df275fa880",
+                    "uuid": "c6beb6aa-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireFileExistence",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing file"
                 },
                 {
@@ -1533,26 +1551,19 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "81c7e99a-86d2-4c42-813e-163a905621a0",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "81c7e99a-86d2-4c42-813e-163a905621a0"
         },
-        "properties": [
-            {
-                "name": "execution.strategy",
-                "type": "scalar",
-                "value": "output_broadcast"
-            }
-        ],
         "blocks": [
             {
                 "uuid": "38739870-c5e9-4be5-a1c5-91e3be719e81",
@@ -1740,28 +1751,28 @@
                         "name": "openingMode"
                     },
                     {
-                        "uuid": "38739870-0300-0000-cf07-23df275fa880",
+                        "uuid": "38739870-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "38739870-0400-0000-cf07-23df275fa880",
+                        "uuid": "38739870-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "38739870-0300-0000-6de8-005fe6410495",
+                        "uuid": "38739870-0300-0000-2539-19334cbc709e",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "tiffRequired"
                     },
                     {
-                        "uuid": "38739870-0400-0000-6de8-005fe6410495",
+                        "uuid": "38739870-0400-0000-2539-19334cbc709e",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireValidTiff"
+                        "name": "tiffRequired"
                     },
                     {
                         "uuid": "38739870-0300-0000-17bf-ab37611908f5",
@@ -1932,106 +1943,86 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoCorrectInvertedBrightness",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "autoScaleWhenIncreasingBitDepth",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "autoUnpackBitsToBytes",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "caching",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropTilesToImageBoundaries",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "cropToImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "/tmp/test.tiff"
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": false
+                    },
+                    {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "openingMode",
-                        "type": "scalar",
                         "value": "OPEN_AND_CLOSE"
                     },
                     {
-                        "name": "requireFileExistence",
-                        "type": "boolean",
-                        "value": true
-                    },
-                    {
-                        "name": "requireValidTiff",
-                        "type": "boolean",
-                        "value": true
-                    },
-                    {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sizeX",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
                     },
                     {
                         "name": "sizeY",
-                        "type": "scalar",
-                        "value": "1000"
+                        "value": 1000
+                    },
+                    {
+                        "name": "tiffRequired",
+                        "value": true
                     },
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     },
                     {
                         "name": "wholeImage",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "y",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     }
                 ],
                 "system": {
@@ -2128,16 +2119,16 @@
                         "name": "secure"
                     },
                     {
-                        "uuid": "1e21840a-0300-0000-3712-596fc4b7b937",
+                        "uuid": "1e21840a-0300-0000-45ee-c4917d2e4323",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
-                        "uuid": "1e21840a-0400-0000-3712-596fc4b7b937",
+                        "uuid": "1e21840a-0400-0000-45ee-c4917d2e4323",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "1e21840a-0300-0000-842f-1e7e2cde3c44",
@@ -2150,6 +2141,18 @@
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "autoContrastBeforeWriting"
+                    },
+                    {
+                        "uuid": "1e21840a-0300-0000-4515-26f52759c613",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "convertAllElementTypesToByte"
+                    },
+                    {
+                        "uuid": "1e21840a-0400-0000-4515-26f52759c613",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "convertAllElementTypesToByte"
                     },
                     {
                         "uuid": "1e21840a-0300-0000-b459-8bc5a6b76083",
@@ -2176,40 +2179,37 @@
                         "name": "compressionType"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoContrastBeforeWriting",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "compressionType",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
+                        "name": "convertAllElementTypesToByte",
+                        "value": true
+                    },
+                    {
                         "name": "file",
-                        "type": "scalar",
                         "value": "/tmp/readtiff.bmp"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
-                        "name": "quality",
-                        "type": "scalar",
-                        "value": ""
-                    },
-                    {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": true
                     },
                     {
+                        "name": "quality",
+                        "value": ""
+                    },
+                    {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -2380,16 +2380,16 @@
                         "name": "secure"
                     },
                     {
-                        "uuid": "a958661c-0300-0000-cf07-23df275fa880",
+                        "uuid": "a958661c-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "a958661c-0400-0000-cf07-23df275fa880",
+                        "uuid": "a958661c-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
                         "uuid": "a958661c-0300-0000-17bf-ab37611908f5",
@@ -2440,45 +2440,37 @@
                         "name": "numberOfChannels"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoCorrectInvertedBrightness",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "autoScaleWhenIncreasingBitDepth",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "../images/tiff/gimp/gimp_test_lzw_1024x1024.tif"
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "int64",
                         "value": 0
                     },
                     {
-                        "name": "requireFileExistence",
-                        "type": "boolean",
-                        "value": true
-                    },
-                    {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -2648,16 +2640,16 @@
                         "name": "secure"
                     },
                     {
-                        "uuid": "c6beb6aa-0300-0000-cf07-23df275fa880",
+                        "uuid": "c6beb6aa-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "c6beb6aa-0400-0000-cf07-23df275fa880",
+                        "uuid": "c6beb6aa-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireFileExistence"
+                        "name": "fileExistenceRequired"
                     },
                     {
                         "uuid": "c6beb6aa-0300-0000-17bf-ab37611908f5",
@@ -2708,45 +2700,37 @@
                         "name": "numberOfChannels"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "autoCorrectInvertedBrightness",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "autoScaleWhenIncreasingBitDepth",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "C:/W/TwelveMonkeys/imageio/imageio-tiff/src/test/resources/tiff/floatingpoint-16bit.tif"
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "ifdIndex",
-                        "type": "scalar",
-                        "value": "0"
+                        "value": 0
                     },
                     {
                         "name": "numberOfChannels",
-                        "type": "scalar",
-                        "value": "0"
-                    },
-                    {
-                        "name": "requireFileExistence",
-                        "type": "boolean",
-                        "value": true
+                        "value": 0
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
