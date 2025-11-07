@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 1.0000000000000016,
         "desktop": {
-            "scroll_h": 0.519851389092119,
-            "scroll_v": 0.6267224496825987
+            "scroll_h": 0.4942814069891073,
+            "scroll_v": 0.662959391247338
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -1005,20 +1005,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "09704b3d-0300-0000-eaf8-8feb85af232c",
+                    "uuid": "09704b3d-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "09704b3d-0400-0000-eaf8-8feb85af232c",
+                    "uuid": "09704b3d-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 }
             ],
@@ -1079,7 +1079,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -1088,7 +1088,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -1393,7 +1393,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -1402,7 +1402,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -2552,12 +2552,12 @@
         {
             "@id": "UIBlockModel",
             "uuid": "367cf859-becb-48ca-a17e-06bbd1e049ef",
-            "layout_x": 9740,
-            "layout_y": 12860,
+            "layout_x": 9700,
+            "layout_y": 13100,
             "layout_width": 540,
             "layout_height": 220,
             "caption": "List of files in a folder",
-            "comment": "",
+            "comment": "Little \"trick\": we require absolute path and return 1 path without scanning,\nin this case, an empty string is converted to the current OS path",
             "worker_type": "4ae7694d-0070-4644-a96d-5fa5b6414058",
             "ports": [
                 {
@@ -2751,20 +2751,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "367cf859-0300-0000-eaf8-8feb85af232c",
+                    "uuid": "367cf859-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "367cf859-0400-0000-eaf8-8feb85af232c",
+                    "uuid": "367cf859-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 }
             ],
@@ -2773,11 +2773,21 @@
                 {
                     "type": "str",
                     "name": "file",
-                    "value": "./arrays_statistics.json"
+                    "value": "/tmp/"
+                },
+                {
+                    "type": "str",
+                    "name": "sortOrder",
+                    "value": "STANDARD"
                 },
                 {
                     "type": "bool",
-                    "name": "folderExistenceRequired",
+                    "name": "recursiveScanning",
+                    "value": true
+                },
+                {
+                    "type": "bool",
+                    "name": "absolutePaths",
                     "value": true
                 },
                 {
@@ -2787,18 +2797,23 @@
                 },
                 {
                     "type": "bool",
-                    "name": "absolutePaths",
-                    "value": true
-                },
-                {
-                    "type": "bool",
-                    "name": "recursiveScanning",
+                    "name": "fileExistenceRequired",
                     "value": true
                 },
                 {
                     "type": "str",
                     "name": "globPattern",
-                    "value": "*.{png,gif,bmp}"
+                    "value": "*"
+                },
+                {
+                    "type": "str",
+                    "name": "regularExpression",
+                    "value": ""
+                },
+                {
+                    "type": "bool",
+                    "name": "singlePath",
+                    "value": false
                 }
             ]
         },
@@ -3137,20 +3152,20 @@
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "9fafbcba-0300-0000-eaf8-8feb85af232c",
+                    "uuid": "9fafbcba-0300-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 },
                 {
                     "@id": "UIPortModel",
-                    "uuid": "9fafbcba-0400-0000-eaf8-8feb85af232c",
+                    "uuid": "9fafbcba-0400-0000-9daa-9014753504ef",
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "folderExistenceRequired",
+                    "name": "fileExistenceRequired",
                     "caption": "Requires existing folder"
                 }
             ],
@@ -4219,6 +4234,229 @@
             "uuid": "7908283b-a108-4beb-8b91-b5daa66d5a40",
             "src_port_uuid": "3f8b166a-0200-0000-d4f1-a3b3e738ab87",
             "dest_port_uuid": "c4b4451e-0100-0000-8fd6-4c4759803353"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "b98ae713-3a79-4ee8-a03c-c67412c2683d",
+            "layout_x": 9700,
+            "layout_y": 12840,
+            "layout_width": 540,
+            "layout_height": 220,
+            "caption": "List of files in a folder",
+            "comment": "",
+            "worker_type": "4ae7694d-0070-4644-a96d-5fa5b6414058",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0100-0000-a304-77c019f67c0a",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0200-0000-d4f1-a3b3e738ab87",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolute_path",
+                    "caption": "absolute path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-b789-0ea0522dbe9b",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "globPattern",
+                    "caption": "Globbing pattern"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-b789-0ea0522dbe9b",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "globPattern",
+                    "caption": "Globbing pattern"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-4444-4c4f21f9d851",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "regularExpression",
+                    "caption": "Regular expression"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-4444-4c4f21f9d851",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "regularExpression",
+                    "caption": "Regular expression"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-48f1-1aca3d5bf056",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sortOrder",
+                    "caption": "How to sort the result list"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-48f1-1aca3d5bf056",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sortOrder",
+                    "caption": "How to sort the result list"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-9edd-571f74ee0e7a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "singlePath",
+                    "caption": "Return 1 path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-9edd-571f74ee0e7a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "singlePath",
+                    "caption": "Return 1 path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-1a27-7bbf48827043",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recursiveScanning",
+                    "caption": "Recursive scanning"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-1a27-7bbf48827043",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recursiveScanning",
+                    "caption": "Recursive scanning"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-981d-54410af408d9",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolutePaths",
+                    "caption": "Absolute paths"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-981d-54410af408d9",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolutePaths",
+                    "caption": "Absolute paths"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-093b-a57407780023",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "removeExtension",
+                    "caption": "Remove extensions"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-093b-a57407780023",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "removeExtension",
+                    "caption": "Remove extensions"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b98ae713-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing folder"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
         }
     ],
     "blocks": [
@@ -4278,11 +4516,10 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "37296502-80d0-4c4c-b837-07c16e8b163a",
             "name": "chain",
             "category": "subchain",
             "options": {
@@ -4291,10 +4528,9 @@
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "37296502-80d0-4c4c-b837-07c16e8b163a"
         },
-        "properties": [
-        ],
         "blocks": [
             {
                 "uuid": "3b0b6180-fb45-48d8-9de8-1e255f9ca8e3",
@@ -4392,30 +4628,25 @@
                         "name": "globPattern"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "action",
-                        "type": "scalar",
                         "value": "COPY"
                     },
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "${resources}"
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.*"
                     },
                     {
                         "name": "target",
-                        "type": "scalar",
                         "value": "C:\\TEMP\\_test\\aaab"
                     }
                 ],
@@ -4813,10 +5044,9 @@
                         "name": "visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "visibleResult",
-                        "type": "scalar",
                         "value": "s"
                     }
                 ],
@@ -4914,30 +5144,25 @@
                         "name": "fileExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "%TEMP%/_test/aaa"
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{csv,inf}"
                     },
                     {
                         "name": "stage",
-                        "type": "scalar",
                         "value": "EXECUTE"
                     }
                 ],
@@ -5011,37 +5236,33 @@
                         "name": "file"
                     },
                     {
-                        "uuid": "09704b3d-0300-0000-eaf8-8feb85af232c",
+                        "uuid": "09704b3d-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "09704b3d-0400-0000-eaf8-8feb85af232c",
+                        "uuid": "09704b3d-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "%TEMP%/_test/2"
                     },
                     {
-                        "name": "folderExistenceRequired",
-                        "type": "boolean",
+                        "name": "fileExistenceRequired",
                         "value": false
                     },
                     {
                         "name": "stage",
-                        "type": "scalar",
                         "value": "EXECUTE"
                     }
                 ],
@@ -5082,19 +5303,18 @@
                         "uuid": "56fe7c29-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "56fe7c29-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
@@ -5144,10 +5364,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "имя проекта.нечт"
                     }
                 ],
@@ -5197,10 +5416,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "some file.dat"
                     }
                 ],
@@ -5307,39 +5525,34 @@
                         "uuid": "62f2e01c-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "62f2e01c-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "conditionStyle",
-                        "type": "scalar",
                         "value": "JAVA_LIKE"
                     },
                     {
                         "name": "defaultCondition",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultFalse",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultTrue",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
@@ -5449,30 +5662,25 @@
                         "name": "removeExtension"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "childPath",
-                        "type": "scalar",
                         "value": "имя проекта.нечт"
                     },
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/_test/data/"
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "securityLevel",
-                        "type": "scalar",
                         "value": "MEDIUM"
                     }
                 ],
@@ -5546,15 +5754,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_FOLDER_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/../../.."
                     }
                 ],
@@ -5628,15 +5834,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_FILE_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "${path.name.ext}"
                     }
                 ],
@@ -5722,20 +5926,17 @@
                         "name": "secure"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "123"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -5809,15 +6010,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/123.dat"
                     }
                 ],
@@ -5891,15 +6090,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_FOLDER_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "./"
                     }
                 ],
@@ -5985,20 +6182,17 @@
                         "name": "secure"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CREATE_FOLDER"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -6084,20 +6278,17 @@
                         "name": "secure"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CREATE_FILE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/1233/"
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -6183,20 +6374,17 @@
                         "name": "secure"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_FOLDER_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": ".."
                     },
                     {
                         "name": "secure",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -6336,67 +6524,59 @@
                         "name": "removeExtension"
                     },
                     {
-                        "uuid": "367cf859-0300-0000-eaf8-8feb85af232c",
+                        "uuid": "367cf859-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "367cf859-0400-0000-eaf8-8feb85af232c",
+                        "uuid": "367cf859-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "absolutePaths",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
-                        "value": "/tmp/"
+                        "value": ""
                     },
                     {
-                        "name": "folderExistenceRequired",
-                        "type": "boolean",
-                        "value": true
+                        "name": "fileExistenceRequired",
+                        "value": false
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
                 "system": {
-                    "caption": "List of files in a folder"
+                    "caption": "List of files in a folder",
+                    "description": "Little \"trick\": we require absolute path and return 1 path without scanning,\nin this case, an empty string is converted to the current OS path"
                 }
             },
             {
@@ -6483,20 +6663,17 @@
                         "name": "whenExists"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "./"
                     },
                     {
                         "name": "whenExists",
-                        "type": "scalar",
                         "value": "true"
                     },
                     {
                         "name": "whenNotExists",
-                        "type": "scalar",
                         "value": "false"
                     }
                 ],
@@ -6636,62 +6813,53 @@
                         "name": "removeExtension"
                     },
                     {
-                        "uuid": "9fafbcba-0300-0000-eaf8-8feb85af232c",
+                        "uuid": "9fafbcba-0300-0000-9daa-9014753504ef",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     },
                     {
-                        "uuid": "9fafbcba-0400-0000-eaf8-8feb85af232c",
+                        "uuid": "9fafbcba-0400-0000-9daa-9014753504ef",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "folderExistenceRequired"
+                        "name": "fileExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "absolutePaths",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "./files.chain"
                     },
                     {
-                        "name": "folderExistenceRequired",
-                        "type": "boolean",
+                        "name": "fileExistenceRequired",
                         "value": true
                     },
                     {
                         "name": "globPattern",
-                        "type": "scalar",
                         "value": "*.{png,gif,bmp}"
                     },
                     {
                         "name": "recursiveScanning",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "regularExpression",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "singlePath",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "sortOrder",
-                        "type": "scalar",
                         "value": "STANDARD"
                     }
                 ],
@@ -6783,25 +6951,21 @@
                         "name": "createParents"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "createParents",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "${path.name}"
                     },
                     {
                         "name": "stage",
-                        "type": "scalar",
                         "value": "EXECUTE"
                     }
                 ],
@@ -6875,15 +7039,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "${resources}"
                     }
                 ],
@@ -6975,25 +7137,21 @@
                         "name": "createParents"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "createParents",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "%TEMP%/_test/aaab"
                     },
                     {
                         "name": "stage",
-                        "type": "scalar",
                         "value": "EXECUTE"
                     }
                 ],
@@ -7103,30 +7261,25 @@
                         "name": "removeExtension"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "childPath",
-                        "type": "scalar",
                         "value": "test.dat"
                     },
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CREATE_FOLDER_WITH_PARENTS"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/_test/aaa"
                     },
                     {
                         "name": "removeExtension",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "securityLevel",
-                        "type": "scalar",
                         "value": "MEDIUM"
                     }
                 ],
@@ -7201,15 +7354,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_PARENT_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%"
                     }
                 ],
@@ -7283,15 +7434,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CREATE_FILE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "%TEMP%/_123"
                     }
                 ],
@@ -7365,15 +7514,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "${path.name.ext}"
                     }
                 ],
@@ -7447,15 +7594,13 @@
                         "name": "operation"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "operation",
-                        "type": "scalar",
                         "value": "CHECK_EXISTENCE"
                     },
                     {
                         "name": "path",
-                        "type": "scalar",
                         "value": "${path.name.ext}"
                     }
                 ],
@@ -7517,20 +7662,204 @@
                         "name": "preserveWhenEmpty"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "extension",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "preserveWhenEmpty",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
                 "system": {
                     "caption": "Change extension in a file name"
+                }
+            },
+            {
+                "uuid": "b98ae713-3a79-4ee8-a03c-c67412c2683d",
+                "executor_id": "4ae7694d-0070-4644-a96d-5fa5b6414058",
+                "executor_name": "List of files in a folder",
+                "ports": [
+                    {
+                        "uuid": "b98ae713-0100-0000-a304-77c019f67c0a",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "b98ae713-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "b98ae713-0200-0000-d4f1-a3b3e738ab87",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolute_path"
+                    },
+                    {
+                        "uuid": "b98ae713-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "b98ae713-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-b789-0ea0522dbe9b",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "globPattern"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-b789-0ea0522dbe9b",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "globPattern"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-4444-4c4f21f9d851",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "regularExpression"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-4444-4c4f21f9d851",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "regularExpression"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-48f1-1aca3d5bf056",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sortOrder"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-48f1-1aca3d5bf056",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sortOrder"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-9edd-571f74ee0e7a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "singlePath"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-9edd-571f74ee0e7a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "singlePath"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-1a27-7bbf48827043",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recursiveScanning"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-1a27-7bbf48827043",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recursiveScanning"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-981d-54410af408d9",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolutePaths"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-981d-54410af408d9",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolutePaths"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-093b-a57407780023",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "removeExtension"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-093b-a57407780023",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "removeExtension"
+                    },
+                    {
+                        "uuid": "b98ae713-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "b98ae713-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "absolutePaths",
+                        "value": true
+                    },
+                    {
+                        "name": "file",
+                        "value": "/tmp/"
+                    },
+                    {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
+                        "name": "globPattern",
+                        "value": "*"
+                    },
+                    {
+                        "name": "recursiveScanning",
+                        "value": true
+                    },
+                    {
+                        "name": "regularExpression",
+                        "value": ""
+                    },
+                    {
+                        "name": "removeExtension",
+                        "value": false
+                    },
+                    {
+                        "name": "singlePath",
+                        "value": false
+                    },
+                    {
+                        "name": "sortOrder",
+                        "value": "STANDARD"
+                    }
+                ],
+                "system": {
+                    "caption": "List of files in a folder"
                 }
             }
         ],

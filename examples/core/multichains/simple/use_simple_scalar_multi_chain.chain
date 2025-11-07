@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000015,
         "desktop": {
-            "scroll_h": 0.6110078584346929,
-            "scroll_v": 0.5568051565491013
+            "scroll_h": 0.6108750122042047,
+            "scroll_v": 0.5646010459892148
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -124,6 +124,26 @@
             ],
             "display_advanced": false,
             "properties": [
+                {
+                    "type": "str",
+                    "name": "file",
+                    "value": "./"
+                },
+                {
+                    "type": "bool",
+                    "name": "fileExistenceRequired",
+                    "value": true
+                },
+                {
+                    "type": "bool",
+                    "name": "strictMode",
+                    "value": false
+                },
+                {
+                    "type": "bool",
+                    "name": "alsoSubChains",
+                    "value": false
+                }
             ]
         },
         {
@@ -1534,6 +1554,121 @@
             "uuid": "e8e31743-774c-449e-b16e-7202108174d7",
             "src_port_uuid": "b4648434-0200-0000-9ecb-4a9b75e2f864",
             "dest_port_uuid": "2d8b483e-0100-0000-302c-9a691edb7821"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "81b6d8df-ba4a-4356-ba00-b1ce1d45fd54",
+            "layout_x": 11680,
+            "layout_y": 11400,
+            "layout_width": 300,
+            "layout_height": 140,
+            "caption": "Use multi-chain(s)",
+            "comment": "Empty string for the file names is allowed when\n\"Requires existing file/folder\" is cleared",
+            "worker_type": "cb64b942-192b-4aa3-a499-5fb189e59262",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Multi-chain JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Multi-chain JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0300-0000-1452-70d2499c0618",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "strictMode",
+                    "caption": "Strict mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0400-0000-1452-70d2499c0618",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "strictMode",
+                    "caption": "Strict mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0300-0000-f436-635a4aaded94",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "alsoSubChains",
+                    "caption": "Use also sub-chain(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "81b6d8df-0400-0000-f436-635a4aaded94",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "alsoSubChains",
+                    "caption": "Use also sub-chain(s)"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
         }
     ],
     "blocks": [
@@ -1650,6 +1785,102 @@
                 ],
                 "system": {
                     "caption": "Use multi-chain"
+                }
+            },
+            {
+                "uuid": "81b6d8df-ba4a-4356-ba00-b1ce1d45fd54",
+                "executor_id": "cb64b942-192b-4aa3-a499-5fb189e59262",
+                "execution_stage": "loading_time",
+                "executor_name": "Use multi-chain(s)",
+                "ports": [
+                    {
+                        "uuid": "81b6d8df-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "81b6d8df-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "81b6d8df-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "81b6d8df-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "81b6d8df-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "81b6d8df-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "81b6d8df-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "81b6d8df-0300-0000-1452-70d2499c0618",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "strictMode"
+                    },
+                    {
+                        "uuid": "81b6d8df-0400-0000-1452-70d2499c0618",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "strictMode"
+                    },
+                    {
+                        "uuid": "81b6d8df-0300-0000-f436-635a4aaded94",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "alsoSubChains"
+                    },
+                    {
+                        "uuid": "81b6d8df-0400-0000-f436-635a4aaded94",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "alsoSubChains"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "alsoSubChains",
+                        "value": false
+                    },
+                    {
+                        "name": "file",
+                        "value": ""
+                    },
+                    {
+                        "name": "fileExistenceRequired",
+                        "value": false
+                    },
+                    {
+                        "name": "strictMode",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Use multi-chain(s)",
+                    "description": "Empty string for the file names is allowed when\n\"Requires existing file/folder\" is cleared"
                 }
             },
             {
