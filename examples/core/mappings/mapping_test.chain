@@ -2,10 +2,10 @@
     "app": "SciChains",
     "version": "1.1",
     "root": {
-        "scale": 0.8000000000000019,
+        "scale": 1.0000000000000027,
         "desktop": {
-            "scroll_h": 0.5051715269152511,
-            "scroll_v": 0.4752338613723069
+            "scroll_h": 0.4986918084959899,
+            "scroll_v": 0.48102117419000573
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -14,7 +14,7 @@
         {
             "@id": "UIBlockModel",
             "uuid": "f5a5a013-2450-451a-86e1-7c5618f4451f",
-            "layout_x": 9720,
+            "layout_x": 9680,
             "layout_y": 9260,
             "layout_width": 300,
             "layout_height": 200,
@@ -69,6 +69,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "f5a5a013-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f5a5a013-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "f5a5a013-0300-0000-946b-a4a193698aa2",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -109,8 +127,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -118,8 +136,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -142,6 +160,31 @@
             ],
             "display_advanced": false,
             "properties": [
+                {
+                    "type": "str",
+                    "name": "file",
+                    "value": "./"
+                },
+                {
+                    "type": "str",
+                    "name": "mappingKeysFile",
+                    "value": ""
+                },
+                {
+                    "type": "str",
+                    "name": "mappingEnumItemsFile",
+                    "value": ""
+                },
+                {
+                    "type": "str",
+                    "name": "mappingSpecification",
+                    "value": ""
+                },
+                {
+                    "type": "bool",
+                    "name": "advancedParameters",
+                    "value": true
+                }
             ]
         },
         {
@@ -954,6 +997,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "3f4e02fa-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "3f4e02fa-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "3f4e02fa-0300-0000-946b-a4a193698aa2",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -994,8 +1055,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1003,8 +1064,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1117,6 +1178,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "8ef6fa70-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "8ef6fa70-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "8ef6fa70-0300-0000-946b-a4a193698aa2",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1157,8 +1236,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1166,8 +1245,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1373,6 +1452,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "5ecfa494-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "5ecfa494-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "5ecfa494-0300-0000-946b-a4a193698aa2",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -1413,8 +1510,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1422,8 +1519,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -2187,6 +2284,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "e040f893-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "e040f893-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "e040f893-0300-0000-946b-a4a193698aa2",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -2227,8 +2342,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -2236,8 +2351,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "mappingJsonContent",
-                    "caption": "Mapping JSON content"
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -2979,7 +3094,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -2988,7 +3103,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -3001,6 +3116,157 @@
             "uuid": "0bfbb462-2819-4ea2-88cf-24b43da05f1b",
             "src_port_uuid": "ec283456-0200-0000-7b46-8d23fc09ed3c",
             "dest_port_uuid": "7554afc2-0100-0000-8fd6-4c4759803353"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "09ebd997-c36c-4870-bf74-a09a7bb8a67d",
+            "layout_x": 9680,
+            "layout_y": 9480,
+            "layout_width": 300,
+            "layout_height": 200,
+            "caption": "Use mapping",
+            "comment": "Does nothing: non-existing mapping file",
+            "worker_type": "cd464ee3-97c0-4648-89e6-83ce4a954ceb",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Mapping JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "Mapping JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-946b-a4a193698aa2",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingKeysFile",
+                    "caption": "Mapping keys file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-946b-a4a193698aa2",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingKeysFile",
+                    "caption": "Mapping keys file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-a245-d6dde56e2af5",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingEnumItemsFile",
+                    "caption": "Mapping enumeration items file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-a245-d6dde56e2af5",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingEnumItemsFile",
+                    "caption": "Mapping enumeration items file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-ec7c-4b2f5ecdb9c6",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-ec7c-4b2f5ecdb9c6",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "mappingSpecification",
+                    "caption": "Mapping specification"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0300-0000-fc9b-2df4e4126d17",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "advancedParameters",
+                    "caption": "Some parameters will be advanced"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "09ebd997-0400-0000-fc9b-2df4e4126d17",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "advancedParameters",
+                    "caption": "Some parameters will be advanced"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
         }
     ],
     "blocks": [
@@ -3112,6 +3378,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "f5a5a013-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "f5a5a013-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "f5a5a013-0300-0000-946b-a4a193698aa2",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -3139,13 +3417,13 @@
                         "uuid": "f5a5a013-0300-0000-63b3-ba1b38cbfc8b",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "f5a5a013-0400-0000-63b3-ba1b38cbfc8b",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "f5a5a013-0300-0000-fc9b-2df4e4126d17",
@@ -3170,15 +3448,19 @@
                         "value": "./"
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "mappingEnumItemsFile",
                         "value": ""
                     },
                     {
-                        "name": "mappingJsonContent",
+                        "name": "mappingKeysFile",
                         "value": ""
                     },
                     {
-                        "name": "mappingKeysFile",
+                        "name": "mappingSpecification",
                         "value": ""
                     }
                 ],
@@ -3223,6 +3505,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "3f4e02fa-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "3f4e02fa-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "3f4e02fa-0300-0000-946b-a4a193698aa2",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -3250,13 +3544,13 @@
                         "uuid": "3f4e02fa-0300-0000-63b3-ba1b38cbfc8b",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "3f4e02fa-0400-0000-63b3-ba1b38cbfc8b",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "3f4e02fa-0300-0000-fc9b-2df4e4126d17",
@@ -3281,16 +3575,20 @@
                         "value": ""
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "mappingEnumItemsFile",
                         "value": ""
                     },
                     {
-                        "name": "mappingJsonContent",
-                        "value": "{\n  \"name\": \"Named tags\",\n  \"id\": \"af992d5d-e867-4a12-8299-393d6f949692\",\n  \"keys\" : [\"RED\",\"GREEN\",\"BLUE\"],\n  \"enum_items\": [\"111\",\"222\"]\n}"
-                    },
-                    {
                         "name": "mappingKeysFile",
                         "value": ""
+                    },
+                    {
+                        "name": "mappingSpecification",
+                        "value": "{\n  \"name\": \"Named tags\",\n  \"id\": \"af992d5d-e867-4a12-8299-393d6f949692\",\n  \"keys\" : [\"RED\",\"GREEN\",\"BLUE\"],\n  \"enum_items\": [\"111\",\"222\"]\n}"
                     }
                 ],
                 "system": {
@@ -3334,6 +3632,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "8ef6fa70-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "8ef6fa70-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "8ef6fa70-0300-0000-946b-a4a193698aa2",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -3361,13 +3671,13 @@
                         "uuid": "8ef6fa70-0300-0000-63b3-ba1b38cbfc8b",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "8ef6fa70-0400-0000-63b3-ba1b38cbfc8b",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "8ef6fa70-0300-0000-fc9b-2df4e4126d17",
@@ -3392,16 +3702,20 @@
                         "value": ""
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "mappingEnumItemsFile",
                         "value": ""
                     },
                     {
-                        "name": "mappingJsonContent",
-                        "value": "{\n    \"name\": \"tags\",\n    \"id\": \"fd992d5d-e867-4a12-8299-393d6f949692\",\n    \"control_template\": {\n        \"value_type\": \"int\",\n        \"edition_type\": \"value\"\n    },\n    \"keys\": [\n        \"RED\",\n        \"GREEN\",\n        \"BLUE // синий\"\n    ]\n}"
-                    },
-                    {
                         "name": "mappingKeysFile",
                         "value": ""
+                    },
+                    {
+                        "name": "mappingSpecification",
+                        "value": "{\n    \"name\": \"tags\",\n    \"id\": \"fd992d5d-e867-4a12-8299-393d6f949692\",\n    \"control_template\": {\n        \"value_type\": \"int\",\n        \"edition_type\": \"value\"\n    },\n    \"keys\": [\n        \"RED\",\n        \"GREEN\",\n        \"BLUE // синий\"\n    ]\n}"
                     }
                 ],
                 "system": {
@@ -3445,6 +3759,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "5ecfa494-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "5ecfa494-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "5ecfa494-0300-0000-946b-a4a193698aa2",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -3472,13 +3798,13 @@
                         "uuid": "5ecfa494-0300-0000-63b3-ba1b38cbfc8b",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "5ecfa494-0400-0000-63b3-ba1b38cbfc8b",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "5ecfa494-0300-0000-fc9b-2df4e4126d17",
@@ -3503,16 +3829,20 @@
                         "value": ""
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "mappingEnumItemsFile",
                         "value": "simple_enum.txt"
                     },
                     {
-                        "name": "mappingJsonContent",
-                        "value": "{\n  \"name\": \"Simplest kinds from file\",\n  \"id\": \"ce392d5d-e867-4a12-8299-393d6f949692\",\n  \"control_template\": {\n     \"edition_type\": \"enum\"\n  },\n  \"important_keys\": [\n    \"RED\",\n    \"BLUE\"\n  ]\n}"
-                    },
-                    {
                         "name": "mappingKeysFile",
                         "value": "specifications/simple.keys.txt"
+                    },
+                    {
+                        "name": "mappingSpecification",
+                        "value": "{\n  \"name\": \"Simplest kinds from file\",\n  \"id\": \"ce392d5d-e867-4a12-8299-393d6f949692\",\n  \"control_template\": {\n     \"edition_type\": \"enum\"\n  },\n  \"important_keys\": [\n    \"RED\",\n    \"BLUE\"\n  ]\n}"
                     }
                 ],
                 "system": {
@@ -3556,6 +3886,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "e040f893-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "e040f893-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "e040f893-0300-0000-946b-a4a193698aa2",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -3583,13 +3925,13 @@
                         "uuid": "e040f893-0300-0000-63b3-ba1b38cbfc8b",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "e040f893-0400-0000-63b3-ba1b38cbfc8b",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "mappingJsonContent"
+                        "name": "mappingSpecification"
                     },
                     {
                         "uuid": "e040f893-0300-0000-fc9b-2df4e4126d17",
@@ -3614,20 +3956,152 @@
                         "value": ""
                     },
                     {
+                        "name": "fileExistenceRequired",
+                        "value": true
+                    },
+                    {
                         "name": "mappingEnumItemsFile",
                         "value": ""
                     },
                     {
-                        "name": "mappingJsonContent",
-                        "value": "{\n    \"id\": \"ac992d5d-e867-4a12-8299-393d6f949692\",\n    \"keys\": [\n        \"RED\",\n        \"GREEN\",\n        \"BLUE //синий\",\n        \"1..32 // очередной цвет $$$\"\n    ],\n    \"enum_items\": [\n        \"alpha//Phase 1\",\n        \"beta//Phase 2\",\n        \"unknwn // Phase 3\"\n    ]\n}"
-                    },
-                    {
                         "name": "mappingKeysFile",
                         "value": ""
+                    },
+                    {
+                        "name": "mappingSpecification",
+                        "value": "{\n    \"id\": \"ac992d5d-e867-4a12-8299-393d6f949692\",\n    \"keys\": [\n        \"RED\",\n        \"GREEN\",\n        \"BLUE //синий\",\n        \"1..32 // очередной цвет $$$\"\n    ],\n    \"enum_items\": [\n        \"alpha//Phase 1\",\n        \"beta//Phase 2\",\n        \"unknwn // Phase 3\"\n    ]\n}"
                     }
                 ],
                 "system": {
                     "caption": "Use mapping"
+                }
+            },
+            {
+                "uuid": "09ebd997-c36c-4870-bf74-a09a7bb8a67d",
+                "executor_id": "cd464ee3-97c0-4648-89e6-83ce4a954ceb",
+                "execution_stage": "loading_time",
+                "executor_name": "Use mapping",
+                "ports": [
+                    {
+                        "uuid": "09ebd997-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "09ebd997-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "09ebd997-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-946b-a4a193698aa2",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingKeysFile"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-946b-a4a193698aa2",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingKeysFile"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-a245-d6dde56e2af5",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingEnumItemsFile"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-a245-d6dde56e2af5",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingEnumItemsFile"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-ec7c-4b2f5ecdb9c6",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingSpecification"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-ec7c-4b2f5ecdb9c6",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "mappingSpecification"
+                    },
+                    {
+                        "uuid": "09ebd997-0300-0000-fc9b-2df4e4126d17",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "advancedParameters"
+                    },
+                    {
+                        "uuid": "09ebd997-0400-0000-fc9b-2df4e4126d17",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "advancedParameters"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "advancedParameters",
+                        "value": true
+                    },
+                    {
+                        "name": "file",
+                        "value": "non-existing.map"
+                    },
+                    {
+                        "name": "fileExistenceRequired",
+                        "value": false
+                    },
+                    {
+                        "name": "mappingEnumItemsFile",
+                        "value": ""
+                    },
+                    {
+                        "name": "mappingKeysFile",
+                        "value": ""
+                    },
+                    {
+                        "name": "mappingSpecification",
+                        "value": ""
+                    }
+                ],
+                "system": {
+                    "caption": "Use mapping",
+                    "description": "Does nothing: non-existing mapping file"
                 }
             },
             {
@@ -5543,18 +6017,18 @@
                         "uuid": "7554afc2-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "7554afc2-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
                 "parameters": [
                     {
-                        "name": "requireInput",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
