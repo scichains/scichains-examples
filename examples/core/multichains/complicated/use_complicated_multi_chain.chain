@@ -4,8 +4,8 @@
     "root": {
         "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.532590474153167,
-            "scroll_v": 0.4836502933659345
+            "scroll_h": 0.49615459053247735,
+            "scroll_v": 0.4672853684255312
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -599,6 +599,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
                     "caption": "Settings JSON file(s)/folder(s)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "9b4d302f-0300-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "9b4d302f-0400-0000-9daa-9014753504ef",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileExistenceRequired",
+                    "caption": "Requires existing file/folder"
                 },
                 {
                     "@id": "UIPortModel",
@@ -2903,7 +2921,7 @@
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "value": false
+                        "value": true
                     },
                     {
                         "name": "strictMode",
@@ -2969,6 +2987,18 @@
                         "name": "file"
                     },
                     {
+                        "uuid": "9b4d302f-0300-0000-9daa-9014753504ef",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
+                        "uuid": "9b4d302f-0400-0000-9daa-9014753504ef",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileExistenceRequired"
+                    },
+                    {
                         "uuid": "9b4d302f-0300-0000-1a27-7bbf48827043",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -2997,6 +3027,10 @@
                     {
                         "name": "file",
                         "value": "caller_settings.json"
+                    },
+                    {
+                        "name": "fileExistenceRequired",
+                        "value": true
                     },
                     {
                         "name": "recursiveScanning",

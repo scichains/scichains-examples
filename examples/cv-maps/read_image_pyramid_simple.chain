@@ -2,10 +2,10 @@
     "app": "SciChains",
     "version": "1.1",
     "root": {
-        "scale": 0.5120000000000008,
+        "scale": 0.640000000000001,
         "desktop": {
-            "scroll_h": 0.6030170002151926,
-            "scroll_v": 0.4092459016393442
+            "scroll_h": 0.5700505371330935,
+            "scroll_v": 0.3709582486137571
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -3536,6 +3536,126 @@
             ],
             "display_advanced": false,
             "properties": [
+                {
+                    "type": "str",
+                    "name": "file",
+                    "value": "/tmp/car.bmp"
+                },
+                {
+                    "type": "str",
+                    "name": "fileNameAdditionMode",
+                    "value": "NONE"
+                },
+                {
+                    "type": "str",
+                    "name": "scanningSequence",
+                    "value": "NONE"
+                },
+                {
+                    "type": "str",
+                    "name": "resolutionLevel",
+                    "value": "0"
+                },
+                {
+                    "type": "str",
+                    "name": "customPlanePyramidSourceFactoryClass",
+                    "value": "net.algart.matrices.maps.pyramids.io.formats.svs.SVSPlanePyramidSourceFactory"
+                },
+                {
+                    "type": "str",
+                    "name": "planePyramidFormat",
+                    "value": "AUTO_DETECT_BY_EXTENSION"
+                },
+                {
+                    "type": "bool",
+                    "name": "closeAfterLast",
+                    "value": false
+                },
+                {
+                    "type": "str",
+                    "name": "openingMode",
+                    "value": "OPEN_AND_CLOSE"
+                },
+                {
+                    "type": "bool",
+                    "name": "secure",
+                    "value": false
+                },
+                {
+                    "type": "str",
+                    "name": "recommendedNumberOfStoredFrames",
+                    "value": "snake ? 2*m : m+2"
+                },
+                {
+                    "type": "str",
+                    "name": "recommendedNumberOfStoredFramesP",
+                    "value": ""
+                },
+                {
+                    "type": "bool",
+                    "name": "useMetadata",
+                    "value": true
+                },
+                {
+                    "type": "bool",
+                    "name": "nonIntersectingRectanglesRequired",
+                    "value": false
+                },
+                {
+                    "type": "str",
+                    "name": "minimalAnalyzedSize",
+                    "value": "0"
+                },
+                {
+                    "type": "bool",
+                    "name": "useInputROI",
+                    "value": false
+                },
+                {
+                    "type": "bool",
+                    "name": "wholeROI",
+                    "value": false
+                },
+                {
+                    "type": "str",
+                    "name": "startX",
+                    "value": "-1000"
+                },
+                {
+                    "type": "str",
+                    "name": "startY",
+                    "value": "0"
+                },
+                {
+                    "type": "str",
+                    "name": "sizeX",
+                    "value": "2000"
+                },
+                {
+                    "type": "str",
+                    "name": "sizeY",
+                    "value": "2000"
+                },
+                {
+                    "type": "str",
+                    "name": "sizeUnit",
+                    "value": "PIXEL"
+                },
+                {
+                    "type": "bool",
+                    "name": "equalizeGrid",
+                    "value": true
+                },
+                {
+                    "type": "str",
+                    "name": "specialImageKind",
+                    "value": "WHOLE_SLIDE"
+                },
+                {
+                    "type": "str",
+                    "name": "visibleResult",
+                    "value": "output"
+                }
             ]
         },
         {
@@ -3694,6 +3814,823 @@
             "uuid": "424a89db-cc80-4733-bd79-78280feb62d5",
             "src_port_uuid": "6f168067-0200-0000-237b-fc90d30f16fd",
             "dest_port_uuid": "25203625-0100-0000-8fd6-4c4759803353"
+        },
+        {
+            "@id": "UIBlockModel",
+            "uuid": "618d8eaa-7e7b-433f-b8c7-48e8923ddab2",
+            "layout_x": 10500,
+            "layout_y": 7180,
+            "layout_width": 580,
+            "layout_height": 420,
+            "caption": "Read plane pyramid",
+            "comment": "",
+            "worker_type": "b11c34fb-7f8a-493c-89a6-db81cb71137f",
+            "ports": [
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-a304-77c019f67c0a",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "file"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-3c7c-49a1bd6e05e2",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name_addition",
+                    "caption": "file name addition"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-dbd3-ba34a6f81619",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_list",
+                    "caption": "file list"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-8fd6-4c4759803353",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "input",
+                    "caption": "optional input"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-bd8f-35ea83335b8d",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "roi",
+                    "caption": "ROI"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-4872-edc27063e3f2",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pyramid_configuration",
+                    "caption": "pyramid configuration"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0100-0000-6fa7-318415cd6a88",
+                    "visible": true,
+                    "port_type": "INPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "rendering_configuration",
+                    "caption": "rendering configuration"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-6416-fc948a169899",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "output",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-156f-15d39d3812c5",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                    "name": "special_image",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-bd31-df35a947688c",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "number_of_levels",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-189a-4954750c50a5",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "level_dim_x",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-560a-50c4843d4da1",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "level_dim_y",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-67dc-1ea86a32e47f",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "dim_x",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-d138-728bb4e954b9",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "dim_y",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-ab4c-192cb6e5f245",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "rectangle",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-79d3-a14a8f6e9108",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "number_of_pyramids",
+                    "caption": "number of pyramids"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-7084-e3aabfac0408",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "number_of_frames",
+                    "caption": "number of frames"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-27dc-3c6e8506da6e",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "frames_per_series",
+                    "caption": "frames per series"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-89b2-f502b71ba32c",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommended_expansion",
+                    "caption": "recommended expansion"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-95ee-82d3fdd08453",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommended_number_of_frames_in_buffer",
+                    "caption": "recommended number of frames in buffer"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-c6d9-339322514a56",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "builtin_metadata",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-237b-fc90d30f16fd",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "metadata",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-6c4c-691450ed8fb5",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "metadata_roi_rectangles",
+                    "caption": "ROI rectangles"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-7714-add1de205b0c",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "metadata_roi_contours",
+                    "caption": "ROI contours"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-5e1e-6b3d851efd22",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "current_pyramid_index",
+                    "caption": "current pyramid index"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-c75d-ef805165900a",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "current_roi_index",
+                    "caption": "current ROI index"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-739e-fe7e19480c0f",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "current_x_index",
+                    "caption": "current x-index"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-0543-43ec9420f254",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "current_y_index",
+                    "caption": "current y-index"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-f3a6-1fd5f1009031",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "current_frame_index",
+                    "caption": "current frame index"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-b68a-32994ae39434",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                    "name": "current_metadata_roi_contours",
+                    "caption": "current ROI contours"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-39bf-a623616036c5",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "first_in_roi",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-fb56-a49d5850cb6e",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "last_in_roi",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-c037-4fb2b59d7cc0",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "first_in_pyramid",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-0265-8223d1104b13",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "last_in_pyramid",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-c861-d4ff2c616921",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "last",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-835f-ba8da7b1636d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "closed",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-d4f1-a3b3e738ab87",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "absolute_path",
+                    "caption": "absolute path"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-91a2-e9b2673cd69d",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "parent_folder",
+                    "caption": "parent folder"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-5f82-f315ea9a15dd",
+                    "visible": true,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file_name",
+                    "caption": "file name"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-a304-77c019f67c0a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "file",
+                    "caption": "File"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-b50e-f55dea9c782d",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "fileNameAdditionMode",
+                    "caption": "How to add \"file name addition\" (for example XXX.DAT)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-c0d9-95521ea10fa4",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "secure",
+                    "caption": "Secure mode"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-98ae-4bd44112d542",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "openingMode",
+                    "caption": "When to open/close pyramid file(s)?"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-98ae-4bd44112d542",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "openingMode",
+                    "caption": "When to open/close pyramid file(s)?"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-51a6-92b3dbe7475f",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "closeAfterLast",
+                    "caption": "Close after last frame"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-51a6-92b3dbe7475f",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "closeAfterLast",
+                    "caption": "Close after last frame"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-3258-4e34fbd8b344",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "planePyramidFormat",
+                    "caption": "Format of the pyramid"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-3258-4e34fbd8b344",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "planePyramidFormat",
+                    "caption": "Format of the pyramid"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-00ac-2dcf5047e727",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "customPlanePyramidSourceFactoryClass",
+                    "caption": "Factory class"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-00ac-2dcf5047e727",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "customPlanePyramidSourceFactoryClass",
+                    "caption": "Factory class"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-d16a-30c5b00e50d8",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "resolutionLevel",
+                    "caption": "Resolution level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-d16a-30c5b00e50d8",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "resolutionLevel",
+                    "caption": "Resolution level"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-eb73-a91f80bb85a8",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "scanningSequence",
+                    "caption": "Auto-scanning sequence"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-eb73-a91f80bb85a8",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "scanningSequence",
+                    "caption": "Auto-scanning sequence"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-98f7-0a45afbb55e5",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommendedNumberOfStoredFrames",
+                    "caption": "Recommended number of stored frames (JavaScript)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-98f7-0a45afbb55e5",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommendedNumberOfStoredFrames",
+                    "caption": "Recommended number of stored frames (JavaScript)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-a4ba-be2c1ca1ce0e",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommendedNumberOfStoredFramesP",
+                    "caption": "Variable p"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-a4ba-be2c1ca1ce0e",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "recommendedNumberOfStoredFramesP",
+                    "caption": "Variable p"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-9d2e-c5cac2fd41c7",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "useMetadata",
+                    "caption": "Use metadata"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-9d2e-c5cac2fd41c7",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "useMetadata",
+                    "caption": "Use metadata"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-63c3-56e576628ea2",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "nonIntersectingRectanglesRequired",
+                    "caption": "Require non-intersecting ROI rectangles"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-63c3-56e576628ea2",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "nonIntersectingRectanglesRequired",
+                    "caption": "Require non-intersecting ROI rectangles"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-eef1-aaeae55f28d0",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "minimalAnalyzedSize",
+                    "caption": "Minimal analysed size"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-eef1-aaeae55f28d0",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "minimalAnalyzedSize",
+                    "caption": "Minimal analysed size"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-022a-2cf0c5282117",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "useInputROI",
+                    "caption": "Use input ROI"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-022a-2cf0c5282117",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "useInputROI",
+                    "caption": "Use input ROI"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-55e1-aa587ca03228",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "wholeROI",
+                    "caption": "Read whole ROI"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-55e1-aa587ca03228",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "wholeROI",
+                    "caption": "Read whole ROI"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-9a55-ff2c85610b94",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "startX",
+                    "caption": "Start X"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-9a55-ff2c85610b94",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "startX",
+                    "caption": "Start X"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-d062-8031ed3dcc12",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "startY",
+                    "caption": "Start Y"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-d062-8031ed3dcc12",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "startY",
+                    "caption": "Start Y"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-3626-609dad4534fd",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeX",
+                    "caption": "X-size (frame width)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-3626-609dad4534fd",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeX",
+                    "caption": "X-size (frame width)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-ecfd-2b67de6e2d12",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeY",
+                    "caption": "Y-size (frame height)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-ecfd-2b67de6e2d12",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeY",
+                    "caption": "Y-size (frame height)"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-923c-b1ed13537a1a",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeUnit",
+                    "caption": "Size unit"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-923c-b1ed13537a1a",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "sizeUnit",
+                    "caption": "Size unit"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-176e-871ccf34e75f",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "equalizeGrid",
+                    "caption": "Equalize grid"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-176e-871ccf34e75f",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "equalizeGrid",
+                    "caption": "Equalize grid"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-41e2-64b5791449ab",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "specialImageKind",
+                    "caption": "Special image kind"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-41e2-64b5791449ab",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "specialImageKind",
+                    "caption": "Special image kind"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0300-0000-d0fa-978fba00c921",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "visibleResult",
+                    "caption": "Visible result"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "618d8eaa-0400-0000-d0fa-978fba00c921",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "visibleResult",
+                    "caption": "Visible result"
+                }
+            ],
+            "display_advanced": false,
+            "properties": [
+            ]
         }
     ],
     "blocks": [
@@ -5035,7 +5972,7 @@
                     },
                     {
                         "name": "openingMode",
-                        "value": "OPEN_ON_FIRST_CALL"
+                        "value": "OPEN_AND_CLOSE"
                     },
                     {
                         "name": "planePyramidFormat",
@@ -5627,7 +6564,7 @@
                 "parameters": [
                     {
                         "name": "inputRequired",
-                        "value": true
+                        "value": false
                     }
                 ],
                 "system": {
@@ -6189,7 +7126,7 @@
                     },
                     {
                         "name": "file",
-                        "value": "C:/TMP/car.bmp"
+                        "value": "/tmp/car.bmp"
                     },
                     {
                         "name": "fileNameAdditionMode",
@@ -6379,6 +7316,649 @@
                 ],
                 "system": {
                     "caption": "Copy scalar"
+                }
+            },
+            {
+                "uuid": "618d8eaa-7e7b-433f-b8c7-48e8923ddab2",
+                "executor_id": "b11c34fb-7f8a-493c-89a6-db81cb71137f",
+                "executor_name": "Read plane pyramid",
+                "ports": [
+                    {
+                        "uuid": "618d8eaa-0100-0000-a304-77c019f67c0a",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-3c7c-49a1bd6e05e2",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name_addition"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-dbd3-ba34a6f81619",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_list"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-8fd6-4c4759803353",
+                        "type": 1,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "input"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-bd8f-35ea83335b8d",
+                        "type": 1,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "roi"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-4872-edc27063e3f2",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pyramid_configuration"
+                    },
+                    {
+                        "uuid": "618d8eaa-0100-0000-6fa7-318415cd6a88",
+                        "type": 1,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "rendering_configuration"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-6416-fc948a169899",
+                        "type": 2,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "output"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-156f-15d39d3812c5",
+                        "type": 2,
+                        "data_type_uuid": "031fc202-0193-4933-ab2e-d81492ce67e0",
+                        "name": "special_image"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-bd31-df35a947688c",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "number_of_levels"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-189a-4954750c50a5",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "level_dim_x"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-560a-50c4843d4da1",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "level_dim_y"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-67dc-1ea86a32e47f",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "dim_x"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-d138-728bb4e954b9",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "dim_y"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-ab4c-192cb6e5f245",
+                        "type": 2,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "rectangle"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-79d3-a14a8f6e9108",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "number_of_pyramids"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-7084-e3aabfac0408",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "number_of_frames"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-27dc-3c6e8506da6e",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "frames_per_series"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-89b2-f502b71ba32c",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommended_expansion"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-95ee-82d3fdd08453",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommended_number_of_frames_in_buffer"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-c6d9-339322514a56",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "builtin_metadata"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-237b-fc90d30f16fd",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "metadata"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-6c4c-691450ed8fb5",
+                        "type": 2,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "metadata_roi_rectangles"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-7714-add1de205b0c",
+                        "type": 2,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "metadata_roi_contours"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-5e1e-6b3d851efd22",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "current_pyramid_index"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-c75d-ef805165900a",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "current_roi_index"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-739e-fe7e19480c0f",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "current_x_index"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-0543-43ec9420f254",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "current_y_index"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-f3a6-1fd5f1009031",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "current_frame_index"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-b68a-32994ae39434",
+                        "type": 2,
+                        "data_type_uuid": "c72a2a31-75ba-4e09-a02b-a9cbc4ac62d2",
+                        "name": "current_metadata_roi_contours"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-39bf-a623616036c5",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "first_in_roi"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-fb56-a49d5850cb6e",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "last_in_roi"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-c037-4fb2b59d7cc0",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "first_in_pyramid"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-0265-8223d1104b13",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "last_in_pyramid"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-c861-d4ff2c616921",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "last"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-835f-ba8da7b1636d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "closed"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-d4f1-a3b3e738ab87",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "absolute_path"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-91a2-e9b2673cd69d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "parent_folder"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-5f82-f315ea9a15dd",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file_name"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "618d8eaa-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-a304-77c019f67c0a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-a304-77c019f67c0a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "file"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-b50e-f55dea9c782d",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-b50e-f55dea9c782d",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "fileNameAdditionMode"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-c0d9-95521ea10fa4",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-c0d9-95521ea10fa4",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "secure"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-98ae-4bd44112d542",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "openingMode"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-98ae-4bd44112d542",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "openingMode"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-51a6-92b3dbe7475f",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "closeAfterLast"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-51a6-92b3dbe7475f",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "closeAfterLast"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-3258-4e34fbd8b344",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "planePyramidFormat"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-3258-4e34fbd8b344",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "planePyramidFormat"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-00ac-2dcf5047e727",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "customPlanePyramidSourceFactoryClass"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-00ac-2dcf5047e727",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "customPlanePyramidSourceFactoryClass"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-d16a-30c5b00e50d8",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "resolutionLevel"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-d16a-30c5b00e50d8",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "resolutionLevel"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-eb73-a91f80bb85a8",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "scanningSequence"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-eb73-a91f80bb85a8",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "scanningSequence"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-98f7-0a45afbb55e5",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommendedNumberOfStoredFrames"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-98f7-0a45afbb55e5",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommendedNumberOfStoredFrames"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-a4ba-be2c1ca1ce0e",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommendedNumberOfStoredFramesP"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-a4ba-be2c1ca1ce0e",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "recommendedNumberOfStoredFramesP"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-9d2e-c5cac2fd41c7",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "useMetadata"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-9d2e-c5cac2fd41c7",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "useMetadata"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-63c3-56e576628ea2",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "nonIntersectingRectanglesRequired"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-63c3-56e576628ea2",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "nonIntersectingRectanglesRequired"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-eef1-aaeae55f28d0",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "minimalAnalyzedSize"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-eef1-aaeae55f28d0",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "minimalAnalyzedSize"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-022a-2cf0c5282117",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "useInputROI"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-022a-2cf0c5282117",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "useInputROI"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-55e1-aa587ca03228",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "wholeROI"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-55e1-aa587ca03228",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "wholeROI"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-9a55-ff2c85610b94",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "startX"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-9a55-ff2c85610b94",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "startX"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-d062-8031ed3dcc12",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "startY"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-d062-8031ed3dcc12",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "startY"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-3626-609dad4534fd",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeX"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-3626-609dad4534fd",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeX"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-ecfd-2b67de6e2d12",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeY"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-ecfd-2b67de6e2d12",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeY"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-923c-b1ed13537a1a",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeUnit"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-923c-b1ed13537a1a",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "sizeUnit"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-176e-871ccf34e75f",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "equalizeGrid"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-176e-871ccf34e75f",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "equalizeGrid"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-41e2-64b5791449ab",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "specialImageKind"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-41e2-64b5791449ab",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "specialImageKind"
+                    },
+                    {
+                        "uuid": "618d8eaa-0300-0000-d0fa-978fba00c921",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "visibleResult"
+                    },
+                    {
+                        "uuid": "618d8eaa-0400-0000-d0fa-978fba00c921",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "visibleResult"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "closeAfterLast",
+                        "value": false
+                    },
+                    {
+                        "name": "customPlanePyramidSourceFactoryClass",
+                        "value": "net.algart.matrices.maps.pyramids.io.formats.svs.SVSPlanePyramidSourceFactory"
+                    },
+                    {
+                        "name": "equalizeGrid",
+                        "value": true
+                    },
+                    {
+                        "name": "file",
+                        "value": "/tmp/"
+                    },
+                    {
+                        "name": "fileNameAdditionMode",
+                        "value": "NONE"
+                    },
+                    {
+                        "name": "minimalAnalyzedSize",
+                        "value": 0
+                    },
+                    {
+                        "name": "nonIntersectingRectanglesRequired",
+                        "value": false
+                    },
+                    {
+                        "name": "openingMode",
+                        "value": "OPEN_AND_CLOSE"
+                    },
+                    {
+                        "name": "planePyramidFormat",
+                        "value": "AUTO_DETECT_BY_EXTENSION"
+                    },
+                    {
+                        "name": "recommendedNumberOfStoredFrames",
+                        "value": "snake ? 2*m : m+2"
+                    },
+                    {
+                        "name": "recommendedNumberOfStoredFramesP",
+                        "value": ""
+                    },
+                    {
+                        "name": "resolutionLevel",
+                        "value": 0
+                    },
+                    {
+                        "name": "scanningSequence",
+                        "value": "NONE"
+                    },
+                    {
+                        "name": "secure",
+                        "value": false
+                    },
+                    {
+                        "name": "sizeUnit",
+                        "value": "PIXEL"
+                    },
+                    {
+                        "name": "sizeX",
+                        "value": 2000
+                    },
+                    {
+                        "name": "sizeY",
+                        "value": 2000
+                    },
+                    {
+                        "name": "specialImageKind",
+                        "value": "WHOLE_SLIDE"
+                    },
+                    {
+                        "name": "startX",
+                        "value": -1000
+                    },
+                    {
+                        "name": "startY",
+                        "value": 0
+                    },
+                    {
+                        "name": "useInputROI",
+                        "value": false
+                    },
+                    {
+                        "name": "useMetadata",
+                        "value": true
+                    },
+                    {
+                        "name": "visibleResult",
+                        "value": "output"
+                    },
+                    {
+                        "name": "wholeROI",
+                        "value": false
+                    }
+                ],
+                "system": {
+                    "caption": "Read plane pyramid",
+                    "enabled": false
                 }
             }
         ],
