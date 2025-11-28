@@ -1,0 +1,158 @@
+{
+  "app": "sphere-polyhedra-kinds",
+  "settings": {
+    "fraction": {
+      "mode": "volume"
+    }
+  },
+  "kinds": [
+    {
+      "id": "S",
+      "kind_": "sphere",
+      "label": 1,
+      "class": "net.algart.model3d.spherepolyhedra.kinds.SphereKind",
+      "color": "0xFF0000",
+      "fraction": 35,
+      "r": 1,
+      "dr": 0.1,
+      "restrictions": [
+        {
+          "restriction": "prohibit-kinds"
+        }
+      ]
+    },
+    {
+      "id": " SCyl1",
+      "label": 2,
+      "kind": "sphere-cylinder",
+      "color": "#00FFFF",
+      "fraction": 15,
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 30
+        }
+      ],
+      "a": 3,
+      "da": 1,
+      "r": 1,
+      "dr": 0.1,
+      "restrictions": [
+        {
+          "restriction": "require-index",
+          "index": 0
+        },
+        {
+          "restriction": "require-kinds",
+          "kinds": [
+            "$Wall"
+          ],
+          "number": 1
+        },
+        {
+          "restriction": "prohibit-kinds"
+        }
+      ]
+    },
+    {
+      "id": "SCube1",
+      "label": 101,
+      "kind": "sphere-cube",
+      "color": "#808080",
+      "fraction": 30,
+      "distribution": "uniform",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 10
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "angle_deviation": 10
+        }
+      ],
+      "a": 1,
+      "da": 1,
+      "r": 0.3,
+      "dr": 0.2
+    },
+    {
+      "id": "SCube2",
+      "label": 102,
+      "kind": "sphere-cube",
+      "color": "#C0C0C0",
+      "fraction": 15,
+      "distribution": "uniform",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 1
+        }
+      ],
+      "a": 1,
+      "da": 1,
+      "r": 0.3,
+      "dr": 0.2
+    },
+    {
+      "id": "Cube1",
+      "label": 201,
+      "kind": "cube",
+      "color": "#800080",
+      "fraction": 30,
+      "distribution": "uniform",
+      "a": 2,
+      "da": 1
+    },
+    {
+      "id": "Bar",
+      "label": 10,
+      "kind": "bar",
+      "color": "#0000FF",
+      "fraction": 30,
+      "distribution": "uniform",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 50
+        }
+      ],
+      "a": 3,
+      "da": 1,
+      "b": 1,
+      "db": 0.2
+    },
+    {
+      "id": "SBar",
+      "label": 11,
+      "kind": "sphere-bar",
+      "color": "#8080FF",
+      "fraction": 30,
+      "distribution": "uniform",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 50
+        }
+      ],
+      "a": 3,
+      "da": 1,
+      "b": 1,
+      "db": 0.2,
+      "r": 0.5,
+      "dr": 0.2
+    }
+  ]
+}

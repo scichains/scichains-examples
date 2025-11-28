@@ -1,0 +1,42 @@
+{
+  "app": "sphere-polyhedra-kinds",
+  "settings": {
+    "fraction": {
+      "mode": "SUMMARY_VOLUME"
+    }
+  },
+  "kinds": [
+    {
+      "id": "SCross1",
+      "kind": "sphere-cross",
+      "color": "0x80FF80",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 5
+        }
+      ],
+      "a": 5,
+      "da": 1,
+      "b": 1.5,
+      "db": 0.1,
+      "r": 0.5,
+      "dr": 0.3,
+      "drb": 0.1,
+      "h": 1.0,
+      "dh": 0.0,
+      "mode": "RELATIVE",
+      "in-range": true,
+      "restrictions": [
+        {
+          "restriction": "require-index",
+          "index": 0
+        }
+      ]
+    }
+  ]
+}

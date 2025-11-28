@@ -1,0 +1,62 @@
+{
+  "app": "sphere-polyhedra-kinds",
+  "settings": {
+    "fraction": {
+      "mode": "SUMMARY_VOLUME"
+    }
+  },
+  "kinds": [
+    {
+      "id": "Sph1",
+      "label": 1,
+      "kind": "sphere",
+      "color": "0xFF0000",
+      "fraction": 10,
+      "r": 1,
+      "dr": 0.5,
+      "restrictions": [
+        {
+          "restriction": "prohibit-kinds",
+          "kinds": [
+            "Sph2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Sph2",
+      "label": 2,
+      "kind": "sphere",
+      "color": "0xFFFF00",
+      "fraction": 10,
+      "r": 1,
+      "dr": 0.5,
+      "restrictions": [
+        {
+          "restriction": "require-kinds",
+          "kinds": [
+            "Sph2"
+          ],
+          "number": 2
+        }
+      ]
+    },
+    {
+      "id": "Sph3",
+      "label": 3,
+      "kind": "sphere",
+      "color": "0x00FF00",
+      "fraction": 10,
+      "r": 1,
+      "dr": 0.5,
+      "restrictions": [
+        {
+          "restriction": "require-kinds",
+          "kinds": [
+            "Sph3"
+          ]
+        }
+      ]
+    }
+  ]
+}

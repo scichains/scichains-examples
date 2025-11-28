@@ -1,0 +1,111 @@
+{
+  "app": "sphere-polyhedra-kinds",
+  "settings": {
+    "fraction": {
+      "mode": "SUMMARY_VOLUME"
+    }
+  },
+  "kinds": [
+    {
+      "id": "Sph1",
+      "kind": "sphere",
+      "color": "0x00FF00",
+      "fraction": 30,
+      "r": 1.0,
+      "dr": 0.3
+    },
+    {
+      "id": "SCube1",
+      "kind": "sphere-cube",
+      "color": "#808080",
+      "fraction": 30,
+      "distribution": "uniform",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 10
+        },
+        {
+          "x": 0,
+          "y": 1,
+          "z": 0,
+          "angle_deviation": 10
+        }
+      ],
+      "a": 1.5,
+      "da": 1,
+      "r": 0.7,
+      "dr": 0.2
+    },
+    {
+      "id": "SCyl1",
+      "kind": "sphere-cylinder",
+      "color": "0xFF0000",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 5
+        }
+      ],
+      "a": 5,
+      "da": 1,
+      "r": 0.5,
+      "dr": 0.1
+    },
+    {
+      "id": "LSph1",
+      "kind": "sphere",
+      "color": "0xFFFF00",
+      "fraction": 10,
+      "r": 0.4,
+      "dr": 0.05
+    },
+    {
+      "id": "LSph2",
+      "kind": "sphere",
+      "color": "0xFFFF80",
+      "fraction": 10,
+      "r": 0.2,
+      "dr": 0.05
+    },
+    {
+      "id": "LSCyl1",
+      "kind": "sphere-cylinder",
+      "color": "0x800000",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 5
+        }
+      ],
+      "a": 0.5,
+      "da": 0.2,
+      "r": 0.2,
+      "dr": 0.1
+    },
+    {
+      "id": "BSph1",
+      "kind": "sphere",
+      "color": "0x0000FF",
+      "fraction": 10,
+      "r": 0.2,
+      "dr": 0.0,
+      "restrictions": [
+        {
+          "restriction": "require-index",
+          "index": 0
+        }
+      ]
+    }
+  ]
+}

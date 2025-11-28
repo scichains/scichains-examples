@@ -1,0 +1,122 @@
+{
+  "app": "sphere-polyhedra-kinds",
+  "settings": {
+    "fraction": {
+      "mode": "SUMMARY_VOLUME"
+    }
+  },
+  "kinds": [
+    {
+      "id": "SCyl1",
+      "label": 11,
+      "kind": "sphere-cylinder",
+      "color": "0xFF0000",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 5
+        }
+      ],
+      "a": 5,
+      "da": 1,
+      "r": 1.0,
+      "dr": 0.1,
+      "restrictions": [
+        {
+          "restriction": "require-index",
+          "index": 0
+        }
+      ]
+    },
+    {
+      "id": "SCyl2",
+      "label": 12,
+      "kind": "sphere-cylinder",
+      "color": "0x800000",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 0,
+          "y": 0,
+          "z": 1,
+          "angle_deviation": 5
+        }
+      ],
+      "a": 5,
+      "da": 1,
+      "r": 1.0,
+      "dr": 0.1,
+      "restrictions": [
+        {
+          "restriction": "require-kinds",
+          "kinds": [
+            "SCross"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S",
+      "label": 1,
+      "kind_": "sphere",
+      "class": "net.algart.model3d.spherepolyhedra.kinds.SphereKind",
+      "color": "0x00FF00",
+      "fraction": 10,
+      "r": 1,
+      "dr": 0.2
+    },
+    {
+      "id": "SCross",
+      "label": 17,
+      "kind": "sphere-cross",
+      "color": "0x80FF80",
+      "fraction": 10,
+      "distribution": "NORMAL",
+      "directions": [
+        {
+          "x": 1,
+          "y": 0,
+          "z": 0,
+          "angle_deviation": 15
+        }
+      ],
+      "a": 5,
+      "da": 1,
+      "b": 2,
+      "db": 0.1,
+      "r": 0.5,
+      "dr": 0.1,
+      "drb": 0.1,
+      "h": 0.0,
+      "dh": 0.5,
+      "shift-mode": "RELATIVE",
+      "restrictions_": [
+        {
+          "restriction": "require-kinds",
+          "kinds": [
+            "S"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BSph1",
+      "kind": "sphere",
+      "color": "0x0000FF",
+      "fraction": 10,
+      "r": 0.2,
+      "dr": 0.0,
+      "restrictions": [
+        {
+          "restriction": "require-index",
+          "index": 0
+        }
+      ]
+    }
+  ]
+}
