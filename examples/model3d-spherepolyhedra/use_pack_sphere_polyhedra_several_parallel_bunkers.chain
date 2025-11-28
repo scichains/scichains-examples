@@ -1,12 +1,11 @@
-
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.8000000000000007,
         "desktop": {
-            "scroll_h": 0.5160690204694263,
-            "scroll_v": 0.4912513944725447
+            "scroll_h": 0.5043833253720454,
+            "scroll_v": 0.4900272465439318
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -34,12 +33,30 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "6d53ecb7-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "6d53ecb7-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "6d53ecb7-0300-0000-a304-77c019f67c0a",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -48,7 +65,7 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -74,8 +91,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -83,8 +100,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -258,6 +275,15 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "kind_set",
                     "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "6e57bb19-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
                 },
                 {
                     "@id": "UIPortModel",
@@ -481,6 +507,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "number_of_objects",
                     "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a2869560-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "a2869560-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
                 }
             ],
             "display_advanced": false,
@@ -542,11 +586,29 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "2a4d44a2-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "2a4d44a2-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "2a4d44a2-0300-0000-3712-596fc4b7b937",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -555,7 +617,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -594,11 +656,29 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "f202d6cc-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "f202d6cc-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "f202d6cc-0300-0000-3712-596fc4b7b937",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -607,7 +687,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -697,6 +777,24 @@
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "summary_volume",
                     "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "05b87787-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "05b87787-0200-0000-a0ae-37d4ecb650d4",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___platform_id",
+                    "caption": "Platform ID"
                 },
                 {
                     "@id": "UIPortModel",
@@ -1053,9 +1151,9 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
             "category": "subchain",
             "options": {
@@ -1065,27 +1163,23 @@
                     "multithreading": false
                 }
             },
-            "uuid": "abbc0720-61d3-4803-92ff-0befeb23e7ac"
+            "id": "abbc0720-61d3-4803-92ff-0befeb23e7ac"
         },
         "properties": [
             {
                 "name": "__common.stop_loop_condition.data_process",
-                "type": "scalar",
                 "value": "e2ab1353-5781-4ae2-8fa7-0edeb8cf71c7"
             },
             {
                 "name": "__common.stop_loop_condition.port",
-                "type": "scalar",
                 "value": "e2ab1353-0200-0000-5f82-f315ea9a15dd"
             },
             {
                 "name": "system.collect_statistic",
-                "type": "boolean",
                 "value": true
             },
             {
                 "name": "system.create_preview",
-                "type": "boolean",
                 "value": true
             }
         ],
@@ -1094,13 +1188,25 @@
                 "uuid": "6d53ecb7-34f7-4cf3-877b-e3a0eae2b130",
                 "executor_id": "1907b22c-c5c5-4d98-833f-20704c39c95a",
                 "execution_stage": "loading_time",
-                "executor_name": "Use sub-chain(s)",
+                "executor_name": "Use chain(s)",
                 "ports": [
                     {
                         "uuid": "6d53ecb7-0200-0000-6416-fc948a169899",
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "output"
+                    },
+                    {
+                        "uuid": "6d53ecb7-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "6d53ecb7-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
                     },
                     {
                         "uuid": "6d53ecb7-0300-0000-a304-77c019f67c0a",
@@ -1130,13 +1236,13 @@
                         "uuid": "6d53ecb7-0300-0000-0aa5-22ac834ca088",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "6d53ecb7-0400-0000-0aa5-22ac834ca088",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "6d53ecb7-0300-0000-75dc-6b57640cee19",
@@ -1187,41 +1293,34 @@
                         "name": "executeAll"
                     }
                 ],
-                "properties": [
+                "parameters": [
+                    {
+                        "name": "chainSpecification",
+                        "value": ""
+                    },
                     {
                         "name": "executeAll",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "executeIsolatedLoadingTimeFunctions",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
-                        "value": "pack_sphere_polyhedra_several_parallel_bunkers.json"
+                        "value": "pack_sphere_polyhedra_several_parallel_bunkers.chain"
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "multithreading",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "overrideBehaviour",
-                        "type": "boolean",
                         "value": true
-                    },
-                    {
-                        "name": "subChainJsonContent",
-                        "type": "scalar",
-                        "value": ""
                     }
                 ],
                 "system": {
@@ -1262,6 +1361,12 @@
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "kind_set"
+                    },
+                    {
+                        "uuid": "6e57bb19-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
                     },
                     {
                         "uuid": "6e57bb19-0300-0000-14bd-af97735fcaa6",
@@ -1348,40 +1453,33 @@
                         "name": "_sch___visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "N",
-                        "type": "int64",
                         "value": 20000
                     },
                     {
                         "name": "_sch___doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "_sch___logTiming",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "_sch___timingLogLevel",
-                        "type": "scalar",
                         "value": "CONFIG"
                     },
                     {
                         "name": "_sch___timingNumberOfCalls",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "_sch___timingNumberOfPercentiles",
-                        "type": "int64",
                         "value": 5
                     },
                     {
                         "name": "_sch___visibleResult",
-                        "type": "scalar",
                         "value": "output"
                     }
                 ],
@@ -1447,9 +1545,21 @@
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "number_of_objects"
+                    },
+                    {
+                        "uuid": "a2869560-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "a2869560-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
                     }
                 ],
-                "properties": [
+                "parameters": [
                 ],
                 "system": {
                     "caption": "Copy sphere-polyhedra array"
@@ -1473,22 +1583,33 @@
                         "name": "output"
                     },
                     {
+                        "uuid": "2a4d44a2-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "2a4d44a2-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
                         "uuid": "2a4d44a2-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "2a4d44a2-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": false
                     }
                 ],
@@ -1514,22 +1635,33 @@
                         "name": "output"
                     },
                     {
+                        "uuid": "f202d6cc-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "f202d6cc-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
+                    },
+                    {
                         "uuid": "f202d6cc-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "f202d6cc-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": false
                     }
                 ],
@@ -1589,6 +1721,18 @@
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "summary_volume"
+                    },
+                    {
+                        "uuid": "05b87787-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
+                    },
+                    {
+                        "uuid": "05b87787-0200-0000-a0ae-37d4ecb650d4",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___platform_id"
                     },
                     {
                         "uuid": "05b87787-0300-0000-da3c-d430ac64f7c6",
@@ -1795,90 +1939,73 @@
                         "name": "animationDelay"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "animate",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "animationDelay",
-                        "type": "int64",
                         "value": 50
                     },
                     {
                         "name": "axes",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "backgroundColor",
-                        "type": "scalar",
                         "value": "#FFFFFF"
                     },
                     {
                         "name": "defaultColor",
-                        "type": "scalar",
                         "value": "#E0E0E0"
                     },
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "dissectedObjectsVisible",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "invisibleKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "rotationAroundXInDegree",
-                        "type": "double",
                         "value": 1.0
                     },
                     {
                         "name": "rotationAroundYInDegree",
-                        "type": "double",
                         "value": 10.0
                     },
                     {
                         "name": "rotationAroundZInDegree",
-                        "type": "double",
                         "value": 0.0
                     },
                     {
                         "name": "scale",
-                        "type": "double",
                         "value": 3.0
                     },
                     {
                         "name": "sectionZ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "upwardAxisY",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x0",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "y0",
-                        "type": "int64",
                         "value": 0
                     }
                 ],

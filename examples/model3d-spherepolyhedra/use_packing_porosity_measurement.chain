@@ -1,11 +1,11 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.6400000000000017,
         "desktop": {
-            "scroll_h": 0.5479041800500929,
-            "scroll_v": 0.5037915976618358
+            "scroll_h": 0.451839167218613,
+            "scroll_v": 0.45761028121024905
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -26,8 +26,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "6d53ecb7-34f7-4cf3-877b-e3a0eae2b130",
-            "layout_x": 8565,
-            "layout_y": 9090,
+            "layout_x": 8720,
+            "layout_y": 9080,
             "layout_width": 278,
             "layout_height": 143,
             "caption": "Use sub-chain",
@@ -68,7 +68,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -77,7 +77,7 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -103,8 +103,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -112,8 +112,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -290,7 +290,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -299,7 +299,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -2463,6 +2463,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "b420964d-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "b420964d-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "b420964d-0300-0000-e34b-5cf51aaf4de0",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -3117,7 +3135,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -3126,7 +3144,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -7903,6 +7921,24 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "fc02555f-0300-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "INPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
+                    "uuid": "fc02555f-0400-0000-0506-0e3daeeae551",
+                    "visible": false,
+                    "port_type": "OUTPUT_CONTROL",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "pattern",
+                    "caption": ""
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "fc02555f-0300-0000-e34b-5cf51aaf4de0",
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
@@ -10947,6 +10983,15 @@
                 },
                 {
                     "@id": "UIPortModel",
+                    "uuid": "cfbe9ecf-0200-0000-cf95-37e5dfbcb01d",
+                    "visible": false,
+                    "port_type": "OUTPUT",
+                    "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                    "name": "_sys___executor_id",
+                    "caption": "Executor ID"
+                },
+                {
+                    "@id": "UIPortModel",
                     "uuid": "cfbe9ecf-0300-0000-63de-3099b2e31d20",
                     "visible": true,
                     "port_type": "INPUT_CONTROL",
@@ -11406,11 +11451,10 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
-            "uuid": "c4b59fdd-a995-4570-a279-b97e5abb8044",
             "category": "subchain",
             "options": {
                 "execution": {
@@ -11418,16 +11462,15 @@
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "c4b59fdd-a995-4570-a279-b97e5abb8044"
         },
-        "properties": [
-        ],
         "blocks": [
             {
                 "uuid": "6d53ecb7-34f7-4cf3-877b-e3a0eae2b130",
                 "executor_id": "1907b22c-c5c5-4d98-833f-20704c39c95a",
                 "execution_stage": "loading_time",
-                "executor_name": "Use sub-chain(s)",
+                "executor_name": "Use chain(s)",
                 "ports": [
                     {
                         "uuid": "6d53ecb7-0200-0000-6416-fc948a169899",
@@ -11475,13 +11518,13 @@
                         "uuid": "6d53ecb7-0300-0000-0aa5-22ac834ca088",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "6d53ecb7-0400-0000-0aa5-22ac834ca088",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "6d53ecb7-0300-0000-75dc-6b57640cee19",
@@ -11532,41 +11575,34 @@
                         "name": "executeAll"
                     }
                 ],
-                "properties": [
+                "parameters": [
+                    {
+                        "name": "chainSpecification",
+                        "value": ""
+                    },
                     {
                         "name": "executeAll",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "executeIsolatedLoadingTimeFunctions",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
-                        "value": "packing_porosity_measurement.json"
+                        "value": "packing_porosity_measurement.chain"
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "multithreading",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "overrideBehaviour",
-                        "type": "boolean",
                         "value": false
-                    },
-                    {
-                        "name": "subChainJsonContent",
-                        "type": "scalar",
-                        "value": ""
                     }
                 ],
                 "system": {
@@ -11645,7 +11681,7 @@
                         "name": "_sys___platform_id"
                     }
                 ],
-                "properties": [
+                "parameters": [
                 ],
                 "system": {
                     "caption": "Copy sphere-polyhedra array"
@@ -11684,19 +11720,18 @@
                         "uuid": "3366d33e-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "3366d33e-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
@@ -12058,95 +12093,77 @@
                         "name": "silentInterrupting"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "behaviourWhenTouchingSystemOrUnknownObjects",
-                        "type": "scalar",
                         "value": "REJECT_AND_TRY_ANOTHER"
                     },
                     {
                         "name": "firstPositionStrategy",
-                        "type": "scalar",
                         "value": "RANDOM"
                     },
                     {
                         "name": "maxNumberOfAttemptsToTurn",
-                        "type": "scalar",
                         "value": "4"
                     },
                     {
                         "name": "maxNumberOfTurns",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "maxSummaryPath",
-                        "type": "scalar",
                         "value": "30"
                     },
                     {
                         "name": "newPackedObjectsMayOverlap",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "numberOfCheckedPositions",
-                        "type": "int32",
                         "value": 50
                     },
                     {
                         "name": "numberOfCreationsBeforeFailure",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "numberOfObjects",
-                        "type": "int64",
                         "value": 2000
                     },
                     {
                         "name": "onlyKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "randSeed",
-                        "type": "scalar",
                         "value": "1"
                     },
                     {
                         "name": "randomRotation",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "samePackingRestrictionsForOneKindId",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "silentInterrupting",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "turnAngleDeviationInDegrees",
-                        "type": "int64",
                         "value": 90
                     },
                     {
                         "name": "turnAngleDistribution",
-                        "type": "scalar",
                         "value": "UNIFORM"
                     },
                     {
                         "name": "useGeometryForFirstPosition",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "usePackingRestrictions",
-                        "type": "boolean",
                         "value": false
                     }
                 ],
@@ -12640,195 +12657,157 @@
                         "name": "requiredNeighbourIndex"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "a",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "b",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "color",
-                        "type": "scalar",
                         "value": "#FFFF00"
                     },
                     {
                         "name": "da",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "db",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "dh",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "distribution",
-                        "type": "scalar",
                         "value": "NORMAL"
                     },
                     {
                         "name": "dr",
-                        "type": "double",
                         "value": 0.5
                     },
                     {
                         "name": "drb",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "fraction",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "fractionMode",
-                        "type": "scalar",
                         "value": "SUMMARY_VOLUME"
                     },
                     {
                         "name": "h",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "id",
-                        "type": "scalar",
                         "value": "S"
                     },
                     {
                         "name": "kindClass",
-                        "type": "scalar",
                         "value": "SPHERE"
                     },
                     {
                         "name": "label",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "numberOfPreferredDirections",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection1AngleDeviationInDegrees",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection1Distribution",
-                        "type": "scalar",
                         "value": "NORMAL"
                     },
                     {
                         "name": "preferredDirection1X",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection1Y",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection1Z",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "preferredDirection2AngleDeviationInDegrees",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection2Distribution",
-                        "type": "scalar",
                         "value": "NORMAL"
                     },
                     {
                         "name": "preferredDirection2X",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "preferredDirection2Y",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection2Z",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection3AngleDeviationInDegrees",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection3Distribution",
-                        "type": "scalar",
                         "value": "NORMAL"
                     },
                     {
                         "name": "preferredDirection3X",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "preferredDirection3Y",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "preferredDirection3Z",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "prohibitedNeighbourKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "r",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "rb",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requiredNeighbourIndex",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "requiredNeighbourKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "sphereCrossInRange",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "sphereCrossMode",
-                        "type": "scalar",
                         "value": "RELATIVE"
                     }
                 ],
@@ -12839,7 +12818,7 @@
             {
                 "uuid": "61e0ab57-2e5d-40d1-b34a-28a879df9ff4",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "61e0ab57-0100-0000-8fd6-4c4759803353",
@@ -12878,10 +12857,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0.5"
                     }
                 ],
@@ -12893,7 +12871,7 @@
             {
                 "uuid": "b420964d-a908-410a-bb2e-fd896bea1265",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "b420964d-0100-0000-60f5-d7289e42146c",
@@ -13118,6 +13096,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "b420964d-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "b420964d-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "b420964d-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -13238,60 +13228,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": ", "
                     }
                 ],
@@ -13302,7 +13285,7 @@
             {
                 "uuid": "38eafcd7-9599-4ed4-bfd2-ad3fe3d48160",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "38eafcd7-0100-0000-8fd6-4c4759803353",
@@ -13341,10 +13324,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "50"
                     }
                 ],
@@ -13356,7 +13338,7 @@
             {
                 "uuid": "feeb879e-1436-42a5-93df-1e369ec00113",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "feeb879e-0100-0000-8fd6-4c4759803353",
@@ -13395,10 +13377,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0"
                     }
                 ],
@@ -13461,15 +13442,13 @@
                         "name": "singleBlock"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "blockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "singleBlock",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -13576,13 +13555,13 @@
                         "uuid": "6165a2e9-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "6165a2e9-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "6165a2e9-0300-0000-ce1a-005d5ba2fb0a",
@@ -13681,65 +13660,53 @@
                         "name": "simpleFormatForIntegers"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "appendToExistingFile",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "clearFileOnReset",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "copyOfPreviousFileIfNonInitialized",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "deleteFileIfNonInitialized",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "delimiter",
-                        "type": "scalar",
                         "value": ","
                     },
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "\\tmp\\measurements.csv"
                     },
                     {
                         "name": "fileNameAdditionMode",
-                        "type": "scalar",
                         "value": "NONE"
                     },
                     {
                         "name": "format",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
-                        "name": "lineDelimiter",
-                        "type": "scalar",
-                        "value": "CRLF"
-                    },
-                    {
-                        "name": "requireInput",
-                        "type": "boolean",
+                        "name": "inputRequired",
                         "value": true
                     },
                     {
+                        "name": "lineDelimiter",
+                        "value": "CRLF"
+                    },
+                    {
                         "name": "secure",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "simpleFormatForIntegers",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -13750,7 +13717,7 @@
             {
                 "uuid": "769f0603-d981-4e46-9bb0-b70b94e7272a",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "769f0603-0100-0000-8fd6-4c4759803353",
@@ -13789,10 +13756,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "\\tmp\\measurements.csv"
                     }
                 ],
@@ -13804,7 +13770,7 @@
             {
                 "uuid": "519b1adc-8e11-476a-8c3a-a2abeff58530",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "519b1adc-0100-0000-8fd6-4c4759803353",
@@ -13843,10 +13809,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0.1"
                     }
                 ],
@@ -13858,7 +13823,7 @@
             {
                 "uuid": "5948d2bd-0bfc-4f7d-934d-981f83564fb2",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "5948d2bd-0100-0000-8fd6-4c4759803353",
@@ -13897,10 +13862,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0.5"
                     }
                 ],
@@ -14569,195 +14533,157 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "callableExecutorId1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorOutputsNecessaryAlways",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultA",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultB",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultC",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultD",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultE",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultF",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "formula",
-                        "type": "scalar",
                         "value": "dr"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "var drMin = a;\nvar drMax = b;\nvar drStep = c;\nvar dr = drMin;"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultE",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultF",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultG",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultH",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "safety",
-                        "type": "scalar",
                         "value": "SAFE"
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -14768,7 +14694,7 @@
             {
                 "uuid": "9e024ee6-31cb-450a-95cc-144697cae3fc",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "9e024ee6-0100-0000-8fd6-4c4759803353",
@@ -14807,10 +14733,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "50"
                     }
                 ],
@@ -14822,7 +14747,7 @@
             {
                 "uuid": "daf9ee90-77c9-42be-920d-517c6a6ccea7",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "daf9ee90-0100-0000-8fd6-4c4759803353",
@@ -14861,10 +14786,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1"
                     }
                 ],
@@ -15533,195 +15457,157 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "callableExecutorId1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorOutputsNecessaryAlways",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultA",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultB",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultC",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultD",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultE",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultF",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "formula",
-                        "type": "scalar",
                         "value": "p"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "var pMin = a;\nvar pMax = b;\nvar pStep = c;\nvar p = pMin;"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultE",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultF",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultG",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultH",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "safety",
-                        "type": "scalar",
                         "value": "SAFE"
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -15732,7 +15618,7 @@
             {
                 "uuid": "b5c96beb-6bba-442d-badd-dee38278269e",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "b5c96beb-0100-0000-8fd6-4c4759803353",
@@ -15771,10 +15657,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1"
                     }
                 ],
@@ -15786,7 +15671,7 @@
             {
                 "uuid": "876a10ea-2f9e-48b5-b4a5-f089d7df41ce",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "876a10ea-0100-0000-8fd6-4c4759803353",
@@ -15825,10 +15710,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "0"
                     }
                 ],
@@ -16497,195 +16381,157 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "callableExecutorId1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorOutputsNecessaryAlways",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultA",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultB",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultC",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultD",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultE",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultF",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "formula",
-                        "type": "scalar",
                         "value": "m"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "var mMin = a;\nvar mMax = b;\nvar mStep = c;\nvar m = mMin;"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultE",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultF",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultG",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultH",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "safety",
-                        "type": "scalar",
                         "value": "SAFE"
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -16696,7 +16542,7 @@
             {
                 "uuid": "fc02555f-1cab-49e3-a5db-eb5fcf8d191d",
                 "executor_id": "ff94d525-7255-42ba-ba23-38d3a987f869",
-                "executor_name": "Concatenate scalars",
+                "executor_name": "Concatenate/format scalars",
                 "ports": [
                     {
                         "uuid": "fc02555f-0100-0000-60f5-d7289e42146c",
@@ -16921,6 +16767,18 @@
                         "name": "separator"
                     },
                     {
+                        "uuid": "fc02555f-0300-0000-0506-0e3daeeae551",
+                        "type": 3,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
+                        "uuid": "fc02555f-0400-0000-0506-0e3daeeae551",
+                        "type": 4,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "pattern"
+                    },
+                    {
                         "uuid": "fc02555f-0300-0000-e34b-5cf51aaf4de0",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
@@ -17041,60 +16899,53 @@
                         "name": "defaultS10"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "defaultS1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS10",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS6",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS7",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS8",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "defaultS9",
-                        "type": "scalar",
+                        "value": ""
+                    },
+                    {
+                        "name": "pattern",
                         "value": ""
                     },
                     {
                         "name": "separator",
-                        "type": "scalar",
                         "value": ", "
                     }
                 ],
@@ -17504,105 +17355,85 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "doOperator",
-                        "type": "scalar",
                         "value": "var done = next();\ndone"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "function next() {\n  dr += drStep;\n  if (dr <= drMax) {\n    return false;\n  }\n  dr = drMin;\n  p += pStep;\n  if (p <= pMax) {\n    return false;\n  }\n  p = pMin;\n  m += mStep;\n  if (m <= mMax) {\n    return false;\n  }\n  m = mMin;\n  n += nStep;\n  if (n <= nMax) {\n    return false;\n  }  \nreturn true;\n}"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": "dr + \", \" + p + \", \" + m +\", \"+ n"
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultI",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultJ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultK",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "status",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "whileCondition",
-                        "type": "scalar",
                         "value": "!done"
                     }
                 ],
@@ -17613,7 +17444,7 @@
             {
                 "uuid": "d1d5dc25-a20d-4e43-92d2-6738f529023f",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "d1d5dc25-0100-0000-8fd6-4c4759803353",
@@ -17652,10 +17483,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1"
                     }
                 ],
@@ -17666,7 +17496,7 @@
             {
                 "uuid": "8b701ffb-61a6-43e2-988f-a8bdc572fa10",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "8b701ffb-0100-0000-8fd6-4c4759803353",
@@ -17705,10 +17535,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1"
                     }
                 ],
@@ -17719,7 +17548,7 @@
             {
                 "uuid": "d99ffaf8-2eff-4b01-853c-52c712da6e87",
                 "executor_id": "9863bb92-aaff-4ffa-a800-1df044f26f50",
-                "executor_name": "Scalar value",
+                "executor_name": "Scalar parameter (any string)",
                 "ports": [
                     {
                         "uuid": "d99ffaf8-0100-0000-8fd6-4c4759803353",
@@ -17758,10 +17587,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "1"
                     }
                 ],
@@ -18429,195 +18257,157 @@
                         "name": "closeSharedContext"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "callableExecutorId1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorId3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "callableExecutorOutputsNecessaryAlways",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "closeSharedContext",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputArraysToDouble",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputNumbersToArray",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertInputScalarToNumber",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "convertOutputIntegersToBriefForm",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "defaultA",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultB",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultC",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultD",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultE",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "defaultF",
-                        "type": "scalar",
                         "value": "0"
                     },
                     {
                         "name": "formula",
-                        "type": "scalar",
                         "value": "n"
                     },
                     {
                         "name": "initializingOperator",
-                        "type": "scalar",
                         "value": "var nMin = a;\nvar nMax = b;\nvar nStep = c;\nvar n = nMin;"
                     },
                     {
                         "name": "resultA",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultB",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultC",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultD",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultE",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultF",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultG",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultH",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM4",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultM5",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX1BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX2",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX2BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "resultX3",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "resultX3BlockLength",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "safety",
-                        "type": "scalar",
                         "value": "SAFE"
                     },
                     {
                         "name": "shareNamespace",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -18871,95 +18661,77 @@
                         "name": "bottomKindId"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "allowOverflow",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "bottomK",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "bottomKindId",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "centerI",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "centerJ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "frontWallKindId",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "ix",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "iy",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "iz",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "jx",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "jy",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "jz",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "leftWallKindId",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "rearWallKindId",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "rightWallKindId",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "sizeI",
-                        "type": "scalar",
                         "value": "30"
                     },
                     {
                         "name": "sizeJ",
-                        "type": "scalar",
                         "value": "30"
                     },
                     {
                         "name": "sizeK",
-                        "type": "scalar",
                         "value": "30"
                     }
                 ],
@@ -19091,6 +18863,12 @@
                         "type": 2,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                         "name": "porosity_at_cut"
+                    },
+                    {
+                        "uuid": "cfbe9ecf-0200-0000-cf95-37e5dfbcb01d",
+                        "type": 2,
+                        "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
+                        "name": "_sys___executor_id"
                     },
                     {
                         "uuid": "cfbe9ecf-0300-0000-63de-3099b2e31d20",
@@ -19237,65 +19015,53 @@
                         "name": "_sch___visibleResult"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "_sch___doAction",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "_sch___logTiming",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "_sch___timingLogLevel",
-                        "type": "scalar",
                         "value": "CONFIG"
                     },
                     {
                         "name": "_sch___timingNumberOfCalls",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "_sch___timingNumberOfPercentiles",
-                        "type": "int64",
                         "value": 5
                     },
                     {
                         "name": "_sch___visibleResult",
-                        "type": "scalar",
                         "value": "xyzr"
                     },
                     {
                         "name": "dilation dr",
-                        "type": "scalar",
                         "value": "0.5"
                     },
                     {
                         "name": "gap",
-                        "type": "scalar",
                         "value": "0.5"
                     },
                     {
                         "name": "high percentile",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "low percentile",
-                        "type": "scalar",
                         "value": "0.2"
                     },
                     {
                         "name": "top gap",
-                        "type": "scalar",
                         "value": "5"
                     },
                     {
                         "name": "voxel size",
-                        "type": "scalar",
                         "value": "0.1"
                     }
                 ],

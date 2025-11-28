@@ -1,6 +1,6 @@
 {
-    "app": "stare-project",
-    "version": "1.0.9",
+    "app": "SciChains",
+    "version": "1.1",
     "root": {
         "scale": 0.8000000000000007,
         "desktop": {
@@ -1987,22 +1987,20 @@
     "properties": {
     },
     "poke_and_look_project": "",
-    "stare_chain": {
-        "app": "stare-chain",
-        "version": "1.0",
+    "chain": {
+        "app": "chain",
+        "version": "1.1",
         "executor": {
             "category": "subchains",
-            "uuid": "f723c85b-58c8-4fe8-8ff1-1b4c690f74dd",
             "options": {
                 "execution": {
                     "all": false,
                     "multithreading": false,
                     "ignore_exceptions": false
                 }
-            }
+            },
+            "id": "f723c85b-58c8-4fe8-8ff1-1b4c690f74dd"
         },
-        "properties": [
-        ],
         "blocks": [
             {
                 "uuid": "42210c4f-870c-40f3-ac5f-1b365ed78e34",
@@ -2088,15 +2086,13 @@
                         "name": "fileExistenceRequired"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "file",
-                        "type": "scalar",
                         "value": "kindsets/demo.json"
                     },
                     {
                         "name": "fileExistenceRequired",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -2164,10 +2160,9 @@
                         "name": "randSeed"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "randSeed",
-                        "type": "scalar",
                         "value": ""
                     }
                 ],
@@ -2433,90 +2428,73 @@
                         "name": "animationDelay"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "animate",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "animationDelay",
-                        "type": "int64",
                         "value": 50
                     },
                     {
                         "name": "backgroundColor",
-                        "type": "scalar",
                         "value": "#FFFFFF"
                     },
                     {
                         "name": "centerX",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "centerY",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "centerZ",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "color",
-                        "type": "scalar",
-                        "value": "#0000FF"
+                        "value": "#8080FF"
                     },
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 500
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 500
                     },
                     {
                         "name": "dissectedObjectsVisible",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "radius",
-                        "type": "int64",
                         "value": 1
                     },
                     {
                         "name": "rotationAroundXInDegree",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "rotationAroundYInDegree",
-                        "type": "int64",
                         "value": 20
                     },
                     {
                         "name": "rotationAroundZInDegree",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "scale",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "sectionZ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "upwardAxisY",
-                        "type": "boolean",
                         "value": true
                     }
                 ],
@@ -2734,7 +2712,7 @@
                         "name": "_sys___platform_id"
                     }
                 ],
-                "properties": [
+                "parameters": [
                 ],
                 "system": {
                     "caption": "Output/copy scalar"
@@ -2782,10 +2760,9 @@
                         "name": "value"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "value",
-                        "type": "scalar",
                         "value": "100000"
                     }
                 ],
@@ -2895,35 +2872,29 @@
                         "name": "randSeed"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "blockLength",
-                        "type": "int64",
                         "value": 3
                     },
                     {
                         "name": "elementType",
-                        "type": "scalar",
                         "value": "float"
                     },
                     {
                         "name": "max",
-                        "type": "int64",
                         "value": 50
                     },
                     {
                         "name": "min",
-                        "type": "int64",
                         "value": -50
                     },
                     {
                         "name": "numberOfBlocks",
-                        "type": "int32",
                         "value": 100000
                     },
                     {
                         "name": "randSeed",
-                        "type": "int64",
                         "value": 1
                     }
                 ],
@@ -3039,20 +3010,17 @@
                         "name": "onlyKinds"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "numberOfSpherePolyhedra",
-                        "type": "int32",
                         "value": 100000
                     },
                     {
                         "name": "onlyKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "randSeed",
-                        "type": "scalar",
                         "value": "12"
                     }
                 ],
@@ -3330,90 +3298,73 @@
                         "name": "animationDelay"
                     }
                 ],
-                "properties": [
+                "parameters": [
                     {
                         "name": "animate",
-                        "type": "boolean",
                         "value": false
                     },
                     {
                         "name": "animationDelay",
-                        "type": "int64",
                         "value": 50
                     },
                     {
                         "name": "axes",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "backgroundColor",
-                        "type": "scalar",
                         "value": "#FFFFFF"
                     },
                     {
                         "name": "defaultColor",
-                        "type": "scalar",
                         "value": "#FF8080"
                     },
                     {
                         "name": "dimX",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "dimY",
-                        "type": "int64",
                         "value": 1000
                     },
                     {
                         "name": "dissectedObjectsVisible",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "invisibleKinds",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "rotationAroundXInDegree",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "rotationAroundYInDegree",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "rotationAroundZInDegree",
-                        "type": "int64",
                         "value": 10
                     },
                     {
                         "name": "scale",
-                        "type": "int64",
                         "value": 7
                     },
                     {
                         "name": "sectionZ",
-                        "type": "scalar",
                         "value": ""
                     },
                     {
                         "name": "upwardAxisY",
-                        "type": "boolean",
                         "value": true
                     },
                     {
                         "name": "x0",
-                        "type": "int64",
                         "value": 0
                     },
                     {
                         "name": "y0",
-                        "type": "int64",
                         "value": 0
                     }
                 ],
@@ -3493,7 +3444,7 @@
                         "name": "_sys___platform_id"
                     }
                 ],
-                "properties": [
+                "parameters": [
                 ],
                 "system": {
                     "caption": "Copy sphere-polyhedra array"

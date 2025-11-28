@@ -2,10 +2,10 @@
     "app": "SciChains",
     "version": "1.1",
     "root": {
-        "scale": 1.2500000000000018,
+        "scale": 0.8000000000000013,
         "desktop": {
-            "scroll_h": 0.521674239792534,
-            "scroll_v": 0.6060169906913598
+            "scroll_h": 0.4897911209617839,
+            "scroll_v": 0.6695876288659793
         },
         "grid_adjust": true,
         "grid_size": 20
@@ -4246,7 +4246,7 @@
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -4255,7 +4255,7 @@
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
                     "name": "file",
-                    "caption": "Sub-chain JSON file(s)/folder(s)"
+                    "caption": "Chain JSON file(s)/folder(s)"
                 },
                 {
                     "@id": "UIPortModel",
@@ -4281,8 +4281,8 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -4290,8 +4290,8 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "subChainJsonContent",
-                    "caption": "Sub-chain JSON content"
+                    "name": "chainSpecification",
+                    "caption": "Chain specification"
                 },
                 {
                     "@id": "UIPortModel",
@@ -5036,8 +5036,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "421db921-120f-4e33-97c0-2a57efcfbdf8",
-            "layout_x": 9674,
-            "layout_y": 13254,
+            "layout_x": 9640,
+            "layout_y": 13240,
             "layout_width": 300,
             "layout_height": 200,
             "caption": "create_histogram_kind_set_subchain",
@@ -5349,7 +5349,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -5358,7 +5358,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -5390,8 +5390,8 @@
         {
             "@id": "UIBlockModel",
             "uuid": "6e396473-7b3b-4288-b491-427364a55710",
-            "layout_x": 9634,
-            "layout_y": 13034,
+            "layout_x": 9622,
+            "layout_y": 13000,
             "layout_width": 391,
             "layout_height": 226,
             "caption": "Create vertical box packing geometry",
@@ -6025,7 +6025,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -6034,7 +6034,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -6116,7 +6116,7 @@
                     "visible": false,
                     "port_type": "INPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 },
                 {
@@ -6125,7 +6125,7 @@
                     "visible": false,
                     "port_type": "OUTPUT_CONTROL",
                     "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                    "name": "requireInput",
+                    "name": "inputRequired",
                     "caption": "Requires input"
                 }
             ],
@@ -7330,7 +7330,7 @@
                 "uuid": "16429053-ff04-4679-91e3-209d64ea52c5",
                 "executor_id": "1907b22c-c5c5-4d98-833f-20704c39c95a",
                 "execution_stage": "loading_time",
-                "executor_name": "Use sub-chain(s)",
+                "executor_name": "Use chain(s)",
                 "ports": [
                     {
                         "uuid": "16429053-0200-0000-6416-fc948a169899",
@@ -7378,13 +7378,13 @@
                         "uuid": "16429053-0300-0000-0aa5-22ac834ca088",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "16429053-0400-0000-0aa5-22ac834ca088",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "subChainJsonContent"
+                        "name": "chainSpecification"
                     },
                     {
                         "uuid": "16429053-0300-0000-75dc-6b57640cee19",
@@ -7437,6 +7437,10 @@
                 ],
                 "parameters": [
                     {
+                        "name": "chainSpecification",
+                        "value": ""
+                    },
+                    {
                         "name": "executeAll",
                         "value": false
                     },
@@ -7446,7 +7450,7 @@
                     },
                     {
                         "name": "file",
-                        "value": "create_histogram_kind_set_subchain.json"
+                        "value": "create_histogram_kind_set_subchain.chain"
                     },
                     {
                         "name": "fileExistenceRequired",
@@ -7459,10 +7463,6 @@
                     {
                         "name": "overrideBehaviour",
                         "value": false
-                    },
-                    {
-                        "name": "subChainJsonContent",
-                        "value": ""
                     }
                 ],
                 "system": {
@@ -10968,18 +10968,18 @@
                         "uuid": "78f47bf3-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "78f47bf3-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
                 "parameters": [
                     {
-                        "name": "requireInput",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
@@ -11396,18 +11396,18 @@
                         "uuid": "c359309c-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "c359309c-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
                 "parameters": [
                     {
-                        "name": "requireInput",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
@@ -11448,18 +11448,18 @@
                         "uuid": "de89b06d-0300-0000-3712-596fc4b7b937",
                         "type": 3,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     },
                     {
                         "uuid": "de89b06d-0400-0000-3712-596fc4b7b937",
                         "type": 4,
                         "data_type_uuid": "869bc442-bd01-4094-afc1-783b9ed1c24e",
-                        "name": "requireInput"
+                        "name": "inputRequired"
                     }
                 ],
                 "parameters": [
                     {
-                        "name": "requireInput",
+                        "name": "inputRequired",
                         "value": true
                     }
                 ],
